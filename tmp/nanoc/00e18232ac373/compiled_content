@@ -1,6 +1,6 @@
 {:	data{o:Nanoc::Identifier:
 @type:	full:@stringI"/index.html:ET{:default{
-:	lastU:Nanoc::Int::TextualContent[0I"”<!DOCTYPE HTML>
+:	lastU:Nanoc::Int::TextualContent[0I"<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -13,29 +13,45 @@
   <body>
     <div id="main">
       <h1>Mastr</h1>
-<h3>Freely available practice problems for mastery grading</h3>
+<h3>Freely available exercises for mastery grading</h3>
 
-<p>You‚Äôve just created a new Nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:</p>
+<p>For <strong>students</strong>: use these exercises as homework
+practice.</p>
 
-<ul>
-  <li><p><strong>Change this page‚Äôs content</strong> by editing the ‚Äúindex.html‚Äù file in the ‚Äúcontent‚Äù directory. This is the actual page content, and therefore doesn‚Äôt include the header, sidebar or style information (those are part of the layout).</p></li>
-  <li><p><strong>Change the layout</strong>, which is the ‚Äúdefault.html‚Äù file in the ‚Äúlayouts‚Äù directory, and create something unique (and hopefully less bland).</p></li>
-</ul>
-
-<p>If you need any help with customizing your Nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>
+<p>For <strong>instructors</strong>: use these exercises in
+written assessments. \(\LaTeX\) source may be found on
+<a href="https://github.com/stevenclontz/Mastr-build">GitHub</a>.</p>
 
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -46,17 +62,15 @@
 </html>
 ;
 T:rawU;[I"+/vagrant/mastr-site/content/index.html;
-TI"”<h1>Mastr</h1>
-<h3>Freely available practice problems for mastery grading</h3>
+TI"R<h1>Mastr</h1>
+<h3>Freely available exercises for mastery grading</h3>
 
-<p>You‚Äôve just created a new Nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:</p>
+<p>For <strong>students</strong>: use these exercises as homework
+practice.</p>
 
-<ul>
-  <li><p><strong>Change this page‚Äôs content</strong> by editing the ‚Äúindex.html‚Äù file in the ‚Äúcontent‚Äù directory. This is the actual page content, and therefore doesn‚Äôt include the header, sidebar or style information (those are part of the layout).</p></li>
-  <li><p><strong>Change the layout</strong>, which is the ‚Äúdefault.html‚Äù file in the ‚Äúlayouts‚Äù directory, and create something unique (and hopefully less bland).</p></li>
-</ul>
-
-<p>If you need any help with customizing your Nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>
+<p>For <strong>instructors</strong>: use these exercises in
+written assessments. \(\LaTeX\) source may be found on
+<a href="https://github.com/stevenclontz/Mastr-build">GitHub</a>.</p>
 ;
 T:pre@:_0@:	post@o;;;;	I"/stylesheet.css;
 T{;{	;U;[I"//vagrant/mastr-site/content/stylesheet.css;
@@ -164,7 +178,7 @@ a:hover {
 ;
 T;@;@;@o;;;;	I"/diff-eq/C1.html;
 T{;{
-;U;[0I"Õ~<!DOCTYPE HTML>
+;U;[0I"ÉÄ<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -1079,16 +1093,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -2001,7 +2033,7 @@ T;U;[0I"«z<div class="exercise">
 </div>;
 T;@!;@;@o;;;;	I"/diff-eq/C2.html;
 T{;{
-;U;[0I"†<!DOCTYPE HTML>
+;U;[0I"Œ°<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2916,16 +2948,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -3838,7 +3888,7 @@ T;U;[0I"ú<div class="exercise">
 </div>;
 T;@+;@(;@(o;;;;	I"/diff-eq/C4.html;
 T{;{
-;U;[0I""ê<!DOCTYPE HTML>
+;U;[0I"ÿë<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -4753,16 +4803,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -5675,7 +5743,7 @@ T;U;[0I"å<div class="exercise">
 </div>;
 T;@5;@2;@2o;;;;	I"/diff-eq/C4b.html;
 T{;{
-;U;[0I"ﬂ–<!DOCTYPE HTML>
+;U;[0I"ï“<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6690,16 +6758,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -7712,7 +7798,7 @@ T;U;[0I"ÿÃ<div class="exercise">
 </div>;
 T;@?;@<;@<o;;;;	I"/diff-eq/C5.html;
 T{;{
-;U;[0I"<ñ<!DOCTYPE HTML>
+;U;[0I"Úó<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -8627,16 +8713,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -9549,7 +9653,7 @@ T;U;[0I"6í<div class="exercise">
 </div>;
 T;@I;@F;@Fo;;;;	I"/diff-eq/C5b.html;
 T{;{
-;U;[0I"…ï<!DOCTYPE HTML>
+;U;[0I"ó<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10464,16 +10568,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -11386,7 +11508,7 @@ T;U;[0I"¬ë<div class="exercise">
 </div>;
 T;@S;@P;@Po;;;;	I"/diff-eq/C6.html;
 T{;{
-;U;[0I"ù£<!DOCTYPE HTML>
+;U;[0I"S•<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12301,16 +12423,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -13223,7 +13363,7 @@ T;U;[0I"óü<div class="exercise">
 </div>;
 T;@];@Z;@Zo;;;;	I"/diff-eq/F2.html;
 T{;{
-;U;[0I"˜{<!DOCTYPE HTML>
+;U;[0I"≠}<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -14138,16 +14278,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -15060,7 +15218,7 @@ T;U;[0I"Òw<div class="exercise">
 </div>;
 T;@g;@d;@do;;;;	I"/diff-eq/F2b.html;
 T{;{
-;U;[0I"Øê<!DOCTYPE HTML>
+;U;[0I"eí<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15975,16 +16133,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -16897,7 +17073,7 @@ T;U;[0I"®å<div class="exercise">
 </div>;
 T;@q;@n;@no;;;;	I"/diff-eq/F2c.html;
 T{;{
-;U;[0I"Pö<!DOCTYPE HTML>
+;U;[0I"ú<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17812,16 +17988,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -18734,7 +18928,7 @@ T;U;[0I"Iñ<div class="exercise">
 </div>;
 T;@{;@x;@xo;;;;	I"/diff-eq/F4.html;
 T{;{
-;U;[0I"∆@<!DOCTYPE HTML>
+;U;[0I"|B<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -21505,16 +21699,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
@@ -24283,7 +24495,7 @@ T;U;[0I"¿<<div class="exercise">
 </div>;
 T;@Ä;@};@}o;;;;	I"/diff-eq/F5.html;
 T{;{
-;U;[0I"µá<!DOCTYPE HTML>
+;U;[0I"kâ<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -25198,16 +25410,34 @@ T{;{
 </div>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <ul><li><a href="/">Home</a></li></ul>
+      <h2>Diff EQ Standards</h2>
       <ul>
-        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
       </ul>
     </div>
 <!-- latest MathJax -->
