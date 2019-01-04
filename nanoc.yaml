@@ -11,3 +11,5 @@ data_sources:
     encoding: utf-8
   - type: exercises 
     encoding: utf-8
+  - type: cname 
+    encoding: utf-8
