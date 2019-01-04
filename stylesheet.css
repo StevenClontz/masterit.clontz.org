@@ -99,3 +99,9 @@ a:hover {
 
   line-height: 20px;
 }
+
+
+.exercise .answer {
+  border: 1px #888 dashed;
+  background-color: #bbb;
+}
