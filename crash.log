@@ -1,0 +1,170 @@
+Crashlog created at 2019-01-04 17:14:33 +0000
+
+===== MESSAGE:
+
+Nanoc::Identifier::InvalidIdentifierError: Invalid identifier (does not start with a slash): "diff-eq/C1.html"
+
+===== STACK TRACE:
+
+  47. from /home/vagrant/.rbenv/versions/2.5.3/bin/bundle:23:in `<main>'
+  46. from /home/vagrant/.rbenv/versions/2.5.3/bin/bundle:23:in `load'
+  45. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/exe/bundle:22:in `<top (required)>'
+  44. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+  43. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/exe/bundle:30:in `block in <top (required)>'
+  42. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/cli.rb:18:in `start'
+  41. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+  40. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/cli.rb:27:in `dispatch'
+  39. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+  38. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  37. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  36. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/cli.rb:463:in `exec'
+  35. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/cli/exec.rb:28:in `run'
+  34. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/cli/exec.rb:74:in `kernel_load'
+  33. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib/bundler/cli/exec.rb:74:in `load'
+  32. from /home/vagrant/.rbenv/versions/2.5.3/bin/nanoc:23:in `<top (required)>'
+  31. from /home/vagrant/.rbenv/versions/2.5.3/bin/nanoc:23:in `load'
+  30. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/bin/nanoc:18:in `<top (required)>'
+  29. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli.rb:62:in `run'
+  28. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
+  27. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
+  26. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
+  25. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli.rb:64:in `block in run'
+  24. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/cri-2.15.2/lib/cri/command.rb:314:in `run'
+  23. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/cri-2.15.2/lib/cri/command.rb:296:in `run'
+  22. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/cri-2.15.2/lib/cri/command.rb:359:in `run_this'
+  21. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/cri-2.15.2/lib/cri/command_dsl.rb:303:in `block in runner'
+  20. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/command_runner.rb:13:in `call'
+  19. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
+  18. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
+  17. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
+  16. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  15. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/commands/compile.rb:25:in `run'
+  14. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/commands/compile.rb:37:in `run_once'
+  13. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/cli/command_runner.rb:59:in `load_site'
+  12. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/repos/site_loader.rb:6:in `new_from_cwd'
+  11. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/repos/site_loader.rb:33:in `site_from_config'
+  10. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/repos/site_loader.rb:33:in `new'
+  9. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/entities/site.rb:20:in `initialize'
+  8. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/repos/aggregate_data_source.rb:14:in `items'
+  7. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/repos/aggregate_data_source.rb:14:in `flat_map'
+  6. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/repos/aggregate_data_source.rb:14:in `each'
+  5. from /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/repos/prefixed_data_source.rb:14:in `items'
+  4. from lib/exercises.rb:6:in `items'
+  3. from lib/exercises.rb:6:in `foreach'
+  2. from lib/exercises.rb:16:in `block in items'
+  1. from lib/exercises.rb:16:in `new'
+  /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib/nanoc/base/entities/identifier.rb:70:in `initialize'
+
+===== VERSION INFORMATION:
+
+Nanoc 4.11.0 © 2007-2018 Denis Defreyne.
+Running ruby 2.5.3 (2018-10-18) on x86_64-linux with RubyGems 2.7.6.
+
+===== SYSTEM INFORMATION:
+
+Linux ubuntu-bionic 4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+===== INSTALLED GEMS:
+
+  addressable 2.5.2
+  adsf 1.4.1
+  bundler 1.17.2
+  colored 1.2
+  concurrent-ruby 1.1.4
+  cri 2.15.2
+  ddmemoize 1.0.0
+  ddmetrics 1.0.1
+  ddplugin 1.0.2
+  hamster 3.0.0
+  json_schema 0.19.1
+  nanoc 4.11.0
+  parallel 1.12.1
+  public_suffix 3.0.3
+  rack 1.2.8
+  ref 2.0.0
+  slow_enumerator_tools 1.1.0
+  tomlrb 1.2.7
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    adsf (1.4.1)
+      rack (>= 1.0.0, < 3.0.0)
+    asdf (0.5.0)
+      rack (~> 1.2.1)
+    colored (1.2)
+    concurrent-ruby (1.1.4)
+    cri (2.15.2)
+      colored (~> 1.2)
+    ddmemoize (1.0.0)
+      ddmetrics (~> 1.0)
+      ref (~> 2.0)
+    ddmetrics (1.0.1)
+    ddplugin (1.0.2)
+    hamster (3.0.0)
+      concurrent-ruby (~> 1.0)
+    json_schema (0.19.1)
+    nanoc (4.11.0)
+      addressable (~> 2.5)
+      cri (~> 2.15)
+      ddmemoize (~> 1.0)
+      ddmetrics (~> 1.0)
+      ddplugin (~> 1.0)
+      hamster (~> 3.0)
+      json_schema (~> 0.19)
+      parallel (~> 1.12)
+      ref (~> 2.0)
+      slow_enumerator_tools (~> 1.0)
+      tomlrb (~> 1.2)
+    parallel (1.12.1)
+    public_suffix (3.0.3)
+    rack (1.2.8)
+    ref (2.0.0)
+    slow_enumerator_tools (1.1.0)
+    tomlrb (1.2.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf (~> 1.4)
+  asdf (~> 0.5.0)
+  nanoc (~> 4.11)
+
+BUNDLED WITH
+   1.17.2
+
+===== LOAD PATHS:
+
+  0. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/ref-2.0.0/lib
+  1. /home/vagrant/.rbenv/rbenv.d/exec/gem-rehash
+  2. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/bundler-1.17.2/lib
+  3. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/nanoc-4.11.0/lib
+  4. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/tomlrb-1.2.7/lib
+  5. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/slow_enumerator_tools-1.1.0/lib
+  6. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/parallel-1.12.1/lib
+  7. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/json_schema-0.19.1/lib
+  8. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/hamster-3.0.0/lib
+  9. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/ddplugin-1.0.2/lib
+  10. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/ddmemoize-1.0.0/lib
+  11. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/ref-2.0.0/lib
+  12. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/ddmetrics-1.0.1/lib
+  13. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/cri-2.15.2/lib
+  14. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/concurrent-ruby-1.1.4/lib
+  15. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/colored-1.2/lib
+  16. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/adsf-1.4.1/lib
+  17. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rack-1.2.8/lib
+  18. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/addressable-2.5.2/lib
+  19. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/public_suffix-3.0.3/lib
+  20. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/site_ruby/2.5.0
+  21. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/site_ruby/2.5.0/x86_64-linux
+  22. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/site_ruby
+  23. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/vendor_ruby/2.5.0
+  24. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/vendor_ruby/2.5.0/x86_64-linux
+  25. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/vendor_ruby
+  26. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/2.5.0
+  27. /home/vagrant/.rbenv/versions/2.5.3/lib/ruby/2.5.0/x86_64-linux
