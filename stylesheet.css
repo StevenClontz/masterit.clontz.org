@@ -105,3 +105,6 @@ a:hover {
   border: 1px #888 dashed;
   background-color: #bbb;
 }
+.exercise h2.title {
+  display: none;
+}
