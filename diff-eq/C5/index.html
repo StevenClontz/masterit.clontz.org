@@ -1,0 +1,933 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mastr - Diff EQ C5</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc 4.11.0">
+  </head>
+  <body>
+    <div id="main">
+      <div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 82)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+7y'+10y = 0 \hspace{1em} y(0) = 4 , y'(0) = -11\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(-2 \, t\right)} + e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 83)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+4y'+3y = 0 \hspace{1em} y(0) = -7 , y'(0) = 15\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(-t\right)} - 4 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 84)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'-4y = 0 \hspace{1em} y(0) = -2 , y'(0) = 8\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -2 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 85)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+8y = 0 \hspace{1em} y(0) = 5 , y'(0) = -18\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(-2 \, t\right)} + 4 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 86)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-4y = 0 \hspace{1em} y(0) = 5 , y'(0) = -2\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(2 \, t\right)} + 3 \, e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 87)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-7y'+12y = 0 \hspace{1em} y(0) = 1 , y'(0) = -1\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(4 \, t\right)} + 5 \, e^{\left(3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 88)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+2y'-8y = 0 \hspace{1em} y(0) = 7 , y'(0) = -4\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 4 \, e^{\left(2 \, t\right)} + 3 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 89)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-20y = 0 \hspace{1em} y(0) = -2 , y'(0) = 28\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(4 \, t\right)} - 4 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 90)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-4y'+3y = 0 \hspace{1em} y(0) = -5 , y'(0) = -9\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -2 \, e^{\left(3 \, t\right)} - 3 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 91)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-1y'-20y = 0 \hspace{1em} y(0) = 5 , y'(0) = -20\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 92)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-1y = 0 \hspace{1em} y(0) = 6 , y'(0) = 2\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(-t\right)} + 4 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 93)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'-4y = 0 \hspace{1em} y(0) = 1 , y'(0) = -24\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-4 \, t\right)} - 4 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 94)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-12y = 0 \hspace{1em} y(0) = -3 , y'(0) = 12\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 95)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+2y'-8y = 0 \hspace{1em} y(0) = 0 , y'(0) = 6\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(2 \, t\right)} - e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 96)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-7y'+12y = 0 \hspace{1em} y(0) = -1 , y'(0) = -7\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(4 \, t\right)} + 3 \, e^{\left(3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 97)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-4y'-5y = 0 \hspace{1em} y(0) = 4 , y'(0) = 14\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(5 \, t\right)} + e^{\left(-t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 98)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+8y = 0 \hspace{1em} y(0) = -3 , y'(0) = 14\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(-2 \, t\right)} - 4 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 99)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-2y'-3y = 0 \hspace{1em} y(0) = 4 , y'(0) = -8\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -e^{\left(3 \, t\right)} + 5 \, e^{\left(-t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 100)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-1y'-2y = 0 \hspace{1em} y(0) = -7 , y'(0) = -8\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -5 \, e^{\left(2 \, t\right)} - 2 \, e^{\left(-t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 41)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'-10y = 0 \hspace{1em} y(0) = 5 , y'(0) = -25\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 42)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-6y'+8y = 0 \hspace{1em} y(0) = -6 , y'(0) = -22\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -5 \, e^{\left(4 \, t\right)} - e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 43)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-5y'+6y = 0 \hspace{1em} y(0) = 5 , y'(0) = 14\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 4 \, e^{\left(3 \, t\right)} + e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 44)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+4y'+3y = 0 \hspace{1em} y(0) = -2 , y'(0) = 12\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(-t\right)} - 5 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 45)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-6y'+5y = 0 \hspace{1em} y(0) = -6 , y'(0) = -22\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(5 \, t\right)} - 2 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 46)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-6y = 0 \hspace{1em} y(0) = 1 , y'(0) = 22\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(2 \, t\right)} - 4 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 47)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+5y = 0 \hspace{1em} y(0) = -8 , y'(0) = 28\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(-t\right)} - 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 48)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-5y'+4y = 0 \hspace{1em} y(0) = 4 , y'(0) = 7\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(4 \, t\right)} + 3 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 49)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+5y'+6y = 0 \hspace{1em} y(0) = 1 , y'(0) = 2\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-2 \, t\right)} - 4 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 50)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-2y'-15y = 0 \hspace{1em} y(0) = -3 , y'(0) = -7\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -2 \, e^{\left(5 \, t\right)} - e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 51)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-2y'-8y = 0 \hspace{1em} y(0) = 8 , y'(0) = 14\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(4 \, t\right)} + 3 \, e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 52)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-5y'+6y = 0 \hspace{1em} y(0) = 1 , y'(0) = 2\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 53)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-20y = 0 \hspace{1em} y(0) = -4 , y'(0) = 29\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(4 \, t\right)} - 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 54)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-7y'+12y = 0 \hspace{1em} y(0) = -1 , y'(0) = 0\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(4 \, t\right)} - 4 \, e^{\left(3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 55)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-4y'-5y = 0 \hspace{1em} y(0) = 2 , y'(0) = 10\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 56)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-1y'-12y = 0 \hspace{1em} y(0) = 1 , y'(0) = 18\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(4 \, t\right)} - 2 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 57)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-16y = 0 \hspace{1em} y(0) = 3 , y'(0) = 4\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(4 \, t\right)} + e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 58)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+8y = 0 \hspace{1em} y(0) = -7 , y'(0) = 18\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -5 \, e^{\left(-2 \, t\right)} - 2 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 59)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+8y = 0 \hspace{1em} y(0) = 1 , y'(0) = 2\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(-2 \, t\right)} - 2 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 60)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'+2y = 0 \hspace{1em} y(0) = 6 , y'(0) = -7\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-t\right)} + e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 61)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-3y'+2y = 0 \hspace{1em} y(0) = 3 , y'(0) = 3\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 62)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-1y'-2y = 0 \hspace{1em} y(0) = -5 , y'(0) = -4\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(2 \, t\right)} - 2 \, e^{\left(-t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 63)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'-10y = 0 \hspace{1em} y(0) = -5 , y'(0) = 4\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(2 \, t\right)} - 2 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 64)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-6y'+5y = 0 \hspace{1em} y(0) = 2 , y'(0) = -2\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -e^{\left(5 \, t\right)} + 3 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 65)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+7y'+12y = 0 \hspace{1em} y(0) = 8 , y'(0) = -29\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(-3 \, t\right)} + 5 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 66)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+8y'+15y = 0 \hspace{1em} y(0) = -5 , y'(0) = 17\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(-3 \, t\right)} - e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 67)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-25y = 0 \hspace{1em} y(0) = -2 , y'(0) = 40\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(5 \, t\right)} - 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 68)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-6y'+5y = 0 \hspace{1em} y(0) = 0 , y'(0) = 12\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(5 \, t\right)} - 3 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 69)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-9y = 0 \hspace{1em} y(0) = -4 , y'(0) = 12\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 70)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+4y'-5y = 0 \hspace{1em} y(0) = -2 , y'(0) = 28\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -5 \, e^{\left(-5 \, t\right)} + 3 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 71)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+7y'+10y = 0 \hspace{1em} y(0) = 3 , y'(0) = -9\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(-2 \, t\right)} + e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 72)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-16y = 0 \hspace{1em} y(0) = -1 , y'(0) = 4\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 73)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-7y'+12y = 0 \hspace{1em} y(0) = 1 , y'(0) = 1\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -2 \, e^{\left(4 \, t\right)} + 3 \, e^{\left(3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 74)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-6y = 0 \hspace{1em} y(0) = 4 , y'(0) = 8\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 4 \, e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 75)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+7y'+10y = 0 \hspace{1em} y(0) = 6 , y'(0) = -15\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-2 \, t\right)} + e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 76)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-9y'+20y = 0 \hspace{1em} y(0) = 5 , y'(0) = 20\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 77)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-1y'-20y = 0 \hspace{1em} y(0) = -6 , y'(0) = 6\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -2 \, e^{\left(5 \, t\right)} - 4 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 78)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+2y'-8y = 0 \hspace{1em} y(0) = 2 , y'(0) = -26\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(2 \, t\right)} + 5 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 79)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+8y = 0 \hspace{1em} y(0) = -8 , y'(0) = 26\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(-2 \, t\right)} - 5 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 80)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-3y'-4y = 0 \hspace{1em} y(0) = 5 , y'(0) = -5\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 81)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+9y'+20y = 0 \hspace{1em} y(0) = -9 , y'(0) = 41\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(-4 \, t\right)} - 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 1)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-2y'-15y = 0 \hspace{1em} y(0) = 8 , y'(0) = 16\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(5 \, t\right)} + 3 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 2)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+5y = 0 \hspace{1em} y(0) = 0 , y'(0) = 8\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(-t\right)} - 2 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 3)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+2y'-15y = 0 \hspace{1em} y(0) = 5 , y'(0) = -1\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(3 \, t\right)} + 2 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 4)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'-4y = 0 \hspace{1em} y(0) = -1 , y'(0) = -21\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 4 \, e^{\left(-4 \, t\right)} - 5 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 5)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-2y = 0 \hspace{1em} y(0) = -2 , y'(0) = 4\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -2 \, e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 6)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-3y'-10y = 0 \hspace{1em} y(0) = 1 , y'(0) = 12\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(5 \, t\right)} - e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 7)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-8y'+15y = 0 \hspace{1em} y(0) = 4 , y'(0) = 18\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(5 \, t\right)} + e^{\left(3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 8)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-2y'-15y = 0 \hspace{1em} y(0) = 6 , y'(0) = 22\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(5 \, t\right)} + e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 9)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+7y'+12y = 0 \hspace{1em} y(0) = -3 , y'(0) = 12\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 10)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+8y'+15y = 0 \hspace{1em} y(0) = 1 , y'(0) = -13\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(-3 \, t\right)} + 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 11)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+4y'+3y = 0 \hspace{1em} y(0) = -6 , y'(0) = 10\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(-t\right)} - 2 \, e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 12)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-5y'+6y = 0 \hspace{1em} y(0) = 7 , y'(0) = 17\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(3 \, t\right)} + 4 \, e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 13)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-3y'+2y = 0 \hspace{1em} y(0) = -6 , y'(0) = -10\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -4 \, e^{\left(2 \, t\right)} - 2 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 14)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+5y = 0 \hspace{1em} y(0) = 1 , y'(0) = -5\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 15)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-5y'+4y = 0 \hspace{1em} y(0) = -1 , y'(0) = 5\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(4 \, t\right)} - 3 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 16)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-4y'+3y = 0 \hspace{1em} y(0) = -1 , y'(0) = -11\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -5 \, e^{\left(3 \, t\right)} + 4 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 17)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-9y = 0 \hspace{1em} y(0) = 1 , y'(0) = 9\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(3 \, t\right)} - e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 18)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+8y'+15y = 0 \hspace{1em} y(0) = 5 , y'(0) = -25\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 19)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-7y'+10y = 0 \hspace{1em} y(0) = -2 , y'(0) = -1\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(5 \, t\right)} - 3 \, e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 20)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+2y'-15y = 0 \hspace{1em} y(0) = 1 , y'(0) = -29\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(3 \, t\right)} + 4 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 21)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+0y'-4y = 0 \hspace{1em} y(0) = 3 , y'(0) = -14\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -2 \, e^{\left(2 \, t\right)} + 5 \, e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 22)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'+2y = 0 \hspace{1em} y(0) = 5 , y'(0) = -10\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 23)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+6y'+5y = 0 \hspace{1em} y(0) = -4 , y'(0) = 24\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(-t\right)} - 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 24)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-5y'+6y = 0 \hspace{1em} y(0) = 3 , y'(0) = 10\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 4 \, e^{\left(3 \, t\right)} - e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 25)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-8y'+15y = 0 \hspace{1em} y(0) = 4 , y'(0) = 22\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(5 \, t\right)} - e^{\left(3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 26)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-6y'+5y = 0 \hspace{1em} y(0) = 6 , y'(0) = 10\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(5 \, t\right)} + 5 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 27)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+4y'-5y = 0 \hspace{1em} y(0) = -4 , y'(0) = -10\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(-5 \, t\right)} - 5 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 28)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+2y'-15y = 0 \hspace{1em} y(0) = 0 , y'(0) = -24\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(3 \, t\right)} + 3 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 29)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-3y'-10y = 0 \hspace{1em} y(0) = -2 , y'(0) = 11\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(5 \, t\right)} - 3 \, e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 30)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-3y'+2y = 0 \hspace{1em} y(0) = -3 , y'(0) = -1\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 2 \, e^{\left(2 \, t\right)} - 5 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 31)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'-4y = 0 \hspace{1em} y(0) = 3 , y'(0) = 8\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -e^{\left(-4 \, t\right)} + 4 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 32)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-7y'+12y = 0 \hspace{1em} y(0) = 2 , y'(0) = 11\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(4 \, t\right)} - 3 \, e^{\left(3 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 33)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-4y'-5y = 0 \hspace{1em} y(0) = -2 , y'(0) = 20\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 3 \, e^{\left(5 \, t\right)} - 5 \, e^{\left(-t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 34)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-2y'-8y = 0 \hspace{1em} y(0) = 3 , y'(0) = 18\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 4 \, e^{\left(4 \, t\right)} - e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 35)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''-5y'+6y = 0 \hspace{1em} y(0) = 7 , y'(0) = 19\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= 5 \, e^{\left(3 \, t\right)} + 2 \, e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 36)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+8y'+15y = 0 \hspace{1em} y(0) = -7 , y'(0) = 25\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -5 \, e^{\left(-3 \, t\right)} - 2 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 37)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-20y = 0 \hspace{1em} y(0) = -1 , y'(0) = -4\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -e^{\left(4 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 38)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+y'-2y = 0 \hspace{1em} y(0) = 0 , y'(0) = 15\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -5 \, e^{\left(-2 \, t\right)} + 5 \, e^{t}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 39)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+9y'+20y = 0 \hspace{1em} y(0) = -8 , y'(0) = 37\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= -3 \, e^{\left(-4 \, t\right)} - 5 \, e^{\left(-5 \, t\right)}\]</p>
+  </div>
+</div><div class="exercise">
+  <h2 class="title">C4 - Homogeneous second-order linear IVP (ver. 40)</h2>
+  <div class="statement">
+    <p>Find the solution to the given IVP.</p>
+    <p class="me">\[y''+3y'+2y = 0 \hspace{1em} y(0) = 1 , y'(0) = -1\]</p>
+  </div>
+  <div class="answer">
+    <p class="me">\[y= e^{\left(-t\right)}\]</p>
+  </div>
+</div>
+    </div>
+    <div id="sidebar">
+      <h2>Documentation</h2>
+      <ul>
+        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
+        <li><a href="http://nanoc.ws/doc/tutorial/">Tutorial</a></li>
+      </ul>
+      <h2>Community</h2>
+      <ul>
+        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
+        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
+        <li><a href="http://nanoc.ws/contributing/">Contributing</a></li>
+      </ul>
+    </div>
+<!-- latest MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
