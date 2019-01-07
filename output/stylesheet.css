@@ -108,3 +108,8 @@ a:hover {
 .exercise h2.title {
   display: none;
 }
+
+
+.hide {
+  display: none;
+}

@@ -13,7 +13,10 @@
       <%= yield %>
     </div>
     <div id="sidebar">
-      <ul><li><a href="/">Home</a></li></ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers</a></li>
+      </ul>
       <h2>Diff EQ Standards</h2>
       <ul>
         <% @items.find_all('/diff-eq/*').each do |i| %>
@@ -24,6 +27,22 @@
 <!-- latest MathJax -->
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  function toggleAnswers() {
+    var answers = document.getElementsByClassName("answer");
+    var i;
+    for (i = 0; i < answers.length; i++) {
+      var answer = answers[i];
+      answer.classList.toggle("hide");
+    }
+  }
+  if (document.getElementsByClassName("answer").length > 0) {
+    var showHideAnswers = document.getElementById("showHideAnswers");
+    showHideAnswers.classList.remove("hide");
+    showHideAnswers.addEventListener("click", function(e){e.preventDefault;toggleAnswers()});
+    toggleAnswers();
+  }
 </script>
   </body>
 </html>
