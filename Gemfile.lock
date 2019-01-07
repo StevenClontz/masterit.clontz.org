@@ -5,8 +5,6 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     adsf (1.4.1)
       rack (>= 1.0.0, < 3.0.0)
-    asdf (0.5.0)
-      rack (~> 1.2.1)
     colored (1.2)
     concurrent-ruby (1.1.4)
     cri (2.15.2)
@@ -43,8 +41,7 @@ PLATFORMS
 
 DEPENDENCIES
   adsf (~> 1.4)
-  asdf (~> 0.5.0)
   nanoc (~> 4.11)
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
