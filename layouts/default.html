@@ -19,7 +19,7 @@
       </ul>
       <h2>Diff EQ Standards</h2>
       <ul>
-        <% @items.find_all('/diff-eq/*').each do |i| %>
+        <% @items.find_all('/diff-eq/*').sort_by{|i|i[:title]}.each do |i| %>
           <li><%= link_to i[:title], i %></li>
         <% end %>
       </ul>
