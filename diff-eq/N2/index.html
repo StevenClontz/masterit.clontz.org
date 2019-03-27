@@ -1,0 +1,1793 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mastr - Diff EQ N2</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc 4.11.0">
+  </head>
+  <body>
+    <div id="main">
+      <h2>N2 - Euler’s method for IVP systems. Estimate the value of an IVP system solution using Euler’s method.</h2>
+<h4>Example 1</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 1)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-1.4)\)</span> and <span class="m">\(y(-1.4)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t y + 4 \, x y - 1\hspace{2em}x( -2 )= -2\]</p>
+    <p class="me">\[y'= -2 \, x^{2} y + t y^{2} + 1\hspace{2em}y( -2 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.4)\approx -1.049\)</span> and 
+      <span class="m">\(y(-1.4)\approx 0.2102\)</span>.
+    </p>
+  </div>
+</div><h4>Example 2</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 2)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, t^{2} x - t^{2} y - 3\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= t^{2} y^{2} + t x\hspace{2em}y( -1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx -0.8169\)</span> and 
+      <span class="m">\(y(-0.40)\approx -1.004\)</span>.
+    </p>
+  </div>
+</div><h4>Example 3</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 3)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-1.4)\)</span> and <span class="m">\(y(-1.4)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, t^{2} x^{2} + 4 \, t^{2} y - 1\hspace{2em}x( -2 )= 0\]</p>
+    <p class="me">\[y'= -2 \, t^{2} x + 2 \, t y - 3\hspace{2em}y( -2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.4)\approx -11.98\)</span> and 
+      <span class="m">\(y(-1.4)\approx 1.325\)</span>.
+    </p>
+  </div>
+</div><h4>Example 4</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 4)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, x^{2} y^{2} - 3 \, t x + 1\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= -t^{2} x - 2 \, t y - 1\hspace{2em}y( 0 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx 1.199\)</span> and 
+      <span class="m">\(y(0.60)\approx -0.6007\)</span>.
+    </p>
+  </div>
+</div><h4>Example 5</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 5)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t x - 3 \, x y\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= t^{2} x - 4 \, t^{2} y + 1\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx 0.06635\)</span> and 
+      <span class="m">\(y(0.60)\approx 1.401\)</span>.
+    </p>
+  </div>
+</div><h4>Example 6</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 6)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(2.6)\)</span> and <span class="m">\(y(2.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, t^{2} y^{2} + t x + 3\hspace{2em}x( 2 )= -2\]</p>
+    <p class="me">\[y'= t^{2} x - 2 \, x y - 1\hspace{2em}y( 2 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.6)\approx -69.76\)</span> and 
+      <span class="m">\(y(2.6)\approx -69.41\)</span>.
+    </p>
+  </div>
+</div><h4>Example 7</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 7)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, t^{2} x^{2} + 3 \, t y\hspace{2em}x( 0 )= -1\]</p>
+    <p class="me">\[y'= -4 \, t^{2} x + 2 \, t y^{2} - 3\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx -1.112\)</span> and 
+      <span class="m">\(y(0.30)\approx -1.748\)</span>.
+    </p>
+  </div>
+</div><h4>Example 8</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 8)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, t^{2} x + 4 \, x y - 1\hspace{2em}x( 1 )= -2\]</p>
+    <p class="me">\[y'= 2 \, t^{2} x + t y - 3\hspace{2em}y( 1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx -3.205\)</span> and 
+      <span class="m">\(y(1.3)\approx -3.327\)</span>.
+    </p>
+  </div>
+</div><h4>Example 9</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 9)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t^{2} x^{2} - x^{2} y^{2} - 1\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= 4 \, x^{2} y + 3 \, t y + 2\hspace{2em}y( 0 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 0.03475\)</span> and 
+      <span class="m">\(y(0.30)\approx 4.049\)</span>.
+    </p>
+  </div>
+</div><h4>Example 10</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 10)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, x^{2} y - 2 \, t y + 3\hspace{2em}x( 0 )= -2\]</p>
+    <p class="me">\[y'= 3 \, t^{2} x + 4 \, t^{2} y + 1\hspace{2em}y( 0 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx -0.9698\)</span> and 
+      <span class="m">\(y(0.60)\approx 0.5121\)</span>.
+    </p>
+  </div>
+</div><h4>Example 11</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 11)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t y^{2} - 2 \, x y\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= 3 \, t^{2} y + 2 \, x^{2} y - 3\hspace{2em}y( -1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 2.499\)</span> and 
+      <span class="m">\(y(-0.40)\approx -3.756\)</span>.
+    </p>
+  </div>
+</div><h4>Example 12</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 12)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} y^{2} + 2 \, x^{2} y + 2\hspace{2em}x( 1 )= -2\]</p>
+    <p class="me">\[y'= -4 \, x^{2} y^{2} + t x^{2} - 2\hspace{2em}y( 1 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx -0.3615\)</span> and 
+      <span class="m">\(y(1.3)\approx -0.7744\)</span>.
+    </p>
+  </div>
+</div><h4>Example 13</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 13)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} y - x^{2} y + 3\hspace{2em}x( -2 )= -2\]</p>
+    <p class="me">\[y'= x^{2} y^{2} + t y^{2}\hspace{2em}y( -2 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx -1.295\)</span> and 
+      <span class="m">\(y(-1.7)\approx -1.012\)</span>.
+    </p>
+  </div>
+</div><h4>Example 14</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 14)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, x^{2} y - 4 \, t y^{2} - 1\hspace{2em}x( -1 )= 2\]</p>
+    <p class="me">\[y'= t x + 4 \, t y + 2\hspace{2em}y( -1 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 5.331\)</span> and 
+      <span class="m">\(y(-0.70)\approx 0.06478\)</span>.
+    </p>
+  </div>
+</div><h4>Example 15</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 15)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t x^{2} + t y - 1\hspace{2em}x( -1 )= 2\]</p>
+    <p class="me">\[y'= -2 \, t x^{2} + 4 \, x^{2} y - 3\hspace{2em}y( -1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 0.7189\)</span> and 
+      <span class="m">\(y(-0.70)\approx -3.619\)</span>.
+    </p>
+  </div>
+</div><h4>Example 16</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 16)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= x^{2} y^{2} + t y + 2\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= 2 \, t^{2} y^{2} + 2 \, x y^{2} + 2\hspace{2em}y( -1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 1.588\)</span> and 
+      <span class="m">\(y(-0.70)\approx 0.6863\)</span>.
+    </p>
+  </div>
+</div><h4>Example 17</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 17)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, x^{2} y + 2 \, t y^{2} - 2\hspace{2em}x( -1 )= -2\]</p>
+    <p class="me">\[y'= t^{2} y^{2} + 3 \, x y + 3\hspace{2em}y( -1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx -1.983\)</span> and 
+      <span class="m">\(y(-0.70)\approx 0.4590\)</span>.
+    </p>
+  </div>
+</div><h4>Example 18</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 18)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t^{2} y - 4 \, t x\hspace{2em}x( -2 )= 0\]</p>
+    <p class="me">\[y'= 2 \, t x^{2} - 4 \, x y - 2\hspace{2em}y( -2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx 0.7614\)</span> and 
+      <span class="m">\(y(-1.7)\approx -0.5822\)</span>.
+    </p>
+  </div>
+</div><h4>Example 19</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 19)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, x^{2} y^{2} + 2 \, t x - 3\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= 3 \, t^{2} y^{2} - x^{2} y^{2} + 1\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 0.01596\)</span> and 
+      <span class="m">\(y(0.30)\approx -1.232\)</span>.
+    </p>
+  </div>
+</div><h4>Example 20</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 20)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} y^{2} - 4 \, x^{2} y^{2} - 3\hspace{2em}x( 0 )= 0\]</p>
+    <p class="me">\[y'= -t^{2} y + x y^{2} + 1\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx -1.145\)</span> and 
+      <span class="m">\(y(0.30)\approx 1.171\)</span>.
+    </p>
+  </div>
+</div><h4>Example 21</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 21)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(1.6)\)</span> and <span class="m">\(y(1.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t x^{2} + x^{2} y\hspace{2em}x( 1 )= 2\]</p>
+    <p class="me">\[y'= 2 \, t^{2} x^{2} + 2 \, t^{2} y - 2\hspace{2em}y( 1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.6)\approx 0.3298\)</span> and 
+      <span class="m">\(y(1.6)\approx 2.527\)</span>.
+    </p>
+  </div>
+</div><h4>Example 22</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 22)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -x^{2} y + 4 \, t x + 3\hspace{2em}x( 0 )= 0\]</p>
+    <p class="me">\[y'= -2 \, t^{2} y^{2} + 3 \, t^{2} x + 2\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx 1.668\)</span> and 
+      <span class="m">\(y(0.60)\approx 2.094\)</span>.
+    </p>
+  </div>
+</div><h4>Example 23</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 23)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t x^{2} - 4 \, x y + 3\hspace{2em}x( 1 )= 2\]</p>
+    <p class="me">\[y'= -3 \, t x - 3 \, t y - 3\hspace{2em}y( 1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx 8.909\)</span> and 
+      <span class="m">\(y(1.3)\approx -4.260\)</span>.
+    </p>
+  </div>
+</div><h4>Example 24</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 24)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} y^{2} - 4 \, x^{2} y^{2} + 2\hspace{2em}x( 1 )= -1\]</p>
+    <p class="me">\[y'= -3 \, x^{2} y + 2 \, t y - 3\hspace{2em}y( 1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx -0.3482\)</span> and 
+      <span class="m">\(y(1.3)\approx -0.9884\)</span>.
+    </p>
+  </div>
+</div><h4>Example 25</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 25)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, x y^{2} + 4 \, t y - 1\hspace{2em}x( -1 )= 2\]</p>
+    <p class="me">\[y'= 2 \, t x^{2} - 2 \, x y^{2} - 3\hspace{2em}y( -1 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 7.980\)</span> and 
+      <span class="m">\(y(-0.70)\approx -8.570\)</span>.
+    </p>
+  </div>
+</div><h4>Example 26</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 26)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} y^{2} - x y - 3\hspace{2em}x( 0 )= 0\]</p>
+    <p class="me">\[y'= -4 \, x^{2} y^{2} - 4 \, t x + 2\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx -1.289\)</span> and 
+      <span class="m">\(y(0.60)\approx 0.5917\)</span>.
+    </p>
+  </div>
+</div><h4>Example 27</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 27)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= x y^{2} - 4 \, t y + 1\hspace{2em}x( 1 )= -2\]</p>
+    <p class="me">\[y'= -3 \, t^{2} x^{2} - 4 \, x y + 2\hspace{2em}y( 1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx -1.349\)</span> and 
+      <span class="m">\(y(1.3)\approx -5.488\)</span>.
+    </p>
+  </div>
+</div><h4>Example 28</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 28)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} x - 4 \, t y^{2}\hspace{2em}x( -2 )= 0\]</p>
+    <p class="me">\[y'= -4 \, x^{2} y + 2 \, t y - 3\hspace{2em}y( -2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx 2.409\)</span> and 
+      <span class="m">\(y(-1.7)\approx -0.2625\)</span>.
+    </p>
+  </div>
+</div><h4>Example 29</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 29)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, t^{2} y^{2} - x y^{2}\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= 4 \, t^{2} y^{2} + 2 \, x y - 2\hspace{2em}y( 0 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx -0.1239\)</span> and 
+      <span class="m">\(y(0.30)\approx 3.221\)</span>.
+    </p>
+  </div>
+</div><h4>Example 30</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 30)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t x^{2} + t y - 2\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= 4 \, t x - 4 \, t y - 1\hspace{2em}y( -1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 0.8741\)</span> and 
+      <span class="m">\(y(-0.70)\approx -6.786\)</span>.
+    </p>
+  </div>
+</div><h4>Example 31</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 31)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, x^{2} y^{2} + t x + 3\hspace{2em}x( -1 )= 0\]</p>
+    <p class="me">\[y'= 2 \, x^{2} y^{2} - 2 \, t^{2} y - 3\hspace{2em}y( -1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 0.7849\)</span> and 
+      <span class="m">\(y(-0.70)\approx -0.7598\)</span>.
+    </p>
+  </div>
+</div><h4>Example 32</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 32)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-1.4)\)</span> and <span class="m">\(y(-1.4)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} x + 2 \, x y + 1\hspace{2em}x( -2 )= -2\]</p>
+    <p class="me">\[y'= -2 \, t y^{2} + 2 \, x y - 3\hspace{2em}y( -2 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.4)\approx -38.55\)</span> and 
+      <span class="m">\(y(-1.4)\approx 3.080\)</span>.
+    </p>
+  </div>
+</div><h4>Example 33</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 33)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t^{2} x^{2} + x y^{2} + 2\hspace{2em}x( -2 )= -2\]</p>
+    <p class="me">\[y'= -4 \, t^{2} y^{2} + t^{2} x + 2\hspace{2em}y( -2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx -48.83\)</span> and 
+      <span class="m">\(y(-1.7)\approx -31.82\)</span>.
+    </p>
+  </div>
+</div><h4>Example 34</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 34)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} x^{2} + 4 \, x y - 3\hspace{2em}x( -2 )= 1\]</p>
+    <p class="me">\[y'= -t y - 2 \, x y + 1\hspace{2em}y( -2 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx 11.25\)</span> and 
+      <span class="m">\(y(-1.7)\approx -0.2930\)</span>.
+    </p>
+  </div>
+</div><h4>Example 35</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 35)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} x^{2} + 3 \, t^{2} y - 1\hspace{2em}x( -1 )= 0\]</p>
+    <p class="me">\[y'= -4 \, x^{2} y^{2} + 2 \, t y^{2} + 1\hspace{2em}y( -1 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 0.5455\)</span> and 
+      <span class="m">\(y(-0.40)\approx 0.6689\)</span>.
+    </p>
+  </div>
+</div><h4>Example 36</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 36)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, x^{2} y^{2} - 4 \, t^{2} x\hspace{2em}x( -1 )= 2\]</p>
+    <p class="me">\[y'= 3 \, x y^{2} + 3 \, t y + 2\hspace{2em}y( -1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 0.1260\)</span> and 
+      <span class="m">\(y(-0.40)\approx 0.8601\)</span>.
+    </p>
+  </div>
+</div><h4>Example 37</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 37)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t^{2} x^{2} + 4 \, t y^{2} - 1\hspace{2em}x( 2 )= 2\]</p>
+    <p class="me">\[y'= 4 \, t^{2} x - 3 \, t^{2} y\hspace{2em}y( 2 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx 18.75\)</span> and 
+      <span class="m">\(y(2.3)\approx 6.492\)</span>.
+    </p>
+  </div>
+</div><h4>Example 38</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 38)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(1.6)\)</span> and <span class="m">\(y(1.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t^{2} x^{2} + 3 \, t^{2} y + 1\hspace{2em}x( 1 )= 0\]</p>
+    <p class="me">\[y'= x^{2} y + t y^{2} + 3\hspace{2em}y( 1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.6)\approx -2.457\)</span> and 
+      <span class="m">\(y(1.6)\approx 0.5494\)</span>.
+    </p>
+  </div>
+</div><h4>Example 39</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 39)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t y^{2} - 4 \, t x - 2\hspace{2em}x( 0 )= -1\]</p>
+    <p class="me">\[y'= -2 \, t^{2} y^{2} - 2 \, t^{2} x + 3\hspace{2em}y( 0 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx -4.351\)</span> and 
+      <span class="m">\(y(0.60)\approx 3.246\)</span>.
+    </p>
+  </div>
+</div><h4>Example 40</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 40)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t^{2} y^{2} + 3 \, x^{2} y + 1\hspace{2em}x( -2 )= 0\]</p>
+    <p class="me">\[y'= 3 \, t^{2} x^{2} + 4 \, x y\hspace{2em}y( -2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx 0.3001\)</span> and 
+      <span class="m">\(y(-1.7)\approx 0.05058\)</span>.
+    </p>
+  </div>
+</div><h4>Example 41</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 41)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} x^{2} - 4 \, t^{2} y\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= t x^{2} - x y^{2} - 3\hspace{2em}y( -1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 6.460\)</span> and 
+      <span class="m">\(y(-0.70)\approx -15.33\)</span>.
+    </p>
+  </div>
+</div><h4>Example 42</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 42)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, t^{2} y^{2} - 2 \, x y^{2}\hspace{2em}x( 0 )= -2\]</p>
+    <p class="me">\[y'= -t^{2} y^{2} - 2 \, t^{2} x - 1\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx -0.8383\)</span> and 
+      <span class="m">\(y(0.30)\approx -1.294\)</span>.
+    </p>
+  </div>
+</div><h4>Example 43</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 43)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(2.6)\)</span> and <span class="m">\(y(2.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} x + 2 \, t y + 3\hspace{2em}x( 2 )= -2\]</p>
+    <p class="me">\[y'= -3 \, x^{2} y + 4 \, t y + 3\hspace{2em}y( 2 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.6)\approx -0.04759\)</span> and 
+      <span class="m">\(y(2.6)\approx 4.846\)</span>.
+    </p>
+  </div>
+</div><h4>Example 44</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 44)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(1.6)\)</span> and <span class="m">\(y(1.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t^{2} y^{2} - t x - 3\hspace{2em}x( 1 )= -1\]</p>
+    <p class="me">\[y'= 4 \, t^{2} x - 4 \, t y + 3\hspace{2em}y( 1 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.6)\approx -2.513\)</span> and 
+      <span class="m">\(y(1.6)\approx -2.098\)</span>.
+    </p>
+  </div>
+</div><h4>Example 45</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 45)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -x^{2} y + t y + 2\hspace{2em}x( -1 )= 2\]</p>
+    <p class="me">\[y'= x^{2} y^{2} - 3 \, t^{2} y + 2\hspace{2em}y( -1 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 1.142\)</span> and 
+      <span class="m">\(y(-0.70)\approx 2.105\)</span>.
+    </p>
+  </div>
+</div><h4>Example 46</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 46)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t^{2} y^{2} - 4 \, x^{2} y + 3\hspace{2em}x( -1 )= -1\]</p>
+    <p class="me">\[y'= 4 \, t^{2} x^{2} + 2 \, t y^{2} + 2\hspace{2em}y( -1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 0.08886\)</span> and 
+      <span class="m">\(y(-0.70)\approx -0.1973\)</span>.
+    </p>
+  </div>
+</div><h4>Example 47</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 47)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -x^{2} y - t y^{2} - 3\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= 4 \, x^{2} y^{2} + 2 \, t x - 1\hspace{2em}y( 0 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx -0.7197\)</span> and 
+      <span class="m">\(y(0.60)\approx 1.183\)</span>.
+    </p>
+  </div>
+</div><h4>Example 48</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 48)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, x^{2} y + 3 \, t y^{2} + 3\hspace{2em}x( 2 )= -1\]</p>
+    <p class="me">\[y'= t^{2} x^{2} + t^{2} y^{2}\hspace{2em}y( 2 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx 0.2236\)</span> and 
+      <span class="m">\(y(2.3)\approx -0.1023\)</span>.
+    </p>
+  </div>
+</div><h4>Example 49</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 49)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, t x^{2} + 2 \, t^{2} y - 2\hspace{2em}x( 0 )= -1\]</p>
+    <p class="me">\[y'= -4 \, t^{2} y^{2} + 2 \, x y^{2} - 3\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx -1.396\)</span> and 
+      <span class="m">\(y(0.30)\approx -0.1665\)</span>.
+    </p>
+  </div>
+</div><h4>Example 50</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 50)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t^{2} x^{2} - 2 \, x^{2} y^{2}\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= -2 \, x^{2} y^{2} + t^{2} y + 2\hspace{2em}y( 0 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 0.1667\)</span> and 
+      <span class="m">\(y(0.30)\approx 1.775\)</span>.
+    </p>
+  </div>
+</div><h4>Example 51</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 51)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t x^{2} + x y^{2} - 1\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= -3 \, t x^{2} - 4 \, x^{2} y - 2\hspace{2em}y( -1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 1.598\)</span> and 
+      <span class="m">\(y(-0.70)\approx 0.2579\)</span>.
+    </p>
+  </div>
+</div><h4>Example 52</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 52)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t x + 3 \, x y\hspace{2em}x( 2 )= 1\]</p>
+    <p class="me">\[y'= -2 \, t^{2} x^{2} - 4 \, x^{2} y + 1\hspace{2em}y( 2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx 1.535\)</span> and 
+      <span class="m">\(y(2.3)\approx -2.415\)</span>.
+    </p>
+  </div>
+</div><h4>Example 53</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 53)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-1.4)\)</span> and <span class="m">\(y(-1.4)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} x^{2} - 4 \, t y^{2} + 2\hspace{2em}x( -2 )= 0\]</p>
+    <p class="me">\[y'= -4 \, t x - 2 \, t y - 2\hspace{2em}y( -2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.4)\approx 4.841\)</span> and 
+      <span class="m">\(y(-1.4)\approx 0.4774\)</span>.
+    </p>
+  </div>
+</div><h4>Example 54</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 54)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} x^{2} - 4 \, x^{2} y - 3\hspace{2em}x( 0 )= 0\]</p>
+    <p class="me">\[y'= -t^{2} x^{2} + x y^{2} + 2\hspace{2em}y( 0 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx -0.9613\)</span> and 
+      <span class="m">\(y(0.30)\approx 0.5876\)</span>.
+    </p>
+  </div>
+</div><h4>Example 55</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 55)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t^{2} y^{2} + 4 \, t x^{2} - 2\hspace{2em}x( 1 )= 0\]</p>
+    <p class="me">\[y'= -4 \, t x + 4 \, t y - 3\hspace{2em}y( 1 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx -2.489\)</span> and 
+      <span class="m">\(y(1.3)\approx 5.646\)</span>.
+    </p>
+  </div>
+</div><h4>Example 56</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 56)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} y + 2 \, x y - 1\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= 2 \, t x - 2 \, x y + 1\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 2.695\)</span> and 
+      <span class="m">\(y(0.30)\approx 0.4604\)</span>.
+    </p>
+  </div>
+</div><h4>Example 57</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 57)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} y^{2} - 3 \, x^{2} y^{2} + 2\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= t x + 3 \, t y - 2\hspace{2em}y( 0 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 0.3803\)</span> and 
+      <span class="m">\(y(0.30)\approx 1.557\)</span>.
+    </p>
+  </div>
+</div><h4>Example 58</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 58)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, x^{2} y - 2 \, t y + 3\hspace{2em}x( -1 )= -1\]</p>
+    <p class="me">\[y'= -t^{2} x^{2} + 3 \, t y^{2} + 1\hspace{2em}y( -1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 1.069\)</span> and 
+      <span class="m">\(y(-0.40)\approx -79.11\)</span>.
+    </p>
+  </div>
+</div><h4>Example 59</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 59)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, x^{2} y^{2} - t^{2} x - 2\hspace{2em}x( 2 )= 1\]</p>
+    <p class="me">\[y'= 3 \, t^{2} x^{2} - 3 \, x y^{2} - 3\hspace{2em}y( 2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx -0.1599\)</span> and 
+      <span class="m">\(y(2.3)\approx 0.4112\)</span>.
+    </p>
+  </div>
+</div><h4>Example 60</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 60)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, x y^{2} - 2 \, t x + 2\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= -4 \, t^{2} x^{2} - 3 \, x^{2} y + 1\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 1.965\)</span> and 
+      <span class="m">\(y(0.30)\approx 0.04701\)</span>.
+    </p>
+  </div>
+</div><h4>Example 61</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 61)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} x^{2} + 3 \, x^{2} y + 2\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= -4 \, t x^{2} + 3 \, t y^{2} - 2\hspace{2em}y( -1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 0.6082\)</span> and 
+      <span class="m">\(y(-0.40)\approx -2.719\)</span>.
+    </p>
+  </div>
+</div><h4>Example 62</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 62)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-1.4)\)</span> and <span class="m">\(y(-1.4)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} x - t y - 3\hspace{2em}x( -2 )= 0\]</p>
+    <p class="me">\[y'= -t^{2} x^{2} - 4 \, x y^{2} + 2\hspace{2em}y( -2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.4)\approx -6.030\)</span> and 
+      <span class="m">\(y(-1.4)\approx -0.7490\)</span>.
+    </p>
+  </div>
+</div><h4>Example 63</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 63)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} x^{2} + 3 \, t y^{2} - 2\hspace{2em}x( -1 )= 0\]</p>
+    <p class="me">\[y'= 2 \, x^{2} y - t y^{2} + 3\hspace{2em}y( -1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx -1.407\)</span> and 
+      <span class="m">\(y(-0.40)\approx 1.116\)</span>.
+    </p>
+  </div>
+</div><h4>Example 64</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 64)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} y^{2} + 2 \, x^{2} y^{2} + 1\hspace{2em}x( 0 )= -1\]</p>
+    <p class="me">\[y'= 3 \, t^{2} y^{2} + t x + 1\hspace{2em}y( 0 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx -0.3662\)</span> and 
+      <span class="m">\(y(0.60)\approx 0.5349\)</span>.
+    </p>
+  </div>
+</div><h4>Example 65</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 65)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t y^{2} - 4 \, t x + 3\hspace{2em}x( -1 )= -2\]</p>
+    <p class="me">\[y'= -3 \, x^{2} y^{2} + 2 \, t y - 3\hspace{2em}y( -1 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 23.85\)</span> and 
+      <span class="m">\(y(-0.70)\approx -97.51\)</span>.
+    </p>
+  </div>
+</div><h4>Example 66</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 66)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= x y^{2} - 4 \, t x - 2\hspace{2em}x( 2 )= 1\]</p>
+    <p class="me">\[y'= -4 \, t^{2} x^{2} + 2 \, t^{2} y^{2} - 2\hspace{2em}y( 2 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx -0.2420\)</span> and 
+      <span class="m">\(y(2.3)\approx 2.732\)</span>.
+    </p>
+  </div>
+</div><h4>Example 67</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 67)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, t^{2} x - 4 \, t y^{2} - 3\hspace{2em}x( 2 )= 0\]</p>
+    <p class="me">\[y'= -2 \, t^{2} x^{2} - 3 \, t^{2} y - 2\hspace{2em}y( 2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx -11.64\)</span> and 
+      <span class="m">\(y(2.3)\approx -11.37\)</span>.
+    </p>
+  </div>
+</div><h4>Example 68</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 68)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} x^{2} + x y^{2} + 2\hspace{2em}x( -1 )= -2\]</p>
+    <p class="me">\[y'= -2 \, t y^{2} + 3 \, x y + 1\hspace{2em}y( -1 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx -0.2405\)</span> and 
+      <span class="m">\(y(-0.40)\approx 0.4523\)</span>.
+    </p>
+  </div>
+</div><h4>Example 69</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 69)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} x - 3 \, x^{2} y + 2\hspace{2em}x( -1 )= -1\]</p>
+    <p class="me">\[y'= 2 \, t^{2} x^{2} - 4 \, x^{2} y - 3\hspace{2em}y( -1 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx -1.527\)</span> and 
+      <span class="m">\(y(-0.40)\approx -0.2863\)</span>.
+    </p>
+  </div>
+</div><h4>Example 70</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 70)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t^{2} x^{2} - x y^{2} + 3\hspace{2em}x( -2 )= -1\]</p>
+    <p class="me">\[y'= 3 \, t x^{2} - x^{2} y - 3\hspace{2em}y( -2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx -5.809\)</span> and 
+      <span class="m">\(y(-1.7)\approx -4.237\)</span>.
+    </p>
+  </div>
+</div><h4>Example 71</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 71)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t^{2} x^{2} + 4 \, t y + 2\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= -4 \, t^{2} y^{2} + 3 \, t^{2} x - 2\hspace{2em}y( 0 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 1.542\)</span> and 
+      <span class="m">\(y(0.30)\approx -0.5824\)</span>.
+    </p>
+  </div>
+</div><h4>Example 72</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 72)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t^{2} y^{2} - 2 \, x y - 2\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= -4 \, x y^{2} - t y + 3\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx -0.6917\)</span> and 
+      <span class="m">\(y(0.60)\approx 2.122\)</span>.
+    </p>
+  </div>
+</div><h4>Example 73</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 73)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} x + 2 \, x y + 1\hspace{2em}x( 0 )= 1\]</p>
+    <p class="me">\[y'= 2 \, t^{2} y^{2} - 4 \, x^{2} y + 3\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx 1.823\)</span> and 
+      <span class="m">\(y(0.60)\approx 0.5986\)</span>.
+    </p>
+  </div>
+</div><h4>Example 74</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 74)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(1.6)\)</span> and <span class="m">\(y(1.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t x^{2} - 3 \, t y^{2} - 2\hspace{2em}x( 1 )= -1\]</p>
+    <p class="me">\[y'= -2 \, t x + 2 \, t y - 3\hspace{2em}y( 1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.6)\approx -4.398\)</span> and 
+      <span class="m">\(y(1.6)\approx -2.053\)</span>.
+    </p>
+  </div>
+</div><h4>Example 75</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 75)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t^{2} y^{2} + x y^{2} + 3\hspace{2em}x( 1 )= 2\]</p>
+    <p class="me">\[y'= 2 \, t^{2} y^{2} + t^{2} x - 1\hspace{2em}y( 1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx 2.961\)</span> and 
+      <span class="m">\(y(1.3)\approx 0.5787\)</span>.
+    </p>
+  </div>
+</div><h4>Example 76</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 76)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(1.6)\)</span> and <span class="m">\(y(1.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, t^{2} y^{2} + 4 \, t^{2} x + 3\hspace{2em}x( 1 )= 1\]</p>
+    <p class="me">\[y'= 3 \, t x^{2} - 4 \, x y - 2\hspace{2em}y( 1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.6)\approx 35.43\)</span> and 
+      <span class="m">\(y(1.6)\approx 14.96\)</span>.
+    </p>
+  </div>
+</div><h4>Example 77</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 77)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(1.6)\)</span> and <span class="m">\(y(1.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t x^{2} + 2 \, t y - 1\hspace{2em}x( 1 )= 2\]</p>
+    <p class="me">\[y'= 3 \, t^{2} y^{2} + 3 \, t^{2} x - 2\hspace{2em}y( 1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.6)\approx 0.1695\)</span> and 
+      <span class="m">\(y(1.6)\approx 3.397\)</span>.
+    </p>
+  </div>
+</div><h4>Example 78</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 78)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= t^{2} x^{2} - 3 \, t^{2} y^{2} - 2\hspace{2em}x( -2 )= -2\]</p>
+    <p class="me">\[y'= t^{2} x - x^{2} y\hspace{2em}y( -2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx -1.425\)</span> and 
+      <span class="m">\(y(-1.7)\approx -1.008\)</span>.
+    </p>
+  </div>
+</div><h4>Example 79</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 79)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t^{2} y - 3 \, x y\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= 4 \, t^{2} y^{2} - 3 \, x^{2} y + 3\hspace{2em}y( -1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx -17.21\)</span> and 
+      <span class="m">\(y(-0.40)\approx 59.13\)</span>.
+    </p>
+  </div>
+</div><h4>Example 80</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 80)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 4 \, t^{2} y^{2} + 4 \, t x^{2} + 1\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= 4 \, t x + 2 \, t y\hspace{2em}y( 0 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 3.012\)</span> and 
+      <span class="m">\(y(0.30)\approx -1.843\)</span>.
+    </p>
+  </div>
+</div><h4>Example 81</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 81)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -x^{2} y - 3 \, t y^{2} + 3\hspace{2em}x( -1 )= 0\]</p>
+    <p class="me">\[y'= -3 \, t^{2} y + 2 \, x y^{2}\hspace{2em}y( -1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 2.737\)</span> and 
+      <span class="m">\(y(-0.40)\approx -0.1100\)</span>.
+    </p>
+  </div>
+</div><h4>Example 82</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 82)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, x^{2} y^{2} - t y + 3\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= t^{2} x - x y^{2} + 3\hspace{2em}y( 0 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 28.06\)</span> and 
+      <span class="m">\(y(0.30)\approx 0.5220\)</span>.
+    </p>
+  </div>
+</div><h4>Example 83</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 83)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -x^{2} y - 2 \, t y + 1\hspace{2em}x( 1 )= 0\]</p>
+    <p class="me">\[y'= -2 \, t^{2} x + 4 \, t y^{2} - 1\hspace{2em}y( 1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx 0.8386\)</span> and 
+      <span class="m">\(y(1.3)\approx -0.7112\)</span>.
+    </p>
+  </div>
+</div><h4>Example 84</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 84)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t^{2} y^{2} - 3 \, x y^{2} + 2\hspace{2em}x( 2 )= -2\]</p>
+    <p class="me">\[y'= -2 \, t y^{2} - 2 \, x y^{2} - 2\hspace{2em}y( 2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx -2.662\)</span> and 
+      <span class="m">\(y(2.3)\approx 0.4699\)</span>.
+    </p>
+  </div>
+</div><h4>Example 85</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 85)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t y^{2} - 2 \, t x - 2\hspace{2em}x( 2 )= -2\]</p>
+    <p class="me">\[y'= 4 \, t^{2} y^{2} - 4 \, t x^{2} + 1\hspace{2em}y( 2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx -8.320\)</span> and 
+      <span class="m">\(y(2.3)\approx 16.08\)</span>.
+    </p>
+  </div>
+</div><h4>Example 86</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 86)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} y^{2} - 2 \, t^{2} x + 1\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= -4 \, t y^{2} + 4 \, x y^{2} - 1\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 2.279\)</span> and 
+      <span class="m">\(y(0.30)\approx -0.3421\)</span>.
+    </p>
+  </div>
+</div><h4>Example 87</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 87)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, x^{2} y^{2} + 2 \, t^{2} x + 1\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= 4 \, t^{2} y^{2} + 4 \, t^{2} x - 3\hspace{2em}y( -1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 1.536\)</span> and 
+      <span class="m">\(y(-0.40)\approx -0.4330\)</span>.
+    </p>
+  </div>
+</div><h4>Example 88</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 88)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, t^{2} x^{2} + 2 \, t y^{2} - 3\hspace{2em}x( 2 )= 0\]</p>
+    <p class="me">\[y'= -4 \, t^{2} y + 4 \, x y^{2} + 1\hspace{2em}y( 2 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx -4.889\)</span> and 
+      <span class="m">\(y(2.3)\approx -2.821\)</span>.
+    </p>
+  </div>
+</div><h4>Example 89</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 89)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, t^{2} x^{2} + x y^{2} - 3\hspace{2em}x( -1 )= 1\]</p>
+    <p class="me">\[y'= -4 \, t^{2} y - x y^{2} - 3\hspace{2em}y( -1 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx -0.8688\)</span> and 
+      <span class="m">\(y(-0.40)\approx -1.377\)</span>.
+    </p>
+  </div>
+</div><h4>Example 90</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 90)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -2 \, t^{2} x^{2} - 3 \, t^{2} y - 3\hspace{2em}x( 1 )= 1\]</p>
+    <p class="me">\[y'= 4 \, t^{2} x^{2} + 2 \, t y\hspace{2em}y( 1 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx 0.5070\)</span> and 
+      <span class="m">\(y(1.3)\approx -0.5935\)</span>.
+    </p>
+  </div>
+</div><h4>Example 91</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 91)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(2.6)\)</span> and <span class="m">\(y(2.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t^{2} y^{2} + 3 \, t x - 2\hspace{2em}x( 2 )= -2\]</p>
+    <p class="me">\[y'= 3 \, t y^{2} - 2 \, x y + 2\hspace{2em}y( 2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.6)\approx -40.62\)</span> and 
+      <span class="m">\(y(2.6)\approx 15.28\)</span>.
+    </p>
+  </div>
+</div><h4>Example 92</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 92)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(2.6)\)</span> and <span class="m">\(y(2.6)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 2 \, t^{2} y - 4 \, x^{2} y - 1\hspace{2em}x( 2 )= 0\]</p>
+    <p class="me">\[y'= -3 \, t^{2} x - 3 \, t y - 1\hspace{2em}y( 2 )= 1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.6)\approx -5.011\)</span> and 
+      <span class="m">\(y(2.6)\approx -2.018\)</span>.
+    </p>
+  </div>
+</div><h4>Example 93</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 93)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(1.3)\)</span> and <span class="m">\(y(1.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, t^{2} y + x^{2} y + 3\hspace{2em}x( 1 )= -2\]</p>
+    <p class="me">\[y'= -3 \, x y^{2} - 4 \, t y - 1\hspace{2em}y( 1 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(1.3)\approx -1.057\)</span> and 
+      <span class="m">\(y(1.3)\approx -0.1690\)</span>.
+    </p>
+  </div>
+</div><h4>Example 94</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 94)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t y^{2} - 3 \, t x - 1\hspace{2em}x( 0 )= -1\]</p>
+    <p class="me">\[y'= -x^{2} y^{2} - 2 \, t x + 2\hspace{2em}y( 0 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx -0.9462\)</span> and 
+      <span class="m">\(y(0.30)\approx 1.569\)</span>.
+    </p>
+  </div>
+</div><h4>Example 95</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 95)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(0.30)\)</span> and <span class="m">\(y(0.30)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -4 \, t^{2} y^{2} + 2 \, t x^{2} - 3\hspace{2em}x( 0 )= 2\]</p>
+    <p class="me">\[y'= 3 \, t^{2} y - 4 \, x^{2} y + 1\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.30)\approx 1.241\)</span> and 
+      <span class="m">\(y(0.30)\approx 0.09883\)</span>.
+    </p>
+  </div>
+</div><h4>Example 96</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 96)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-1.7)\)</span> and <span class="m">\(y(-1.7)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, t x^{2} + 2 \, t y\hspace{2em}x( -2 )= 2\]</p>
+    <p class="me">\[y'= 3 \, t x^{2} - 4 \, x^{2} y - 3\hspace{2em}y( -2 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-1.7)\approx 0.3032\)</span> and 
+      <span class="m">\(y(-1.7)\approx -2.909\)</span>.
+    </p>
+  </div>
+</div><h4>Example 97</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 97)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(-0.70)\)</span> and <span class="m">\(y(-0.70)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= 3 \, x^{2} y^{2} + 4 \, t y^{2}\hspace{2em}x( -1 )= 2\]</p>
+    <p class="me">\[y'= t^{2} y^{2} + 3 \, t x - 1\hspace{2em}y( -1 )= 2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.70)\approx 69.83\)</span> and 
+      <span class="m">\(y(-0.70)\approx -6.283\)</span>.
+    </p>
+  </div>
+</div><h4>Example 98</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 98)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(0.60)\)</span> and <span class="m">\(y(0.60)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -3 \, x^{2} y^{2} - t^{2} x + 2\hspace{2em}x( 0 )= 0\]</p>
+    <p class="me">\[y'= -3 \, t^{2} y^{2} - x^{2} y^{2}\hspace{2em}y( 0 )= -1\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(0.60)\approx 0.7498\)</span> and 
+      <span class="m">\(y(0.60)\approx -1.273\)</span>.
+    </p>
+  </div>
+</div><h4>Example 99</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 99)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.10\)</span> to approximate
+      <span class="m">\(x(2.3)\)</span> and <span class="m">\(y(2.3)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t x + 2 \, t y - 3\hspace{2em}x( 2 )= -2\]</p>
+    <p class="me">\[y'= t^{2} x^{2} + 2 \, x y^{2}\hspace{2em}y( 2 )= 0\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(2.3)\approx -0.2042\)</span> and 
+      <span class="m">\(y(2.3)\approx 1.724\)</span>.
+    </p>
+  </div>
+</div><h4>Example 100</h4><div class="exercise">
+  <h2 class="title">N2 - Euler&#x2019;s method for IVP systems. Estimate the value of an IVP system solution using Euler&#x2019;s method. (ver. 100)</h2>
+  <div class="statement">
+    <p>
+      Use Euler's method with <span class="m">\(h=0.20\)</span> to approximate
+      <span class="m">\(x(-0.40)\)</span> and <span class="m">\(y(-0.40)\)</span> given the following
+      system of IVPs.
+    </p>
+    <p class="me">\[x'= -t^{2} y - x^{2} y + 3\hspace{2em}x( -1 )= 0\]</p>
+    <p class="me">\[y'= 2 \, x^{2} y + t y^{2} + 3\hspace{2em}y( -1 )= -2\]</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>
+      <span class="m">\(x(-0.40)\approx 6.664\)</span> and 
+      <span class="m">\(y(-0.40)\approx -10.94\)</span>.
+    </p>
+  </div>
+</div>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers</a></li>
+      </ul>
+      <h2>Diff EQ Standards</h2>
+      <ul>
+        
+          <li><a href="/diff-eq/C1/">Diff EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">Diff EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C3m/">Diff EQ C3m</a></li>
+        
+          <li><a href="/diff-eq/C4/">Diff EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">Diff EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">Diff EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">Diff EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">Diff EQ C6</a></li>
+        
+          <li><a href="/diff-eq/C7m/">Diff EQ C7m</a></li>
+        
+          <li><a href="/diff-eq/F2/">Diff EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">Diff EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">Diff EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F3m/">Diff EQ F3m</a></li>
+        
+          <li><a href="/diff-eq/F4/">Diff EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">Diff EQ F5</a></li>
+        
+          <li><a href="/diff-eq/F6/">Diff EQ F6</a></li>
+        
+          <li><a href="/diff-eq/N1/">Diff EQ N1</a></li>
+        
+          <li><a href="/diff-eq/N2/">Diff EQ N2</a></li>
+        
+          <li><a href="/diff-eq/N3m/">Diff EQ N3m</a></li>
+        
+          <li><a href="/diff-eq/S1/">Diff EQ S1</a></li>
+        
+          <li><a href="/diff-eq/S2m/">Diff EQ S2m</a></li>
+        
+          <li><a href="/diff-eq/S3/">Diff EQ S3</a></li>
+        
+          <li><a href="/diff-eq/S4m/">Diff EQ S4m</a></li>
+        
+      </ul>
+    </div>
+<!-- latest MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  function toggleAnswers() {
+    var answers = document.getElementsByClassName("answer");
+    var i;
+    for (i = 0; i < answers.length; i++) {
+      var answer = answers[i];
+      answer.classList.toggle("hide");
+    }
+  }
+  if (document.getElementsByClassName("answer").length > 0) {
+    var showHideAnswers = document.getElementById("showHideAnswers");
+    showHideAnswers.classList.remove("hide");
+    showHideAnswers.addEventListener("click", function(e){e.preventDefault;toggleAnswers()});
+    toggleAnswers();
+  }
+</script>
+  </body>
+</html>
