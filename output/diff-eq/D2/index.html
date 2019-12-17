@@ -401,6 +401,266 @@
     <p class="me">\[\mathcal L\left\{y\right\}= \frac{3 \, s e^{\left(-2 \, s\right)}}{s^{2} + 9} + \frac{s}{s^{2} + 9} - \frac{3 \, e^{\left(-2 \, s\right)}}{s}\]</p>
     <p class="me">\[{y} = 3 \, \cos\left(3 \, t - 6\right) u\left(t - 2\right) + \cos\left(3 \, t\right) - 3 \, u\left(t - 2\right)\]</p>
   </div>
+</div><h4>Example 31</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 31)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 4 \, {y} = 4 \, u\left(t - 1\right)\hspace{2em}y(0)= 0 ,y'(0)= 4\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{4}{s^{2} + 4} + \frac{4 \, e^{\left(-s\right)}}{{\left(s^{2} + 4\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{s e^{\left(-s\right)}}{s^{2} + 4} + \frac{e^{\left(-s\right)}}{s} + \frac{4}{s^{2} + 4}\]</p>
+    <p class="me">\[{y} = -\cos\left(2 \, t - 2\right) u\left(t - 1\right) + 2 \, \sin\left(2 \, t\right) + u\left(t - 1\right)\]</p>
+  </div>
+</div><h4>Example 32</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 32)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 4 \, {y} = 16 \, u\left(t - 2\right)\hspace{2em}y(0)= 0 ,y'(0)= -8\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{8}{s^{2} + 4} + \frac{16 \, e^{\left(-2 \, s\right)}}{{\left(s^{2} + 4\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4 \, s e^{\left(-2 \, s\right)}}{s^{2} + 4} + \frac{4 \, e^{\left(-2 \, s\right)}}{s} - \frac{8}{s^{2} + 4}\]</p>
+    <p class="me">\[{y} = -4 \, \cos\left(2 \, t - 4\right) u\left(t - 2\right) - 4 \, \sin\left(2 \, t\right) + 4 \, u\left(t - 2\right)\]</p>
+  </div>
+</div><h4>Example 33</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 33)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} - 2 \, {y'} - 8 \, {y} = 18 \, \delta\left(t - 1\right)\hspace{2em}y(0)= 0 ,y'(0)= -12\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{18 \, e^{\left(-s\right)}}{s^{2} - 2 \, s - 8} - \frac{12}{s^{2} - 2 \, s - 8}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{3 \, e^{\left(-s\right)}}{s + 2} + \frac{3 \, e^{\left(-s\right)}}{s - 4} + \frac{2}{s + 2} - \frac{2}{s - 4}\]</p>
+    <p class="me">\[{y} = 3 \, e^{\left(4 \, t - 4\right)} u\left(t - 1\right) - 3 \, e^{\left(-2 \, t + 2\right)} u\left(t - 1\right) - 2 \, e^{\left(4 \, t\right)} + 2 \, e^{\left(-2 \, t\right)}\]</p>
+  </div>
+</div><h4>Example 34</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 34)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 9 \, {y} = -18 \, u\left(t - 2\right)\hspace{2em}y(0)= -5 ,y'(0)= 0\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{5 \, s}{s^{2} + 9} - \frac{18 \, e^{\left(-2 \, s\right)}}{{\left(s^{2} + 9\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{2 \, s e^{\left(-2 \, s\right)}}{s^{2} + 9} - \frac{5 \, s}{s^{2} + 9} - \frac{2 \, e^{\left(-2 \, s\right)}}{s}\]</p>
+    <p class="me">\[{y} = 2 \, \cos\left(3 \, t - 6\right) u\left(t - 2\right) - 5 \, \cos\left(3 \, t\right) - 2 \, u\left(t - 2\right)\]</p>
+  </div>
+</div><h4>Example 35</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 35)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 9 \, {y} = 36 \, u\left(t - 1\right)\hspace{2em}y(0)= 0 ,y'(0)= 9\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{9}{s^{2} + 9} + \frac{36 \, e^{\left(-s\right)}}{{\left(s^{2} + 9\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4 \, s e^{\left(-s\right)}}{s^{2} + 9} + \frac{4 \, e^{\left(-s\right)}}{s} + \frac{9}{s^{2} + 9}\]</p>
+    <p class="me">\[{y} = -4 \, \cos\left(3 \, t - 3\right) u\left(t - 1\right) + 3 \, \sin\left(3 \, t\right) + 4 \, u\left(t - 1\right)\]</p>
+  </div>
+</div><h4>Example 36</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 36)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 4 \, {y} = 4 \, u\left(t - 3\right)\hspace{2em}y(0)= 0 ,y'(0)= -2\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{2}{s^{2} + 4} + \frac{4 \, e^{\left(-3 \, s\right)}}{{\left(s^{2} + 4\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{s e^{\left(-3 \, s\right)}}{s^{2} + 4} + \frac{e^{\left(-3 \, s\right)}}{s} - \frac{2}{s^{2} + 4}\]</p>
+    <p class="me">\[{y} = -\cos\left(2 \, t - 6\right) u\left(t - 3\right) - \sin\left(2 \, t\right) + u\left(t - 3\right)\]</p>
+  </div>
+</div><h4>Example 37</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 37)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} - 5 \, {y'} + 6 \, {y} = 4 \, \delta\left(t - 2\right)\hspace{2em}y(0)= 0 ,y'(0)= -3\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{4 \, e^{\left(-2 \, s\right)}}{s^{2} - 5 \, s + 6} - \frac{3}{s^{2} - 5 \, s + 6}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4 \, e^{\left(-2 \, s\right)}}{s - 2} + \frac{4 \, e^{\left(-2 \, s\right)}}{s - 3} + \frac{3}{s - 2} - \frac{3}{s - 3}\]</p>
+    <p class="me">\[{y} = 4 \, e^{\left(3 \, t - 6\right)} u\left(t - 2\right) - 4 \, e^{\left(2 \, t - 4\right)} u\left(t - 2\right) - 3 \, e^{\left(3 \, t\right)} + 3 \, e^{\left(2 \, t\right)}\]</p>
+  </div>
+</div><h4>Example 38</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 38)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + {y} = -3 \, u\left(t - 1\right)\hspace{2em}y(0)= 0 ,y'(0)= -4\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4}{s^{2} + 1} - \frac{3 \, e^{\left(-s\right)}}{{\left(s^{2} + 1\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{3 \, s e^{\left(-s\right)}}{s^{2} + 1} - \frac{3 \, e^{\left(-s\right)}}{s} - \frac{4}{s^{2} + 1}\]</p>
+    <p class="me">\[{y} = 3 \, \cos\left(t - 1\right) u\left(t - 1\right) - 4 \, \sin\left(t\right) - 3 \, u\left(t - 1\right)\]</p>
+  </div>
+</div><h4>Example 39</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 39)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + {y} = 2 \, u\left(t - 3\right)\hspace{2em}y(0)= 0 ,y'(0)= -1\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{1}{s^{2} + 1} + \frac{2 \, e^{\left(-3 \, s\right)}}{{\left(s^{2} + 1\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{2 \, s e^{\left(-3 \, s\right)}}{s^{2} + 1} + \frac{2 \, e^{\left(-3 \, s\right)}}{s} - \frac{1}{s^{2} + 1}\]</p>
+    <p class="me">\[{y} = -2 \, \cos\left(t - 3\right) u\left(t - 3\right) - \sin\left(t\right) + 2 \, u\left(t - 3\right)\]</p>
+  </div>
+</div><h4>Example 40</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 40)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} - 9 \, {y} = 24 \, \delta\left(t - 3\right)\hspace{2em}y(0)= 0 ,y'(0)= -6\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{24 \, e^{\left(-3 \, s\right)}}{s^{2} - 9} - \frac{6}{s^{2} - 9}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4 \, e^{\left(-3 \, s\right)}}{s + 3} + \frac{4 \, e^{\left(-3 \, s\right)}}{s - 3} + \frac{1}{s + 3} - \frac{1}{s - 3}\]</p>
+    <p class="me">\[{y} = 4 \, e^{\left(3 \, t - 9\right)} u\left(t - 3\right) - 4 \, e^{\left(-3 \, t + 9\right)} u\left(t - 3\right) - e^{\left(3 \, t\right)} + e^{\left(-3 \, t\right)}\]</p>
+  </div>
+</div><h4>Example 41</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 41)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 9 \, {y} = 9 \, u\left(t - 1\right)\hspace{2em}y(0)= 5 ,y'(0)= 0\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{5 \, s}{s^{2} + 9} + \frac{9 \, e^{\left(-s\right)}}{{\left(s^{2} + 9\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{s e^{\left(-s\right)}}{s^{2} + 9} + \frac{5 \, s}{s^{2} + 9} + \frac{e^{\left(-s\right)}}{s}\]</p>
+    <p class="me">\[{y} = -\cos\left(3 \, t - 3\right) u\left(t - 1\right) + 5 \, \cos\left(3 \, t\right) + u\left(t - 1\right)\]</p>
+  </div>
+</div><h4>Example 42</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 42)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 9 \, {y} = 27 \, u\left(t - 2\right)\hspace{2em}y(0)= 0 ,y'(0)= -6\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{6}{s^{2} + 9} + \frac{27 \, e^{\left(-2 \, s\right)}}{{\left(s^{2} + 9\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{3 \, s e^{\left(-2 \, s\right)}}{s^{2} + 9} + \frac{3 \, e^{\left(-2 \, s\right)}}{s} - \frac{6}{s^{2} + 9}\]</p>
+    <p class="me">\[{y} = -3 \, \cos\left(3 \, t - 6\right) u\left(t - 2\right) - 2 \, \sin\left(3 \, t\right) + 3 \, u\left(t - 2\right)\]</p>
+  </div>
+</div><h4>Example 43</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 43)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 9 \, {y} = -27 \, u\left(t - 1\right)\hspace{2em}y(0)= 0 ,y'(0)= 12\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{12}{s^{2} + 9} - \frac{27 \, e^{\left(-s\right)}}{{\left(s^{2} + 9\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{3 \, s e^{\left(-s\right)}}{s^{2} + 9} - \frac{3 \, e^{\left(-s\right)}}{s} + \frac{12}{s^{2} + 9}\]</p>
+    <p class="me">\[{y} = 3 \, \cos\left(3 \, t - 3\right) u\left(t - 1\right) + 4 \, \sin\left(3 \, t\right) - 3 \, u\left(t - 1\right)\]</p>
+  </div>
+</div><h4>Example 44</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 44)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} - {y} = 6 \, \delta\left(t - 2\right)\hspace{2em}y(0)= 0 ,y'(0)= 4\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{6 \, e^{\left(-2 \, s\right)}}{s^{2} - 1} + \frac{4}{s^{2} - 1}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{3 \, e^{\left(-2 \, s\right)}}{s + 1} + \frac{3 \, e^{\left(-2 \, s\right)}}{s - 1} - \frac{2}{s + 1} + \frac{2}{s - 1}\]</p>
+    <p class="me">\[{y} = 3 \, e^{\left(t - 2\right)} u\left(t - 2\right) - 3 \, e^{\left(-t + 2\right)} u\left(t - 2\right) - 2 \, e^{\left(-t\right)} + 2 \, e^{t}\]</p>
+  </div>
+</div><h4>Example 45</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 45)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 4 \, {y} = -12 \, u\left(t - 3\right)\hspace{2em}y(0)= -4 ,y'(0)= 0\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4 \, s}{s^{2} + 4} - \frac{12 \, e^{\left(-3 \, s\right)}}{{\left(s^{2} + 4\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{3 \, s e^{\left(-3 \, s\right)}}{s^{2} + 4} - \frac{4 \, s}{s^{2} + 4} - \frac{3 \, e^{\left(-3 \, s\right)}}{s}\]</p>
+    <p class="me">\[{y} = 3 \, \cos\left(2 \, t - 6\right) u\left(t - 3\right) - 4 \, \cos\left(2 \, t\right) - 3 \, u\left(t - 3\right)\]</p>
+  </div>
+</div><h4>Example 46</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 46)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 9 \, {y} = -18 \, u\left(t - 2\right)\hspace{2em}y(0)= 0 ,y'(0)= 3\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{3}{s^{2} + 9} - \frac{18 \, e^{\left(-2 \, s\right)}}{{\left(s^{2} + 9\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{2 \, s e^{\left(-2 \, s\right)}}{s^{2} + 9} - \frac{2 \, e^{\left(-2 \, s\right)}}{s} + \frac{3}{s^{2} + 9}\]</p>
+    <p class="me">\[{y} = 2 \, \cos\left(3 \, t - 6\right) u\left(t - 2\right) + \sin\left(3 \, t\right) - 2 \, u\left(t - 2\right)\]</p>
+  </div>
+</div><h4>Example 47</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 47)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 5 \, {y'} + 4 \, {y} = 9 \, \delta\left(t - 2\right)\hspace{2em}y(0)= 0 ,y'(0)= 9\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{9 \, e^{\left(-2 \, s\right)}}{s^{2} + 5 \, s + 4} + \frac{9}{s^{2} + 5 \, s + 4}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{3 \, e^{\left(-2 \, s\right)}}{s + 4} + \frac{3 \, e^{\left(-2 \, s\right)}}{s + 1} - \frac{3}{s + 4} + \frac{3}{s + 1}\]</p>
+    <p class="me">\[{y} = 3 \, e^{\left(-t + 2\right)} u\left(t - 2\right) - 3 \, e^{\left(-4 \, t + 8\right)} u\left(t - 2\right) + 3 \, e^{\left(-t\right)} - 3 \, e^{\left(-4 \, t\right)}\]</p>
+  </div>
+</div><h4>Example 48</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 48)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + 4 \, {y} = 16 \, u\left(t - 1\right)\hspace{2em}y(0)= 0 ,y'(0)= 6\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{6}{s^{2} + 4} + \frac{16 \, e^{\left(-s\right)}}{{\left(s^{2} + 4\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4 \, s e^{\left(-s\right)}}{s^{2} + 4} + \frac{4 \, e^{\left(-s\right)}}{s} + \frac{6}{s^{2} + 4}\]</p>
+    <p class="me">\[{y} = -4 \, \cos\left(2 \, t - 2\right) u\left(t - 1\right) + 3 \, \sin\left(2 \, t\right) + 4 \, u\left(t - 1\right)\]</p>
+  </div>
+</div><h4>Example 49</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 49)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + {y} = -2 \, u\left(t - 2\right)\hspace{2em}y(0)= 2 ,y'(0)= 0\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{2 \, s}{s^{2} + 1} - \frac{2 \, e^{\left(-2 \, s\right)}}{{\left(s^{2} + 1\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= \frac{2 \, s e^{\left(-2 \, s\right)}}{s^{2} + 1} + \frac{2 \, s}{s^{2} + 1} - \frac{2 \, e^{\left(-2 \, s\right)}}{s}\]</p>
+    <p class="me">\[{y} = 2 \, \cos\left(t - 2\right) u\left(t - 2\right) + 2 \, \cos\left(t\right) - 2 \, u\left(t - 2\right)\]</p>
+  </div>
+</div><h4>Example 50</h4><div class="exercise">
+  <h2 class="title">D2 - Discontinuous IVPs. Use Laplace transforms to solve IVPs involving a step function or Dirac delta distribution. (ver. 50)</h2>
+  <div class="statement">
+    <p>
+      Solve the following IVP.
+      <p class="me">\[{y''} + {y} = 3 \, u\left(t - 2\right)\hspace{2em}y(0)= -4 ,y'(0)= 0\]</p>
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{4 \, s}{s^{2} + 1} + \frac{3 \, e^{\left(-2 \, s\right)}}{{\left(s^{2} + 1\right)} s}\]</p>
+    <p class="me">\[\mathcal L\left\{y\right\}= -\frac{3 \, s e^{\left(-2 \, s\right)}}{s^{2} + 1} - \frac{4 \, s}{s^{2} + 1} + \frac{3 \, e^{\left(-2 \, s\right)}}{s}\]</p>
+    <p class="me">\[{y} = -3 \, \cos\left(t - 2\right) u\left(t - 2\right) - 4 \, \cos\left(t\right) + 3 \, u\left(t - 2\right)\]</p>
+  </div>
 </div>
     </div>
     <div id="sidebar">
@@ -472,6 +732,12 @@
           <li><a href="/lin-alg/V2/">LIN-ALG V2</a></li>
         
           <li><a href="/lin-alg/V3/">LIN-ALG V3</a></li>
+        
+          <li><a href="/lin-alg/V5/">LIN-ALG V5</a></li>
+        
+          <li><a href="/lin-alg/V6/">LIN-ALG V6</a></li>
+        
+          <li><a href="/lin-alg/V7/">LIN-ALG V7</a></li>
         
           <li><a href="/lin-alg/V8/">LIN-ALG V8</a></li>
         
