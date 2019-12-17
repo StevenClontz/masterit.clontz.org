@@ -1,0 +1,797 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mastr - LIN-ALG V9</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc 4.11.0">
+  </head>
+  <body>
+    <div id="main">
+      <h2>V9 - Polynomial Computation</h2>
+<h4>Example 1</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 1)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{-10 \, x^{3} - 2 \, x^{2} + x + 6 , -8 \, x^{3} - 8 \, x^{2} + 4 \, x + 8 , 30 \, x^{3} + 38 \, x^{2} - 19 \, x - 34 , -78 \, x^{3} - 150 \, x^{2} + 75 \, x + 114 , -104 \, x^{3} - 136 \, x^{2} + 68 \, x + 120 , -242 \, x^{3} - 426 \, x^{2} + 213 \, x + 334\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{-10 \, x^{3} - 2 \, x^{2} + x + 6 , -8 \, x^{3} - 8 \, x^{2} + 4 \, x + 8\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 2</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 2)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} 9 &amp; -2 \\ -8 &amp; -3 \end{bmatrix} , \left[\begin{array}{cc}
+-5 &amp; 3 \\
+9 &amp; 7
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; 0 \\
+0 &amp; 0
+\end{array}\right] , \left[\begin{array}{cc}
+-28 &amp; 10 \\
+34 &amp; 20
+\end{array}\right] , \left[\begin{array}{cc}
+-23 &amp; 7 \\
+25 &amp; 13
+\end{array}\right] , \left[\begin{array}{cc}
+68 &amp; -34 \\
+-106 &amp; -76
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+9 &amp; -2 \\
+-8 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 3 \\
+9 &amp; 7
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 3</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 3)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -2 &amp; 6 \\ 6 &amp; -1 \end{bmatrix} , \left[\begin{array}{cc}
+5 &amp; 5 \\
+3 &amp; -7
+\end{array}\right] , \left[\begin{array}{cc}
+6 &amp; -18 \\
+-18 &amp; 3
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 5 \\
+7 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-8 &amp; -3 \\
+5 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+-35 &amp; -5 \\
+9 &amp; 13
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-2 &amp; 6 \\
+6 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+5 &amp; 5 \\
+3 &amp; -7
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 5 \\
+7 &amp; -5
+\end{array}\right] \left[\begin{array}{cc}
+-8 &amp; -3 \\
+5 &amp; -1
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 4</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 4)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} 2 &amp; -4 \\ -7 &amp; 1 \end{bmatrix} , \left[\begin{array}{cc}
+7 &amp; -10 \\
+1 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-7 &amp; -2 \\
+2 &amp; 7
+\end{array}\right] , \left[\begin{array}{cc}
+8 &amp; -4 \\
+-31 &amp; 3
+\end{array}\right] , \left[\begin{array}{cc}
+5 &amp; 6 \\
+5 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+7 &amp; 5 \\
+-4 &amp; -5
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+2 &amp; -4 \\
+-7 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+7 &amp; -10 \\
+1 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-7 &amp; -2 \\
+2 &amp; 7
+\end{array}\right] , \left[\begin{array}{cc}
+7 &amp; 5 \\
+-4 &amp; -5
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 5</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 5)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{-4 \, x^{3} - 6 \, x^{2} - 10 , -4 \, x^{3} - 2 \, x^{2} - 5 \, x , -10 \, x^{3} + 3 \, x^{2} + 6 \, x - 4 , 6 \, x^{3} - 6 \, x^{2} - x - 7 , -6 \, x^{3} + 5 \, x^{2} - 5 \, x + 5 , -4 \, x^{3} - 20 \, x^{2} - 22 \, x - 14\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{-4 \, x^{3} - 6 \, x^{2} - 10 , -4 \, x^{3} - 2 \, x^{2} - 5 \, x , -10 \, x^{3} + 3 \, x^{2} + 6 \, x - 4 , 6 \, x^{3} - 6 \, x^{2} - x - 7\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 6</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 6)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{-5 \, x^{3} - 3 \, x^{2} + 7 \, x + 7 , 7 \, x^{3} + 4 \, x^{2} - 2 \, x + 3 , -13 \, x^{3} - 8 \, x^{2} + 26 \, x + 31 , 48 \, x^{3} + 28 \, x^{2} - 36 \, x - 16 , 6 \, x^{3} + 3 \, x^{2} + 15 \, x + 30 , -7 \, x^{3} - 3 \, x^{2} + 5 \, x\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{-5 \, x^{3} - 3 \, x^{2} + 7 \, x + 7 , 7 \, x^{3} + 4 \, x^{2} - 2 \, x + 3 , -7 \, x^{3} - 3 \, x^{2} + 5 \, x\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 7</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 7)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{8 \, x^{3} + 5 \, x + 6 , x^{3} + 5 \, x^{2} + x + 5 , -39 \, x^{3} + 5 \, x^{2} - 24 \, x - 25 , -2 \, x^{3} + 9 \, x^{2} - 2 \, x + 7 , 137 \, x^{3} - 35 \, x^{2} + 83 \, x + 73 , -19 \, x^{3} - 30 \, x^{2} - 7 \, x - 44\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{8 \, x^{3} + 5 \, x + 6 , x^{3} + 5 \, x^{2} + x + 5 , -2 \, x^{3} + 9 \, x^{2} - 2 \, x + 7\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 8</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 8)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{-7 \, x^{3} + x^{2} + 8 \, x + 7 , 2 \, x^{3} + x^{2} + 9 \, x + 9 , -7 \, x^{3} + 4 \, x^{2} + 4 \, x - 8 , 5 \, x^{3} - 5 \, x^{2} - 5 \, x - 9 , -7 \, x^{3} + x - 9 , -7 \, x^{3} - 6 \, x^{2} + 6 \, x + 4\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{-7 \, x^{3} + x^{2} + 8 \, x + 7 , 2 \, x^{3} + x^{2} + 9 \, x + 9 , -7 \, x^{3} + 4 \, x^{2} + 4 \, x - 8 , 5 \, x^{3} - 5 \, x^{2} - 5 \, x - 9\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 9</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 9)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{-4 \, x^{3} + x^{2} - 5 \, x + 2 , 8 \, x^{3} - x - 6 , 3 \, x + 5 , 24 \, x^{3} - 2 \, x^{2} + 8 \, x - 16 , -28 \, x^{3} + 3 \, x^{2} - 13 \, x + 18 , -8 \, x^{3} + x^{2} + 4 \, x - 10\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{-4 \, x^{3} + x^{2} - 5 \, x + 2 , 8 \, x^{3} - x - 6 , 3 \, x + 5 , -8 \, x^{3} + x^{2} + 4 \, x - 10\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 10</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 10)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} 9 &amp; -2 \\ -2 &amp; -9 \end{bmatrix} , \left[\begin{array}{cc}
+8 &amp; -7 \\
+-6 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -1 \\
+-10 &amp; 8
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 7 \\
+4 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+-15 &amp; 9 \\
+44 &amp; -40
+\end{array}\right] , \left[\begin{array}{cc}
+-32 &amp; 7 \\
+14 &amp; -15
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+9 &amp; -2 \\
+-2 &amp; -9
+\end{array}\right] , \left[\begin{array}{cc}
+8 &amp; -7 \\
+-6 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -1 \\
+-10 &amp; 8
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 7 \\
+4 &amp; 5
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 11</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 11)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{-7 \, x^{3} - 7 \, x^{2} - x - 1 , -2 \, x^{3} - 4 \, x^{2} - 7 \, x - 5 , -9 \, x^{3} + 2 \, x^{2} - 10 \, x - 4 , 47 \, x^{3} + 33 \, x^{2} + 51 \, x + 31 , 36 \, x^{3} - 8 \, x^{2} + 40 \, x + 16 , -241 \, x^{3} - 177 \, x^{2} - 276 \, x - 170\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{-7 \, x^{3} - 7 \, x^{2} - x - 1 , -2 \, x^{3} - 4 \, x^{2} - 7 \, x - 5 , -9 \, x^{3} + 2 \, x^{2} - 10 \, x - 4\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 12</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 12)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -1 &amp; 1 \\ -1 &amp; 6 \end{bmatrix} , \left[\begin{array}{cc}
+-2 &amp; 7 \\
+-4 &amp; 7
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; 7 \\
+4 &amp; 6
+\end{array}\right] , \left[\begin{array}{cc}
+15 &amp; -13 \\
+23 &amp; -10
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; 6 \\
+6 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-25 &amp; 16 \\
+-39 &amp; -5
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-1 &amp; 1 \\
+-1 &amp; 6
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 7 \\
+-4 &amp; 7
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; 7 \\
+4 &amp; 6
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; 6 \\
+6 &amp; -6
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 13</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 13)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{4 \, x^{3} - 8 \, x^{2} + 7 \, x - 6 , -x^{3} - 9 \, x^{2} - 3 \, x - 8 , 9 \, x^{3} - 51 \, x^{2} + 12 \, x - 42 , -60 \, x^{3} + 340 \, x^{2} - 80 \, x + 280 , 2 \, x^{3} - 9 \, x^{2} + 4 \, x - 8 , 61 \, x^{3} - 287 \, x^{2} + 88 \, x - 234\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{4 \, x^{3} - 8 \, x^{2} + 7 \, x - 6 , -x^{3} - 9 \, x^{2} - 3 \, x - 8 , 2 \, x^{3} - 9 \, x^{2} + 4 \, x - 8\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 14</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 14)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -10 &amp; -8 \\ 7 &amp; -6 \end{bmatrix} , \left[\begin{array}{cc}
+-1 &amp; 1 \\
+-4 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; -7 \\
+1 &amp; 6
+\end{array}\right] , \left[\begin{array}{cc}
+1 &amp; 25 \\
+-21 &amp; 9
+\end{array}\right] , \left[\begin{array}{cc}
+-18 &amp; 16 \\
+19 &amp; -50
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -6 \\
+-3 &amp; -5
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-10 &amp; -8 \\
+7 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-1 &amp; 1 \\
+-4 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; -7 \\
+1 &amp; 6
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -6 \\
+-3 &amp; -5
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 15</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 15)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{3 \, x^{3} - 7 \, x^{2} + 3 \, x + 3 , -6 \, x^{3} + 4 \, x^{2} - 7 \, x + 2 , 18 \, x^{3} - 32 \, x^{2} + 19 \, x + 10 , -2 \, x^{3} - 2 \, x^{2} - 4 \, x - 5 , 8 \, x^{3} + 6 \, x^{2} - 2 \, x + 1 , x^{3} + 21 \, x^{2} + 6 \, x - 1\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{3 \, x^{3} - 7 \, x^{2} + 3 \, x + 3 , -6 \, x^{3} + 4 \, x^{2} - 7 \, x + 2 , -2 \, x^{3} - 2 \, x^{2} - 4 \, x - 5 8 \, x^{3} + 6 \, x^{2} - 2 \, x + 1\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 16</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 16)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -2 &amp; 1 \\ -10 &amp; 5 \end{bmatrix} , \left[\begin{array}{cc}
+-10 &amp; 7 \\
+-9 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+-12 &amp; 10 \\
+22 &amp; -36
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 2 \\
+-20 &amp; 10
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 3 \\
+-3 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+-28 &amp; 18 \\
+-58 &amp; 4
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-2 &amp; 1 \\
+-10 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+-10 &amp; 7 \\
+-9 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 3 \\
+-3 &amp; 5
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 17</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 17)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{6 \, x^{3} - x^{2} - 2 \, x - 1 , 7 \, x^{3} - 6 \, x^{2} + 4 \, x - 2 , -32 \, x^{3} + 15 \, x^{2} - 2 \, x + 7 , -46 \, x^{3} + 27 \, x^{2} - 10 \, x + 11 , 2 \, x^{3} + 4 \, x^{2} + 7 \, x - 9 , 128 \, x^{3} - 60 \, x^{2} + 8 \, x - 28\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{6 \, x^{3} - x^{2} - 2 \, x - 1 , 7 \, x^{3} - 6 \, x^{2} + 4 \, x - 2 , 2 \, x^{3} + 4 \, x^{2} + 7 \, x - 9\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 18</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 18)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} 9 &amp; -3 \\ 1 &amp; -5 \end{bmatrix} , \left[\begin{array}{cc}
+9 &amp; -1 \\
+3 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+-8 &amp; 7 \\
+-2 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 0 \\
+-5 &amp; 9
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 4 \\
+5 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+1 &amp; -9 \\
+8 &amp; 4
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+9 &amp; -3 \\
+1 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+9 &amp; -1 \\
+3 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+-8 &amp; 7 \\
+-2 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 0 \\
+-5 &amp; 9
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 19</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 19)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{9 \, x^{2} + 9 \, x - 3 , -3 \, x^{3} + 2 \, x^{2} - 5 \, x - 5 , -12 \, x^{3} + 26 \, x^{2} - 2 \, x - 26 , 24 \, x^{3} - 70 \, x^{2} - 14 \, x + 58 , -5 \, x^{3} - 7 \, x^{2} + 7 \, x + 3 , -102 \, x^{3} + 275 \, x^{2} + 37 \, x - 239\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{9 \, x^{2} + 9 \, x - 3 , -3 \, x^{3} + 2 \, x^{2} - 5 \, x - 5 , -5 \, x^{3} - 7 \, x^{2} + 7 \, x + 3\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 20</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 20)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{5 \, x^{3} + x^{2} + 3 \, x - 2 , 7 \, x^{3} - 6 \, x^{2} - 8 \, x + 6 , 7 \, x^{3} + 4 \, x^{2} + 7 \, x + 1 , x^{3} - 4 \, x^{2} - 8 \, x + 4 , -9 \, x^{3} + 3 \, x^{2} + 4 \, x - 9 , 4 \, x^{3} + 7 \, x^{2} + 21 \, x - 6\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{5 \, x^{3} + x^{2} + 3 \, x - 2 , 7 \, x^{3} - 6 \, x^{2} - 8 \, x + 6 , 7 \, x^{3} + 4 \, x^{2} + 7 \, x + 1 , x^{3} - 4 \, x^{2} - 8 \, x + 4\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 21</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 21)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -6 &amp; -10 \\ -6 &amp; 2 \end{bmatrix} , \left[\begin{array}{cc}
+8 &amp; -4 \\
+3 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 28 \\
+6 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+9 &amp; 6 \\
+-4 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+-46 &amp; 10 \\
+-21 &amp; 7
+\end{array}\right] , \left[\begin{array}{cc}
+-20 &amp; 36 \\
+0 &amp; 0
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-6 &amp; -10 \\
+-6 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+8 &amp; -4 \\
+3 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+9 &amp; 6 \\
+-4 &amp; -8
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 22</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 22)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -5 &amp; -1 \\ -7 &amp; -9 \end{bmatrix} , \left[\begin{array}{cc}
+8 &amp; 9 \\
+0 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+44 &amp; 31 \\
+28 &amp; 48
+\end{array}\right] , \left[\begin{array}{cc}
+-226 &amp; -171 \\
+-126 &amp; -230
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; 4 \\
+-5 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-255 &amp; -199 \\
+-133 &amp; -251
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-5 &amp; -1 \\
+-7 &amp; -9
+\end{array}\right] , \left[\begin{array}{cc}
+8 &amp; 9 \\
+0 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; 4 \\
+-5 &amp; -5
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 23</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 23)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -9 &amp; -7 \\ -8 &amp; -4 \end{bmatrix} , \left[\begin{array}{cc}
+7 &amp; -7 \\
+1 &amp; -10
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; 7 \\
+-4 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 8 \\
+4 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+58 &amp; 49 \\
+29 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+9 &amp; -1 \\
+-8 &amp; -2
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-9 &amp; -7 \\
+-8 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+7 &amp; -7 \\
+1 &amp; -10
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; 7 \\
+-4 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 8 \\
+4 &amp; -6
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 24</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 24)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -2 &amp; 7 \\ -4 &amp; 1 \end{bmatrix} , \left[\begin{array}{cc}
+6 &amp; -3 \\
+-5 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+-9 &amp; 8 \\
+8 &amp; 0
+\end{array}\right] , \left[\begin{array}{cc}
+-38 &amp; -4 \\
+61 &amp; 0
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 8 \\
+0 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+-176 &amp; -22 \\
+281 &amp; 2
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-2 &amp; 7 \\
+-4 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+6 &amp; -3 \\
+-5 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+-9 &amp; 8 \\
+8 &amp; 0
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 8 \\
+0 &amp; -8
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 25</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 25)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -1 &amp; 5 \\ 8 &amp; 4 \end{bmatrix} , \left[\begin{array}{cc}
+-3 &amp; 8 \\
+-5 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-8 &amp; -1 \\
+-8 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -4 \\
+-3 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+-13 &amp; -44 \\
+-54 &amp; -11
+\end{array}\right] , \left[\begin{array}{cc}
+5 &amp; -7 \\
+-40 &amp; -14
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-1 &amp; 5 \\
+8 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; 8 \\
+-5 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+-8 &amp; -1 \\
+-8 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -4 \\
+-3 &amp; 5
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 26</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 26)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{4 \, x^{3} - 9 \, x^{2} + 4 \, x + 8 , 7 \, x^{3} + 7 \, x^{2} + 9 \, x + 1 , -9 \, x^{3} - 6 \, x^{2} - x - 2 , -3 \, x^{3} - 23 \, x^{2} + 15 \, x + 13 , 4 \, x^{3} - 3 \, x^{2} + 2 \, x - 6 , x^{3} + 5 \, x^{2} + 2 \, x + 2\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{4 \, x^{3} - 9 \, x^{2} + 4 \, x + 8 , 7 \, x^{3} + 7 \, x^{2} + 9 \, x + 1 , -9 \, x^{3} - 6 \, x^{2} - x - 2 , 4 \, x^{3} - 3 \, x^{2} + 2 \, x - 6\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 27</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 27)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -7 &amp; 6 \\ 8 &amp; -4 \end{bmatrix} , \left[\begin{array}{cc}
+-9 &amp; 2 \\
+-9 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -2 \\
+-6 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; 3 \\
+4 &amp; -10
+\end{array}\right] , \left[\begin{array}{cc}
+1 &amp; -9 \\
+9 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+22 &amp; 4 \\
+52 &amp; 12
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-7 &amp; 6 \\
+8 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-9 &amp; 2 \\
+-9 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -2 \\
+-6 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; 3 \\
+4 &amp; -10
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 28</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 28)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(\mathcal{P}^3\)</span> <p class="me">\[W=\mathrm{span}\ \left\{-4 \, x^{3} + 6 \, x^{2} + 9 \, x - 2 , x^{3} + 5 \, x^{2} + 5 \, x - 6 , -10 \, x^{3} + 9 \, x^{2} - 9 \, x - 3 , 49 \, x^{3} - 76 \, x^{2} + 11 \, x + 47 , -7 \, x^{3} + 8 \, x^{2} + 7 \, x - 4 , 163 \, x^{3} - 278 \, x^{2} - 32 \, x + 175\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{-4 \, x^{3} + 6 \, x^{2} + 9 \, x - 2 , x^{3} + 5 \, x^{2} + 5 \, x - 6 , -10 \, x^{3} + 9 \, x^{2} - 9 \, x - 3 , -7 \, x^{3} + 8 \, x^{2} + 7 \, x - 4\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 29</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 29)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} 6 &amp; 1 \\ -4 &amp; -9 \end{bmatrix} , \left[\begin{array}{cc}
+1 &amp; 1 \\
+-6 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+-17 &amp; -7 \\
+38 &amp; 8
+\end{array}\right] , \left[\begin{array}{cc}
+51 &amp; 21 \\
+-114 &amp; -24
+\end{array}\right] , \left[\begin{array}{cc}
+9 &amp; -6 \\
+1 &amp; -10
+\end{array}\right] , \left[\begin{array}{cc}
+-258 &amp; -103 \\
+556 &amp; 135
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+6 &amp; 1 \\
+-4 &amp; -9
+\end{array}\right] , \left[\begin{array}{cc}
+1 &amp; 1 \\
+-6 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+9 &amp; -6 \\
+1 &amp; -10
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div><h4>Example 30</h4><div class="exercise">
+  <h2 class="title">V9 - Polynomial Computation (ver. 30)</h2>
+  <div class="statement">
+    <p>Find a basis for the subspace of <span class="m">\(M_{2,2}\)</span> <p class="me">\[W=\mathrm{span}\ \left\{\begin{bmatrix} -3 &amp; 5 \\ -9 &amp; 4 \end{bmatrix} , \left[\begin{array}{cc}
+3 &amp; -10 \\
+5 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -7 \\
+-7 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+8 &amp; -5 \\
+8 &amp; 7
+\end{array}\right] , \left[\begin{array}{cc}
+8 &amp; -3 \\
+-9 &amp; -9
+\end{array}\right] , \left[\begin{array}{cc}
+9 &amp; -4 \\
+-6 &amp; -5
+\end{array}\right]\right\}.\]</p> Be sure to explain why your result is a basis.</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> A basis of <span class="m">\(W\)</span> is  <span class="m">\(\left\{\left[\begin{array}{cc}
+-3 &amp; 5 \\
+-9 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; -10 \\
+5 &amp; -8
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -7 \\
+-7 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+8 &amp; -5 \\
+8 &amp; 7
+\end{array}\right]\right\}\)</span>.
+  </p>
+  </div>
+</div>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers</a></li>
+      </ul>
+      <h2>Diff EQ Standards</h2>
+      <ul>
+        
+          <li><a href="/diff-eq/C1/">DIFF-EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">DIFF-EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C3m/">DIFF-EQ C3m</a></li>
+        
+          <li><a href="/diff-eq/C4/">DIFF-EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">DIFF-EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">DIFF-EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">DIFF-EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">DIFF-EQ C6</a></li>
+        
+          <li><a href="/diff-eq/C7m/">DIFF-EQ C7m</a></li>
+        
+          <li><a href="/diff-eq/D1/">DIFF-EQ D1</a></li>
+        
+          <li><a href="/diff-eq/D2/">DIFF-EQ D2</a></li>
+        
+          <li><a href="/diff-eq/D3m/">DIFF-EQ D3m</a></li>
+        
+          <li><a href="/diff-eq/D4m/">DIFF-EQ D4m</a></li>
+        
+          <li><a href="/diff-eq/F2/">DIFF-EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">DIFF-EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">DIFF-EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F3m/">DIFF-EQ F3m</a></li>
+        
+          <li><a href="/diff-eq/F4/">DIFF-EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">DIFF-EQ F5</a></li>
+        
+          <li><a href="/diff-eq/F6/">DIFF-EQ F6</a></li>
+        
+          <li><a href="/diff-eq/N1/">DIFF-EQ N1</a></li>
+        
+          <li><a href="/diff-eq/N2/">DIFF-EQ N2</a></li>
+        
+          <li><a href="/diff-eq/N3m/">DIFF-EQ N3m</a></li>
+        
+          <li><a href="/diff-eq/S1/">DIFF-EQ S1</a></li>
+        
+          <li><a href="/diff-eq/S2m/">DIFF-EQ S2m</a></li>
+        
+          <li><a href="/diff-eq/S3/">DIFF-EQ S3</a></li>
+        
+          <li><a href="/diff-eq/S4m/">DIFF-EQ S4m</a></li>
+        
+      </ul>
+      <h2>Lin Alg Standards</h2>
+      <ul>
+        
+          <li><a href="/lin-alg/V2/">LIN-ALG V2</a></li>
+        
+          <li><a href="/lin-alg/V3/">LIN-ALG V3</a></li>
+        
+          <li><a href="/lin-alg/V8/">LIN-ALG V8</a></li>
+        
+          <li><a href="/lin-alg/V9/">LIN-ALG V9</a></li>
+        
+      </ul>
+    </div>
+<!-- latest MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  function toggleAnswers() {
+    var answers = document.getElementsByClassName("answer");
+    var i;
+    for (i = 0; i < answers.length; i++) {
+      var answer = answers[i];
+      answer.classList.toggle("hide");
+    }
+  }
+  if (document.getElementsByClassName("answer").length > 0) {
+    var showHideAnswers = document.getElementById("showHideAnswers");
+    showHideAnswers.classList.remove("hide");
+    showHideAnswers.addEventListener("click", function(e){e.preventDefault;toggleAnswers()});
+    toggleAnswers();
+  }
+</script>
+  </body>
+</html>

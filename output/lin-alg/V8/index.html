@@ -1,0 +1,1283 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mastr - LIN-ALG V8</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc 4.11.0">
+  </head>
+  <body>
+    <div id="main">
+      <h2>V8 - Dimension</h2>
+<h4>Example 1</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 1)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+6 \\
+1 \\
+-2 \\
+-10 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+-8 \\
+-8 \\
+-9 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+-26 \\
+-13 \\
+2 \\
+41 \\
+-46
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-6 \\
+2 \\
+-5 \\
+-10
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+-4 \\
+3 \\
+-2 \\
+3
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 2</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 2)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+9 \\
+-2 \\
+-8 \\
+-3 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+9 \\
+7 \\
+-4 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+6 \\
+-8 \\
+3 \\
+6 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-33 \\
+46 \\
+68 \\
+-1 \\
+41
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 3</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 3)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-2 \\
+6 \\
+6 \\
+-1 \\
+5
+\end{array}\right] , \left[\begin{array}{r}
+5 \\
+3 \\
+-7 \\
+8 \\
+9
+\end{array}\right] , \left[\begin{array}{r}
+5 \\
+1 \\
+-5 \\
+5 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-21 \\
+1 \\
+-15 \\
+-25
+\end{array}\right] , \left[\begin{array}{r}
+13 \\
+-17 \\
+-35 \\
+18 \\
+-7
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 4</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 4)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+2 \\
+-4 \\
+-7 \\
+1 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-10 \\
+1 \\
+-6 \\
+-7 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+18 \\
+-17 \\
+-22 \\
+11 \\
+30
+\end{array}\right] , \left[\begin{array}{r}
+-7 \\
+-3 \\
+-1 \\
+-2 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+-20 \\
+21 \\
+29 \\
+-12 \\
+-37
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 5</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 5)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-10 \\
+0 \\
+-6 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-2 \\
+-4 \\
+-4 \\
+6
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-10 \\
+-7 \\
+-1 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+6 \\
+5 \\
+-5 \\
+5 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+-14 \\
+-28 \\
+-30 \\
+-18 \\
+12
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 6</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 6)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+7 \\
+7 \\
+-3 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+4 \\
+7 \\
+-9 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+5 \\
+11 \\
+4 \\
+-14 \\
+6
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+8 \\
+9 \\
+6 \\
+-9
+\end{array}\right] , \left[\begin{array}{r}
+-27 \\
+-51 \\
+-13 \\
+61 \\
+-27
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 7</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 7)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+6 \\
+5 \\
+0 \\
+8 \\
+5
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+5 \\
+1 \\
+7 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-5 \\
+7 \\
+-2 \\
+9
+\end{array}\right] , \left[\begin{array}{r}
+-20 \\
+-15 \\
+-14 \\
+-36 \\
+-43
+\end{array}\right] , \left[\begin{array}{r}
+8 \\
+3 \\
+-10 \\
+-7 \\
+5
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 8</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 8)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+7 \\
+8 \\
+1 \\
+-7 \\
+9
+\end{array}\right] , \left[\begin{array}{r}
+9 \\
+1 \\
+2 \\
+-8 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+-7 \\
+-9 \\
+-5 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+5 \\
+-9 \\
+1 \\
+0 \\
+-7
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+6 \\
+-6 \\
+-7 \\
+-4
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(5\)</span>.
+  </p>
+  </div>
+</div><h4>Example 9</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 9)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+2 \\
+-5 \\
+1 \\
+-4 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+0 \\
+8 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+10 \\
+14 \\
+18 \\
+18
+\end{array}\right] , \left[\begin{array}{r}
+13 \\
+-30 \\
+-2 \\
+-29 \\
+-39
+\end{array}\right] , \left[\begin{array}{r}
+-22 \\
+45 \\
+23 \\
+56 \\
+66
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(2\)</span>.
+  </p>
+  </div>
+</div><h4>Example 10</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 10)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+9 \\
+-2 \\
+-2 \\
+-9 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+-7 \\
+-6 \\
+-1 \\
+4 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+-10 \\
+8 \\
+-2 \\
+7 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+56 \\
+-28 \\
+7 \\
+-41 \\
+-7
+\end{array}\right] , \left[\begin{array}{r}
+75 \\
+-2 \\
+13 \\
+-48 \\
+-11
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 11</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 11)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-1 \\
+-1 \\
+-7 \\
+-7 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-7 \\
+-4 \\
+-2 \\
+-4 \\
+-10
+\end{array}\right] , \left[\begin{array}{r}
+31 \\
+19 \\
+29 \\
+37 \\
+55
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+3 \\
+7 \\
+-3 \\
+9
+\end{array}\right] , \left[\begin{array}{r}
+-124 \\
+-76 \\
+-116 \\
+-148 \\
+-220
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 12</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 12)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-1 \\
+1 \\
+-1 \\
+6 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+7 \\
+-4 \\
+7 \\
+4 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-29 \\
+17 \\
+-29 \\
+-10 \\
+-30
+\end{array}\right] , \left[\begin{array}{r}
+98 \\
+-59 \\
+98 \\
+10 \\
+105
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+-5 \\
+0 \\
+-9 \\
+-8
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 13</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 13)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-6 \\
+7 \\
+-8 \\
+4 \\
+-8
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-9 \\
+-1 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-18 \\
+21 \\
+-24 \\
+12 \\
+-24
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+-8 \\
+4 \\
+-9 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+-1 \\
+4 \\
+-7 \\
+9
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 14</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 14)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-10 \\
+-8 \\
+7 \\
+-6 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-4 \\
+5 \\
+3 \\
+-7
+\end{array}\right] , \left[\begin{array}{r}
+13 \\
+-4 \\
+8 \\
+15 \\
+-20
+\end{array}\right] , \left[\begin{array}{r}
+7 \\
+5 \\
+9 \\
+8 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-66 \\
+24 \\
+-45 \\
+-78 \\
+107
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 15</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 15)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+3 \\
+3 \\
+-7 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-7 \\
+4 \\
+-6 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+25 \\
+-19 \\
+31 \\
+-15 \\
+14
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+1 \\
+-2 \\
+6 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+-52 \\
+25 \\
+-35 \\
+18 \\
+-30
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 16</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 16)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-2 \\
+1 \\
+-10 \\
+5 \\
+-10
+\end{array}\right] , \left[\begin{array}{r}
+7 \\
+-9 \\
+-8 \\
+1 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-10 \\
+9 \\
+0 \\
+5 \\
+-7
+\end{array}\right] , \left[\begin{array}{r}
+-40 \\
+39 \\
+-14 \\
+23 \\
+-34
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+-5 \\
+2 \\
+0 \\
+2
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 17</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 17)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-1 \\
+-2 \\
+-1 \\
+6 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+-6 \\
+7 \\
+-10 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+7 \\
+9 \\
+-4 \\
+-6 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+5 \\
+-9 \\
+7 \\
+4 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-13 \\
+30 \\
+-25 \\
+22 \\
+30
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 18</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 18)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+9 \\
+-3 \\
+1 \\
+-5 \\
+9
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+3 \\
+-8 \\
+-8 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+2 \\
+-2 \\
+0 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+9 \\
+-5 \\
+4 \\
+5 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-9 \\
+8 \\
+4 \\
+-7
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(5\)</span>.
+  </p>
+  </div>
+</div><h4>Example 19</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 19)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-3 \\
+9 \\
+9 \\
+0 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+2 \\
+-3 \\
+-1 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+-17 \\
+38 \\
+33 \\
+-1 \\
+-21
+\end{array}\right] , \left[\begin{array}{r}
+54 \\
+-84 \\
+-54 \\
+6 \\
+46
+\end{array}\right] , \left[\begin{array}{r}
+61 \\
+-157 \\
+-147 \\
+2 \\
+87
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(2\)</span>.
+  </p>
+  </div>
+</div><h4>Example 20</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 20)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-2 \\
+3 \\
+1 \\
+5 \\
+6
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+-6 \\
+7 \\
+1 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+7 \\
+4 \\
+-8 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+-10 \\
+12 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-34 \\
+-50 \\
+-7 \\
+37 \\
+28
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 21</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 21)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-6 \\
+-10 \\
+-6 \\
+2 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+3 \\
+-1 \\
+-6 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+6 \\
+9 \\
+6 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+-8 \\
+5 \\
+-10 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-5 \\
+4 \\
+-9 \\
+6
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(5\)</span>.
+  </p>
+  </div>
+</div><h4>Example 22</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 22)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-5 \\
+-1 \\
+-7 \\
+-9 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+9 \\
+0 \\
+4 \\
+2 \\
+6
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-4 \\
+5 \\
+-6 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+33 \\
+18 \\
+-31 \\
+16 \\
+-7
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+6 \\
+3 \\
+-4 \\
+8
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 23</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 23)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-9 \\
+-7 \\
+-8 \\
+-4 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-7 \\
+1 \\
+-10 \\
+2 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-6 \\
+-2 \\
+8 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+26 \\
+18 \\
+24 \\
+46 \\
+-16
+\end{array}\right] , \left[\begin{array}{r}
+9 \\
+-1 \\
+-8 \\
+-2 \\
+-5
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 24</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 24)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-2 \\
+7 \\
+-4 \\
+1 \\
+6
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-5 \\
+-1 \\
+-9 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+25 \\
+-10 \\
+25 \\
+40 \\
+-70
+\end{array}\right] , \left[\begin{array}{r}
+-69 \\
+9 \\
+-63 \\
+-123 \\
+192
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+8 \\
+2 \\
+-6 \\
+-4
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 25</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 25)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-1 \\
+5 \\
+8 \\
+4 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+8 \\
+-5 \\
+-6 \\
+-8 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+-1 \\
+4 \\
+-4 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-35 \\
+-18 \\
+-16 \\
+-16 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-27 \\
+-28 \\
+-36 \\
+1
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 26</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 26)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+8 \\
+4 \\
+-9 \\
+4 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+9 \\
+7 \\
+7 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+25 \\
+15 \\
+-11 \\
+6 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+42 \\
+26 \\
+-13 \\
+8 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+5 \\
+1 \\
+-2
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(3\)</span>.
+  </p>
+  </div>
+</div><h4>Example 27</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 27)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-7 \\
+6 \\
+8 \\
+-4 \\
+-9
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-9 \\
+-5 \\
+4 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+-1 \\
+4 \\
+3 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+-10 \\
+1 \\
+-9 \\
+9 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-22 \\
+48 \\
+36 \\
+-24 \\
+-10
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 28</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 28)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-2 \\
+9 \\
+6 \\
+-4 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+5 \\
+5 \\
+1 \\
+-3 \\
+-9
+\end{array}\right] , \left[\begin{array}{r}
+-23 \\
+-34 \\
+-11 \\
+19 \\
+51
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-4 \\
+7 \\
+8 \\
+-7
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+5 \\
+3 \\
+-1 \\
+-6
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 29</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 29)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+6 \\
+1 \\
+-4 \\
+-9 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-6 \\
+2 \\
+-7 \\
+5
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+6 \\
+-7 \\
+4 \\
+7
+\end{array}\right] , \left[\begin{array}{r}
+-7 \\
+9 \\
+-6 \\
+1 \\
+-10
+\end{array}\right] , \left[\begin{array}{r}
+-17 \\
+4 \\
+26 \\
+37 \\
+-55
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(4\)</span>.
+  </p>
+  </div>
+</div><h4>Example 30</h4><div class="exercise">
+  <h2 class="title">V8 - Dimension (ver. 30)</h2>
+  <div class="statement">
+    <p>Explain how to find the dimension of <p class="me">\[W=\mathrm{span}\ \left\{\left[\begin{array}{r}
+-3 \\
+5 \\
+-9 \\
+4 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-10 \\
+5 \\
+-8 \\
+0 \\
+-7
+\end{array}\right] , \left[\begin{array}{r}
+-7 \\
+-1 \\
+8 \\
+-5 \\
+8
+\end{array}\right] , \left[\begin{array}{r}
+7 \\
+8 \\
+-3 \\
+-9 \\
+-9
+\end{array}\right] , \left[\begin{array}{r}
+9 \\
+-4 \\
+-6 \\
+-5 \\
+-10
+\end{array}\right]\right\}.\]</p></p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> The dimension of <span class="m">\(W\)</span> is  <span class="m">\(5\)</span>.
+  </p>
+  </div>
+</div>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers</a></li>
+      </ul>
+      <h2>Diff EQ Standards</h2>
+      <ul>
+        
+          <li><a href="/diff-eq/C1/">DIFF-EQ C1</a></li>
+        
+          <li><a href="/diff-eq/C2/">DIFF-EQ C2</a></li>
+        
+          <li><a href="/diff-eq/C3m/">DIFF-EQ C3m</a></li>
+        
+          <li><a href="/diff-eq/C4/">DIFF-EQ C4</a></li>
+        
+          <li><a href="/diff-eq/C4b/">DIFF-EQ C4b</a></li>
+        
+          <li><a href="/diff-eq/C5/">DIFF-EQ C5</a></li>
+        
+          <li><a href="/diff-eq/C5b/">DIFF-EQ C5b</a></li>
+        
+          <li><a href="/diff-eq/C6/">DIFF-EQ C6</a></li>
+        
+          <li><a href="/diff-eq/C7m/">DIFF-EQ C7m</a></li>
+        
+          <li><a href="/diff-eq/D1/">DIFF-EQ D1</a></li>
+        
+          <li><a href="/diff-eq/D2/">DIFF-EQ D2</a></li>
+        
+          <li><a href="/diff-eq/D3m/">DIFF-EQ D3m</a></li>
+        
+          <li><a href="/diff-eq/D4m/">DIFF-EQ D4m</a></li>
+        
+          <li><a href="/diff-eq/F2/">DIFF-EQ F2</a></li>
+        
+          <li><a href="/diff-eq/F2b/">DIFF-EQ F2b</a></li>
+        
+          <li><a href="/diff-eq/F2c/">DIFF-EQ F2c</a></li>
+        
+          <li><a href="/diff-eq/F3m/">DIFF-EQ F3m</a></li>
+        
+          <li><a href="/diff-eq/F4/">DIFF-EQ F4</a></li>
+        
+          <li><a href="/diff-eq/F5/">DIFF-EQ F5</a></li>
+        
+          <li><a href="/diff-eq/F6/">DIFF-EQ F6</a></li>
+        
+          <li><a href="/diff-eq/N1/">DIFF-EQ N1</a></li>
+        
+          <li><a href="/diff-eq/N2/">DIFF-EQ N2</a></li>
+        
+          <li><a href="/diff-eq/N3m/">DIFF-EQ N3m</a></li>
+        
+          <li><a href="/diff-eq/S1/">DIFF-EQ S1</a></li>
+        
+          <li><a href="/diff-eq/S2m/">DIFF-EQ S2m</a></li>
+        
+          <li><a href="/diff-eq/S3/">DIFF-EQ S3</a></li>
+        
+          <li><a href="/diff-eq/S4m/">DIFF-EQ S4m</a></li>
+        
+      </ul>
+      <h2>Lin Alg Standards</h2>
+      <ul>
+        
+          <li><a href="/lin-alg/V2/">LIN-ALG V2</a></li>
+        
+          <li><a href="/lin-alg/V3/">LIN-ALG V3</a></li>
+        
+          <li><a href="/lin-alg/V8/">LIN-ALG V8</a></li>
+        
+          <li><a href="/lin-alg/V9/">LIN-ALG V9</a></li>
+        
+      </ul>
+    </div>
+<!-- latest MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  function toggleAnswers() {
+    var answers = document.getElementsByClassName("answer");
+    var i;
+    for (i = 0; i < answers.length; i++) {
+      var answer = answers[i];
+      answer.classList.toggle("hide");
+    }
+  }
+  if (document.getElementsByClassName("answer").length > 0) {
+    var showHideAnswers = document.getElementById("showHideAnswers");
+    showHideAnswers.classList.remove("hide");
+    showHideAnswers.addEventListener("click", function(e){e.preventDefault;toggleAnswers()});
+    toggleAnswers();
+  }
+</script>
+  </body>
+</html>
