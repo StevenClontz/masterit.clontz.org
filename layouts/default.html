@@ -23,6 +23,12 @@
           <li><%= link_to i[:title], i %></li>
         <% end %>
       </ul>
+      <h2>Lin Alg Standards</h2>
+      <ul>
+        <% @items.find_all('/lin-alg/*').sort_by{|i|i[:title]}.each do |i| %>
+          <li><%= link_to i[:title], i %></li>
+        <% end %>
+      </ul>
     </div>
 <!-- latest MathJax -->
 <script type="text/javascript" async
