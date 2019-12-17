@@ -1001,6 +1001,666 @@
       mass is located approximately <span class="m">\(11.1\)</span> meters from its natural position.
     </p>
   </div>
+</div><h4>Example 31</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 31)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(5\)</span> N/m,
+      the outer spring has constant <span class="m">\(6\)</span> N/m.
+      The inner mass is moved <span class="m">\(2\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{47}{6}\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(4\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 11 x_1+ 6 x_2\hspace{2em}x_1(0)= 2 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 6 x_1- 6 x_2\hspace{2em}x_2(0)= -\frac{47}{6} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 5 \, \cos\left(\sqrt{15} t\right) - 3 \, \cos\left(\sqrt{2} t\right)\]</p>
+    <p class="me">\[x_2= -\frac{10}{3} \, \cos\left(\sqrt{15} t\right) - \frac{9}{2} \, \cos\left(\sqrt{2} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(4\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-7.31\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-0.390\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 32</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 32)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(3\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(2\)</span> meters inwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(6\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(3\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 5 x_1+ 2 x_2\hspace{2em}x_1(0)= -2 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= 6 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -4 \, \cos\left(\sqrt{6} t\right) + 2 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= 2 \, \cos\left(\sqrt{6} t\right) + 4 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(3\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-3.92\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-2.99\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 33</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 33)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(4\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(8\)</span> meters inwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(7\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(4\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 6 x_1+ 2 x_2\hspace{2em}x_1(0)= -8 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= -7 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -3 \, \cos\left(2 \, t\right) - 5 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= 3 \, \cos\left(2 \, t\right) - 10 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(4\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(3.70\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(6.10\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 34</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 34)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(3\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(6\)</span> meters inwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(7\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(2\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 5 x_1+ 2 x_2\hspace{2em}x_1(0)= -6 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= -7 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -2 \, \cos\left(\sqrt{6} t\right) - 4 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= \cos\left(\sqrt{6} t\right) - 8 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(2\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(1.29\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(3.51\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 35</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 35)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(3\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(1\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{19}{2}\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(5\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 5 x_1+ 2 x_2\hspace{2em}x_1(0)= 1 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= \frac{19}{2} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -3 \, \cos\left(\sqrt{6} t\right) + 4 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= \frac{3}{2} \, \cos\left(\sqrt{6} t\right) + 8 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(5\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-1.71\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(3.69\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 36</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 36)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(4\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(6\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(0\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(4\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 6 x_1+ 2 x_2\hspace{2em}x_1(0)= 6 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= 0 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 4 \, \cos\left(2 \, t\right) + 2 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= -4 \, \cos\left(2 \, t\right) + 4 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(4\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-1.89\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-2.03\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 37</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 37)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(2\)</span> kg,
+      the inner spring has constant <span class="m">\(5\)</span> N/m,
+      the outer spring has constant <span class="m">\(4\)</span> N/m.
+      The inner mass is moved <span class="m">\(1\)</span> meters inwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(7\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(4\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 9 x_1+ 4 x_2\hspace{2em}x_1(0)= -1 ,x_1'(0)=0\]</p>
+    <p class="me">\[2 x_2''= 4 x_1- 4 x_2\hspace{2em}x_2(0)= 7 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -4 \, \cos\left(\sqrt{10} t\right) + 3 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= \cos\left(\sqrt{10} t\right) + 6 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(4\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-5.95\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-2.93\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 38</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 38)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(18\)</span> N/m,
+      the outer spring has constant <span class="m">\(4\)</span> N/m.
+      The inner mass is moved <span class="m">\(4\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(7\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(5\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 22 x_1+ 4 x_2\hspace{2em}x_1(0)= 4 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 4 x_1- 4 x_2\hspace{2em}x_2(0)= 7 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 2 \, \cos\left(2 \, \sqrt{3} t\right) + 2 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p class="me">\[x_2= -\cos\left(2 \, \sqrt{3} t\right) + 8 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(5\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-1.36\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-5.81\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 39</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 39)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(10\)</span> N/m,
+      the outer spring has constant <span class="m">\(12\)</span> N/m.
+      The inner mass is moved <span class="m">\(3\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{61}{6}\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(2\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 22 x_1+ 12 x_2\hspace{2em}x_1(0)= 3 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 12 x_1- 12 x_2\hspace{2em}x_2(0)= -\frac{61}{6} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 5 \, \cos\left(2 \, \sqrt{5} t\right) - 2 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p class="me">\[x_2= -\frac{15}{2} \, \cos\left(2 \, \sqrt{5} t\right) - \frac{8}{3} \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(2\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-2.54\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(9.18\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 40</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 40)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(15\)</span> N/m,
+      the outer spring has constant <span class="m">\(4\)</span> N/m.
+      The inner mass is moved <span class="m">\(8\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(15\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(2\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 19 x_1+ 4 x_2\hspace{2em}x_1(0)= 8 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 4 x_1- 4 x_2\hspace{2em}x_2(0)= 15 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 4 \, \cos\left(2 \, \sqrt{5} t\right) + 4 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p class="me">\[x_2= -\cos\left(2 \, \sqrt{5} t\right) + 16 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(2\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-7.34\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-14.3\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 41</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 41)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(3\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(6\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(7\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(4\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 5 x_1+ 2 x_2\hspace{2em}x_1(0)= 6 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= 7 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 2 \, \cos\left(\sqrt{6} t\right) + 4 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= -\cos\left(\sqrt{6} t\right) + 8 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(4\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-4.48\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-4.30\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 42</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 42)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(10\)</span> N/m,
+      the outer spring has constant <span class="m">\(12\)</span> N/m.
+      The inner mass is moved <span class="m">\(1\)</span> meters inwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(10\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(5\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 22 x_1+ 12 x_2\hspace{2em}x_1(0)= -1 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 12 x_1- 12 x_2\hspace{2em}x_2(0)= 10 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -4 \, \cos\left(2 \, \sqrt{5} t\right) + 3 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p class="me">\[x_2= 6 \, \cos\left(2 \, \sqrt{5} t\right) + 4 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(5\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(1.56\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-8.48\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 43</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 43)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(3\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(1\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{11}{2}\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(3\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 5 x_1+ 2 x_2\hspace{2em}x_1(0)= 1 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= -\frac{11}{2} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 3 \, \cos\left(\sqrt{6} t\right) - 2 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= -\frac{3}{2} \, \cos\left(\sqrt{6} t\right) - 4 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(3\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(3.43\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(3.23\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 44</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 44)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(2\)</span> kg,
+      the inner spring has constant <span class="m">\(5\)</span> N/m,
+      the outer spring has constant <span class="m">\(4\)</span> N/m.
+      The inner mass is moved <span class="m">\(2\)</span> meters inwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(5\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(3\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 9 x_1+ 4 x_2\hspace{2em}x_1(0)= -2 ,x_1'(0)=0\]</p>
+    <p class="me">\[2 x_2''= 4 x_1- 4 x_2\hspace{2em}x_2(0)= 5 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -4 \, \cos\left(\sqrt{10} t\right) + 2 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= \cos\left(\sqrt{10} t\right) + 4 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(3\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(2.01\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-4.96\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 45</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 45)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(5\)</span> N/m,
+      the outer spring has constant <span class="m">\(6\)</span> N/m.
+      The inner mass is moved <span class="m">\(2\)</span> meters inwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{22}{3}\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(3\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 11 x_1+ 6 x_2\hspace{2em}x_1(0)= -2 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 6 x_1- 6 x_2\hspace{2em}x_2(0)= -\frac{22}{3} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 2 \, \cos\left(\sqrt{15} t\right) - 4 \, \cos\left(\sqrt{2} t\right)\]</p>
+    <p class="me">\[x_2= -\frac{4}{3} \, \cos\left(\sqrt{15} t\right) - 6 \, \cos\left(\sqrt{2} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(3\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(2.98\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(1.94\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 46</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 46)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(1\)</span> kg, 
+      the outer mass is <span class="m">\(2\)</span> kg,
+      the inner spring has constant <span class="m">\(14\)</span> N/m,
+      the outer spring has constant <span class="m">\(6\)</span> N/m.
+      The inner mass is moved <span class="m">\(7\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{25}{3}\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(3\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[1 x_1''=- 20 x_1+ 6 x_2\hspace{2em}x_1(0)= 7 ,x_1'(0)=0\]</p>
+    <p class="me">\[2 x_2''= 6 x_1- 6 x_2\hspace{2em}x_2(0)= \frac{25}{3} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 4 \, \cos\left(\sqrt{21} t\right) + 3 \, \cos\left(\sqrt{2} t\right)\]</p>
+    <p class="me">\[x_2= -\frac{2}{3} \, \cos\left(\sqrt{21} t\right) + 9 \, \cos\left(\sqrt{2} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(3\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(0.160\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-4.33\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 47</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 47)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(10\)</span> N/m,
+      the outer spring has constant <span class="m">\(12\)</span> N/m.
+      The inner mass is moved <span class="m">\(1\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(10\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(2\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 22 x_1+ 12 x_2\hspace{2em}x_1(0)= 1 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 12 x_1- 12 x_2\hspace{2em}x_2(0)= -10 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 4 \, \cos\left(2 \, \sqrt{5} t\right) - 3 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p class="me">\[x_2= -6 \, \cos\left(2 \, \sqrt{5} t\right) - 4 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(2\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-0.702\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(9.11\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 48</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 48)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(10\)</span> N/m,
+      the outer spring has constant <span class="m">\(12\)</span> N/m.
+      The inner mass is moved <span class="m">\(3\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{61}{6}\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(3\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 22 x_1+ 12 x_2\hspace{2em}x_1(0)= 3 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 12 x_1- 12 x_2\hspace{2em}x_2(0)= -\frac{61}{6} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 5 \, \cos\left(2 \, \sqrt{5} t\right) - 2 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p class="me">\[x_2= -\frac{15}{2} \, \cos\left(2 \, \sqrt{5} t\right) - \frac{8}{3} \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(3\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(2.37\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-6.19\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 49</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 49)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(4\)</span> N/m,
+      the outer spring has constant <span class="m">\(2\)</span> N/m.
+      The inner mass is moved <span class="m">\(3\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(12\)</span> meters outwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(3\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 6 x_1+ 2 x_2\hspace{2em}x_1(0)= 3 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 2 x_1- 2 x_2\hspace{2em}x_2(0)= 12 ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= -2 \, \cos\left(2 \, t\right) + 5 \, \cos\left(t\right)\]</p>
+    <p class="me">\[x_2= 2 \, \cos\left(2 \, t\right) + 10 \, \cos\left(t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(3\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-6.87\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-7.98\)</span> meters from its natural position.
+    </p>
+  </div>
+</div><h4>Example 50</h4><div class="exercise">
+  <h2 class="title">S2m: Coupled mass-spring systems (ver. 50)</h2>
+  <div class="statement">
+    <p>
+      Consider a coupled mass-spring system where 
+      the inner mass is <span class="m">\(2\)</span> kg, 
+      the outer mass is <span class="m">\(1\)</span> kg,
+      the inner spring has constant <span class="m">\(18\)</span> N/m,
+      the outer spring has constant <span class="m">\(4\)</span> N/m.
+      The inner mass is moved <span class="m">\(0\)</span> meters outwards from its
+      natural position, while the outer mass is moved
+      <span class="m">\(\frac{45}{2}\)</span> meters inwards from its natural position. Both
+      masses are then simultaneously released from rest.
+    </p>
+    <p>
+      Give a system of IVPs that models this scenario,
+      then solve the system. Use your solution to find the
+      position of both masses after <span class="m">\(4\)</span> seconds.
+    </p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+    <p>The IVP system is given by:</p>
+    <p class="me">\[2 x_1''=- 22 x_1+ 4 x_2\hspace{2em}x_1(0)= 0 ,x_1'(0)=0\]</p>
+    <p class="me">\[1 x_2''= 4 x_1- 4 x_2\hspace{2em}x_2(0)= -\frac{45}{2} ,x_2'(0)=0\]</p>
+    <p>This system solves to:</p>
+    <p class="me">\[x_1= 5 \, \cos\left(2 \, \sqrt{3} t\right) - 5 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p class="me">\[x_2= -\frac{5}{2} \, \cos\left(2 \, \sqrt{3} t\right) - 20 \, \cos\left(\sqrt{3} t\right)\]</p>
+    <p>
+      Thus after <span class="m">\(4\)</span> seconds, the inner mass is located approximately
+      <span class="m">\(-2.61\)</span> meters from its natural position, and the outer
+      mass is located approximately <span class="m">\(-16.7\)</span> meters from its natural position.
+    </p>
+  </div>
 </div>
     </div>
     <div id="sidebar">
@@ -1072,6 +1732,12 @@
           <li><a href="/lin-alg/V2/">LIN-ALG V2</a></li>
         
           <li><a href="/lin-alg/V3/">LIN-ALG V3</a></li>
+        
+          <li><a href="/lin-alg/V5/">LIN-ALG V5</a></li>
+        
+          <li><a href="/lin-alg/V6/">LIN-ALG V6</a></li>
+        
+          <li><a href="/lin-alg/V7/">LIN-ALG V7</a></li>
         
           <li><a href="/lin-alg/V8/">LIN-ALG V8</a></li>
         
