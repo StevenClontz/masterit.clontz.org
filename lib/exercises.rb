@@ -12,6 +12,7 @@ class ExercisesDataSource < Nanoc::DataSource
         seed_ints = seeds["seeds"].map{|seed| seed["_seed"]}.sort
         seed_ints.each do |seed_int|
           next if seed_int > 50
+          next if seed_int == 0
           content << "<h4>Example #{seed_int}</h4>"
           content << File.read("../mastr/build/#{course}/#{standard}/#{seed_int.to_s.rjust(3, "0")}.html")
         end 
