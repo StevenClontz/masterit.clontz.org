@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mastr - Linear Algebra V3</title>
+    <title>Mastr - Linear Algebra V06</title>
     <link rel="stylesheet" href="/stylesheet.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
@@ -10,103 +10,100 @@
   </head>
   <body>
     <div id="main">
-      <h2>V3 - Spanning sets</h2>
+      <h2>V6 - Basis verification</h2>
 <h4>Example 1</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 1)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 1)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -1 \\
 -5 \\
-4
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
 -4 \\
 -4 \\
--5
+-5 \\
+-3 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+8 \\
+11 \\
+25 \\
+-6 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
 -3 \\
--1 \\
--4 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
-4 \\
-0 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
 1 \\
 -3 \\
 -5 \\
 -3
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
+-9 \\
 1 \\
--1 \\
-1
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+0 \\
+2
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -1 \\
 -5 \\
-4
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
 -4 \\
 -4 \\
--5
+-5 \\
+-3 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+8 \\
+11 \\
+25 \\
+-6 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
 -3 \\
--1 \\
--4 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
-4 \\
-0 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
 1 \\
 -3 \\
 -5 \\
 -3
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
+-9 \\
 1 \\
--1 \\
-1
+0 \\
+2
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 2</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 2)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 2)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 -4 \\
 -2 \\
--3
+-3 \\
+1
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
 4 \\
 3 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
+-2 \\
 2 \\
--1 \\
-0 \\
-3
+-1
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
+3 \\
 -5 \\
 -4 \\
-3 \\
--4
+3
 \end{array}\right] , \left[\begin{array}{r}
+-4 \\
 1 \\
 3 \\
 -3 \\
@@ -115,32 +112,31 @@
 -1 \\
 -4 \\
 4 \\
-2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+2 \\
+0
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 -4 \\
 -2 \\
--3
+-3 \\
+1
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
 4 \\
 3 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
+-2 \\
 2 \\
--1 \\
-0 \\
-3
+-1
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
+3 \\
 -5 \\
 -4 \\
-3 \\
--4
+3
 \end{array}\right] , \left[\begin{array}{r}
+-4 \\
 1 \\
 3 \\
 -3 \\
@@ -149,14 +145,14 @@
 -1 \\
 -4 \\
 4 \\
-2
+2 \\
+0
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 3</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 3)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 3)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
@@ -169,22 +165,16 @@
 -4 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
--6 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
--5 \\
--2 \\
-0
+-3 \\
+-3 \\
+1 \\
+-2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
 2 \\
--1 \\
-1
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+3 \\
+-3 \\
+-4
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -198,27 +188,21 @@
 -4 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
--6 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
--5 \\
--2 \\
-0
+-3 \\
+-3 \\
+1 \\
+-2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
 2 \\
--1 \\
-1
+3 \\
+-3 \\
+-4
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 4</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 4)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 4)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
@@ -235,18 +219,12 @@
 1 \\
 3 \\
 0
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 1 \\
 -3 \\
 -4 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--1 \\
--1 \\
--3 \\
-3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -264,97 +242,72 @@
 1 \\
 3 \\
 0
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 1 \\
 -3 \\
 -4 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--1 \\
--1 \\
--3 \\
-3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 5</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 5)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 5)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -3 \\
--2 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--1 \\
--2 \\
 -2
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-3 \\
--2 \\
--6
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
 0 \\
-6 \\
-4 \\
-0
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-3 \\
+-1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-2 \\
+3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -3 \\
--2 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--1 \\
--2 \\
 -2
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-3 \\
--2 \\
--6
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
 0 \\
-6 \\
-4 \\
-0
+-3 \\
+-1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-2 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 6</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 6)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 6)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 -2 \\
 -3 \\
-1
+1 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--1 \\
 2 \\
 3 \\
+-5 \\
+1 \\
 -5
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--5 \\
 -3 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
+1 \\
 0 \\
 4 \\
-1 \\
-4
+1
 \end{array}\right] , \left[\begin{array}{r}
+4 \\
 4 \\
 3 \\
 -5 \\
@@ -363,32 +316,31 @@
 2 \\
 -2 \\
 -4 \\
-3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+3 \\
+4
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 -2 \\
 -3 \\
-1
+1 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--1 \\
 2 \\
 3 \\
+-5 \\
+1 \\
 -5
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--5 \\
 -3 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
+1 \\
 0 \\
 4 \\
-1 \\
-4
+1
 \end{array}\right] , \left[\begin{array}{r}
+4 \\
 4 \\
 3 \\
 -5 \\
@@ -397,36 +349,35 @@
 2 \\
 -2 \\
 -4 \\
-3
+3 \\
+4
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 7</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 7)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 7)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 0 \\
 4 \\
-2
+2 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
 2 \\
 0 \\
-3
+3 \\
+-3 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
-0 \\
--12 \\
--6
+-3 \\
+3 \\
+-1 \\
+4 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-12 \\
-0 \\
-24 \\
-12
-\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 1 \\
 -5 \\
 3 \\
@@ -435,32 +386,31 @@
 1 \\
 -5 \\
 -4 \\
-2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+2 \\
+-5
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 0 \\
 4 \\
-2
+2 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
 2 \\
 0 \\
-3
+3 \\
+-3 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
-0 \\
--12 \\
--6
+-3 \\
+3 \\
+-1 \\
+4 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-12 \\
-0 \\
-24 \\
-12
-\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 1 \\
 -5 \\
 3 \\
@@ -469,86 +419,84 @@
 1 \\
 -5 \\
 -4 \\
-2
+2 \\
+-5
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 8</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 8)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 8)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 4 \\
 0 \\
 -4 \\
+4 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
 0 \\
 1 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-2 \\
 -4 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
 2 \\
--2 \\
-10 \\
--7
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
--4 \\
 2
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-5 \\
+-3 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+5 \\
+15 \\
+-9 \\
+-14
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 3 \\
 -3 \\
 -4 \\
--2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-2 \\
+-3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 4 \\
 0 \\
 -4 \\
+4 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
 0 \\
 1 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-2 \\
 -4 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
 2 \\
--2 \\
-10 \\
--7
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
--4 \\
 2
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-5 \\
+-3 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+5 \\
+15 \\
+-9 \\
+-14
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 3 \\
 -3 \\
 -4 \\
--2
+-2 \\
+-3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 9</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 9)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 9)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -3 \\
@@ -565,18 +513,12 @@
 0 \\
 0 \\
 0
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
 0 \\
 3 \\
 1
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
-4 \\
-1 \\
--5
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -594,45 +536,38 @@
 0 \\
 0 \\
 0
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
 0 \\
 3 \\
 1
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
-4 \\
-1 \\
--5
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 10</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 10)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 10)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 -1 \\
 -5 \\
-4
+4 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
 -3 \\
 -1 \\
+2 \\
+-1 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+-1 \\
+3 \\
+2 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
 3 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
-3 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
 3 \\
 3 \\
 2 \\
@@ -641,32 +576,31 @@
 2 \\
 -4 \\
 2 \\
--5
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-5 \\
+-3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 -1 \\
 -5 \\
-4
+4 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
 -3 \\
 -1 \\
+2 \\
+-1 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+-1 \\
+3 \\
+2 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
 3 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
-3 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
 3 \\
 3 \\
 2 \\
@@ -675,14 +609,14 @@
 2 \\
 -4 \\
 2 \\
--5
+-5 \\
+-3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 11</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 11)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 11)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
@@ -695,22 +629,16 @@
 -1 \\
 -2
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
-0 \\
--2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-2 \\
-3 \\
-1
+-5 \\
+1 \\
+-5 \\
+-3
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+-1 \\
 -2 \\
-4 \\
--5
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-2 \\
+1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -724,27 +652,21 @@
 -1 \\
 -2
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
-0 \\
--2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-2 \\
-3 \\
-1
+-5 \\
+1 \\
+-5 \\
+-3
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+-1 \\
 -2 \\
-4 \\
--5
+-2 \\
+1
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 12</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 12)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 12)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
@@ -757,22 +679,16 @@
 3 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-9 \\
--18 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
 3 \\
--3 \\
+2 \\
+3 \\
 -5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
-3 \\
+2 \\
 -3 \\
--1
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+3 \\
+1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -786,203 +702,159 @@
 3 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-9 \\
--18 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
 3 \\
--3 \\
+2 \\
+3 \\
 -5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
-3 \\
+2 \\
 -3 \\
--1
+3 \\
+1
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 13</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 13)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 13)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 -4 \\
-2 \\
--4
+2
 \end{array}\right] , \left[\begin{array}{r}
+-4 \\
 -2 \\
--5 \\
--1 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--4 \\
-1 \\
--4
+-5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
+-14 \\
 4 \\
-3 \\
--4 \\
--4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-14
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 -4 \\
-2 \\
--4
+2
 \end{array}\right] , \left[\begin{array}{r}
+-4 \\
 -2 \\
--5 \\
--1 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--4 \\
-1 \\
--4
+-5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
+-14 \\
 4 \\
-3 \\
--4 \\
--4
+-14
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 14</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 14)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 14)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -4 \\
 3 \\
--3 \\
--1
+-3
 \end{array}\right] , \left[\begin{array}{r}
+-1 \\
 0 \\
--2 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-0 \\
-3 \\
 -2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
--4 \\
-3 \\
-2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+2 \\
+1 \\
+-4
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -4 \\
 3 \\
--3 \\
--1
+-3
 \end{array}\right] , \left[\begin{array}{r}
+-1 \\
 0 \\
--2 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-0 \\
-3 \\
 -2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
--4 \\
-3 \\
-2
+2 \\
+1 \\
+-4
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 15</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 15)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 15)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 1 \\
 -4 \\
 1 \\
-1
+1 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
 2 \\
 -3 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
+1 \\
 -2 \\
--5 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
 2 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 -2 \\
 -1 \\
--1 \\
-0
+-1
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
 -1 \\
 3 \\
 4 \\
 -2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 -4 \\
-2 \\
--3 \\
-2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+12 \\
+-6 \\
+-4 \\
+15
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 1 \\
 -4 \\
 1 \\
-1
+1 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
 2 \\
 -3 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
+1 \\
 -2 \\
--5 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
 2 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 -2 \\
 -1 \\
--1 \\
-0
+-1
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
 -1 \\
 3 \\
 4 \\
 -2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 -4 \\
-2 \\
--3 \\
-2
+12 \\
+-6 \\
+-4 \\
+15
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 16</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 16)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 16)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
@@ -995,22 +867,16 @@
 -4 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
+-3 \\
+-5 \\
+4 \\
 0
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
-5 \\
--8 \\
-10
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-1 \\
--2 \\
 2 \\
--3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-4 \\
+1 \\
+-1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1024,27 +890,21 @@
 -4 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
+-3 \\
+-5 \\
+4 \\
 0
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
-5 \\
--8 \\
-10
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-1 \\
--2 \\
 2 \\
--3
+-4 \\
+1 \\
+-1
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 17</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 17)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 17)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
@@ -1061,18 +921,12 @@
 3 \\
 4 \\
 -2
-\end{array}\right] , \left[\begin{array}{r}
-12 \\
--10 \\
--8 \\
--4
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+-3 \\
+-2 \\
 2 \\
-1 \\
 -5
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1090,95 +944,87 @@
 3 \\
 4 \\
 -2
-\end{array}\right] , \left[\begin{array}{r}
-12 \\
--10 \\
--8 \\
--4
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+-3 \\
+-2 \\
 2 \\
-1 \\
 -5
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 18</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 18)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 18)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
 0 \\
 -3 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-1 \\
--4 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--1 \\
-1 \\
+4 \\
 -1
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+-4 \\
+-4 \\
 3 \\
--1 \\
-19 \\
-2
+-1
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+-1 \\
+0 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 2 \\
 2 \\
 -3 \\
 0
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--5 \\
-4 \\
-2 \\
--4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-3 \\
+12 \\
+12 \\
+-9 \\
+3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
 0 \\
 -3 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-1 \\
--4 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--1 \\
-1 \\
+4 \\
 -1
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+-4 \\
+-4 \\
 3 \\
--1 \\
-19 \\
-2
+-1
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+-1 \\
+0 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 2 \\
 2 \\
 -3 \\
 0
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--5 \\
-4 \\
-2 \\
--4
+-3 \\
+12 \\
+12 \\
+-9 \\
+3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 19</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 19)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 19)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 4 \\
@@ -1195,18 +1041,12 @@
 3 \\
 3 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -4 \\
 2 \\
 2 \\
 1
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--4 \\
--3 \\
--5
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1224,23 +1064,17 @@
 3 \\
 3 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -4 \\
 2 \\
 2 \\
 1
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--4 \\
--3 \\
--5
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 20</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 20)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 20)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 1 \\
@@ -1257,18 +1091,12 @@
 2 \\
 3 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
 1 \\
-4
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--3 \\
--4 \\
-3 \\
--5
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-12 \\
+-11
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1286,179 +1114,119 @@
 2 \\
 3 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
 1 \\
-4
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--3 \\
--4 \\
-3 \\
--5
+-12 \\
+-11
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 21</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 21)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 21)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -5 \\
 -3 \\
-1 \\
-4
+1
 \end{array}\right] , \left[\begin{array}{r}
+4 \\
 -2 \\
-1 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
--1 \\
-3 \\
-4
+1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--2 \\
--4 \\
--4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-6 \\
+-8 \\
+3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -5 \\
 -3 \\
-1 \\
-4
+1
 \end{array}\right] , \left[\begin{array}{r}
+4 \\
 -2 \\
-1 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
--1 \\
-3 \\
-4
+1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--2 \\
--4 \\
--4
+-6 \\
+-8 \\
+3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 22</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 22)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 22)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 -4 \\
--5 \\
-4
+-5
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
-0 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--3 \\
--2 \\
-2
+4 \\
+0
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--3 \\
-3 \\
+2 \\
 1 \\
--2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 -4 \\
--5 \\
-4
+-5
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
-0 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--3 \\
--2 \\
-2
+4 \\
+0
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--3 \\
-3 \\
+2 \\
 1 \\
--2
+3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 23</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 23)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 23)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -4 \\
 -4 \\
--2 \\
-3
+-2
 \end{array}\right] , \left[\begin{array}{r}
+3 \\
 -4 \\
-0 \\
--5 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-8 \\
--11 \\
--3
+0
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-20 \\
--4 \\
-28 \\
--3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-5 \\
+1 \\
+3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -4 \\
 -4 \\
--2 \\
-3
+-2
 \end{array}\right] , \left[\begin{array}{r}
+3 \\
 -4 \\
-0 \\
--5 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-8 \\
--11 \\
--3
+0
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-20 \\
--4 \\
-28 \\
--3
+-5 \\
+1 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 24</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 24)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 24)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
@@ -1475,18 +1243,12 @@
 4 \\
 0 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 2 \\
 2 \\
 -5 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-4 \\
-0 \\
--4 \\
--2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1504,23 +1266,17 @@
 4 \\
 0 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 2 \\
 2 \\
 -5 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-4 \\
-0 \\
--4 \\
--2
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 25</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 25)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 25)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
@@ -1533,22 +1289,16 @@
 -3 \\
 -4
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
-11 \\
-7 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-15 \\
-9 \\
--2
+-1 \\
+-4 \\
+-1 \\
+2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
--1 \\
--5 \\
--1
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-2 \\
+2 \\
+2
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1562,49 +1312,42 @@
 -3 \\
 -4
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
-11 \\
-7 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-15 \\
-9 \\
--2
+-1 \\
+-4 \\
+-1 \\
+2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
 -2 \\
--1 \\
--5 \\
--1
+-2 \\
+2 \\
+2
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 26</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 26)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 26)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 -5 \\
 2 \\
-0
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
 3 \\
 3 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
 -1 \\
--3 \\
--5 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-0 \\
-0 \\
+-1 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
+-5 \\
+3 \\
+-4 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 1 \\
 -2 \\
 2 \\
@@ -1613,32 +1356,31 @@
 1 \\
 2 \\
 0 \\
--1
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-1 \\
+1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 -5 \\
 2 \\
-0
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
 3 \\
 3 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
 -1 \\
--3 \\
--5 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-0 \\
-0 \\
+-1 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
+-5 \\
+3 \\
+-4 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 1 \\
 -2 \\
 2 \\
@@ -1647,66 +1389,48 @@
 1 \\
 2 \\
 0 \\
--1
+-1 \\
+1
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 27</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 27)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 27)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 4 \\
--2 \\
--5
+-2
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
 -5 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
--8 \\
-4 \\
-10
+1 \\
+-5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-3 \\
+2 \\
+-1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 4 \\
--2 \\
--5
+-2
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
 -5 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
--8 \\
-4 \\
-10
+1 \\
+-5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
-0
+-3 \\
+2 \\
+-1
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 28</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 28)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 28)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 4 \\
@@ -1723,18 +1447,12 @@
 4 \\
 -5 \\
 -4
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -1 \\
 0 \\
 -3 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
-4 \\
--4 \\
--3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1752,45 +1470,38 @@
 4 \\
 -5 \\
 -4
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -1 \\
 0 \\
 -3 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
-4 \\
--4 \\
--3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 29</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 29)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 29)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -2 \\
 -5 \\
+0 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
 -3 \\
 1 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-0 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
 -4 \\
--2 \\
-4
+2 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
+9 \\
+1 \\
+22 \\
+-6 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
 -3 \\
 0 \\
 -5 \\
@@ -1799,32 +1510,31 @@
 -2 \\
 -2 \\
 -1 \\
-3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+3 \\
+-2
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -2 \\
 -5 \\
+0 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
 -3 \\
 1 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-0 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
 -4 \\
--2 \\
-4
+2 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
+9 \\
+1 \\
+22 \\
+-6 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
 -3 \\
 0 \\
 -5 \\
@@ -1833,14 +1543,14 @@
 -2 \\
 -2 \\
 -1 \\
-3
+3 \\
+-2
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 30</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 30)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 30)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
@@ -1857,18 +1567,12 @@
 -4 \\
 -1 \\
 4
-\end{array}\right] , \left[\begin{array}{r}
-16 \\
-9 \\
-8 \\
--9
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
--5 \\
--5 \\
+-3 \\
+4 \\
+3 \\
 4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1886,75 +1590,51 @@
 -4 \\
 -1 \\
 4
-\end{array}\right] , \left[\begin{array}{r}
-16 \\
-9 \\
-8 \\
--9
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
--5 \\
--5 \\
+-3 \\
+4 \\
+3 \\
 4
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 31</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 31)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 31)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 1 \\
 1 \\
--5 \\
-3
+-5
 \end{array}\right] , \left[\begin{array}{r}
+3 \\
 -1 \\
--1 \\
--2 \\
 -1
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
-4 \\
-4 \\
-1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-12 \\
--6 \\
--4 \\
-0
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-2 \\
+-1 \\
+-5
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 1 \\
 1 \\
--5 \\
-3
+-5
 \end{array}\right] , \left[\begin{array}{r}
+3 \\
 -1 \\
--1 \\
--2 \\
 -1
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
-4 \\
-4 \\
-1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-12 \\
--6 \\
--4 \\
-0
+-2 \\
+-1 \\
+-5
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 32</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 32)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 32)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
@@ -1968,21 +1648,15 @@
 -5
 \end{array}\right] , \left[\begin{array}{r}
 0 \\
--4 \\
--6 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--12 \\
 1 \\
-0 \\
-9
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -1 \\
--3 \\
-0 \\
--4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-12 \\
+-5 \\
+-14 \\
+17
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -1997,78 +1671,54 @@
 -5
 \end{array}\right] , \left[\begin{array}{r}
 0 \\
--4 \\
--6 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--12 \\
 1 \\
-0 \\
-9
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -1 \\
--3 \\
-0 \\
--4
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-12 \\
+-5 \\
+-14 \\
+17
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 33</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 33)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 33)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 3 \\
-2 \\
--5
+2
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
-1 \\
-2 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-1 \\
-2 \\
-4
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -5 \\
-1 \\
--2 \\
--13
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+4 \\
+-5
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
 3 \\
-2 \\
--5
+2
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
-1 \\
-2 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-1 \\
-2 \\
-4
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
 -5 \\
-1 \\
--2 \\
--13
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+4 \\
+-5
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 34</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 34)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 34)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
@@ -2081,22 +1731,16 @@
 3 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-4 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
-9 \\
 -2 \\
-14 \\
--3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
+-5 \\
 -1 \\
+-5
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+-3 \\
 -2 \\
--3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-5
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -2110,101 +1754,76 @@
 3 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-4 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
-9 \\
 -2 \\
-14 \\
--3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
+-5 \\
 -1 \\
+-5
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+-3 \\
 -2 \\
--3
+-5
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 35</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 35)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 35)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 0 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
 4 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
-2 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--2 \\
--3 \\
-4
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
--4 \\
-4 \\
--1
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+0 \\
+0 \\
+3
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 3 \\
 0 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
 4 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
-2 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--2 \\
--3 \\
-4
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--2 \\
--4 \\
-4 \\
--1
+0 \\
+0 \\
+3
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 36</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 36)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 36)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
 0 \\
 -3 \\
--2
+-2 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
--5 \\
 -1 \\
 3 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-8 \\
-2 \\
--9 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
 -4 \\
-0 \\
--6 \\
--4
+2 \\
+1
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+0 \\
+0 \\
+0 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
 4 \\
 1 \\
 4 \\
@@ -2213,32 +1832,31 @@
 -4 \\
 -4 \\
 -3 \\
--4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-4 \\
+-2
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
 0 \\
 -3 \\
--2
+-2 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
--5 \\
 -1 \\
 3 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-8 \\
-2 \\
--9 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
 -4 \\
-0 \\
--6 \\
--4
+2 \\
+1
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+0 \\
+0 \\
+0 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
 4 \\
 1 \\
 4 \\
@@ -2247,210 +1865,188 @@
 -4 \\
 -4 \\
 -3 \\
--4
+-4 \\
+-2
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 37</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 37)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 37)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 4 \\
 -3 \\
--2
+-2 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
 -5 \\
 1 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 0 \\
-1 \\
--2 \\
 1
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
--17 \\
+-16 \\
+-10 \\
+3 \\
 6 \\
--1
+2
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
-2 \\
-2 \\
-1
+47 \\
+17 \\
+3 \\
+-12 \\
+-7
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
+12 \\
+2 \\
 3 \\
 -2 \\
--1 \\
-3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-2
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 4 \\
 -3 \\
--2
+-2 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
 -5 \\
 1 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
+-3 \\
 0 \\
-1 \\
--2 \\
 1
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
--17 \\
+-16 \\
+-10 \\
+3 \\
 6 \\
--1
+2
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
-2 \\
-2 \\
-1
+47 \\
+17 \\
+3 \\
+-12 \\
+-7
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
+12 \\
+2 \\
 3 \\
 -2 \\
--1 \\
-3
+-2
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 38</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 38)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 38)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -4 \\
 -5 \\
-2 \\
--5
+2
 \end{array}\right] , \left[\begin{array}{r}
+-5 \\
 4 \\
--5 \\
--5 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--3 \\
-1 \\
-3
+-5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--4 \\
-14 \\
-2 \\
--6
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-8 \\
+-10 \\
+4
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -4 \\
 -5 \\
-2 \\
--5
+2
 \end{array}\right] , \left[\begin{array}{r}
+-5 \\
 4 \\
--5 \\
--5 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--3 \\
-1 \\
-3
+-5
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--4 \\
-14 \\
-2 \\
--6
+-8 \\
+-10 \\
+4
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 39</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 39)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 39)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -3 \\
 1 \\
 -2 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-4 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-3 \\
-4 \\
+-5 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--2 \\
--5 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+4 \\
 -3 \\
-1 \\
-2
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-5 \\
+-1 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+6 \\
+10 \\
+2 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-4 \\
+-14 \\
+-12 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+8 \\
+28 \\
+24 \\
+0
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -3 \\
 1 \\
 -2 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-4 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-3 \\
-4 \\
+-5 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--2 \\
--5 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+4 \\
 -3 \\
-1 \\
-2
+-5 \\
+-1 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-8 \\
+6 \\
+10 \\
+2 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-4 \\
+-14 \\
+-12 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+8 \\
+28 \\
+24 \\
+0
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 40</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 40)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 40)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
@@ -2463,22 +2059,16 @@
 -3 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
 0 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-1 \\
-4 \\
--3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--5 \\
-3 \\
+0 \\
 0 \\
 0
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+11 \\
+5 \\
+-6
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -2492,79 +2082,55 @@
 -3 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
 0 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-1 \\
-4 \\
--3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--5 \\
-3 \\
+0 \\
 0 \\
 0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+11 \\
+5 \\
+-6
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 41</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 41)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 41)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 4 \\
 4 \\
--3 \\
--1
+-3
 \end{array}\right] , \left[\begin{array}{r}
+-1 \\
 4 \\
-1 \\
-4 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--5 \\
-0 \\
 1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--1 \\
--4 \\
 1 \\
-0
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-4 \\
+-1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 4 \\
 4 \\
--3 \\
--1
+-3
 \end{array}\right] , \left[\begin{array}{r}
+-1 \\
 4 \\
-1 \\
-4 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--5 \\
-0 \\
 1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--1 \\
--4 \\
 1 \\
-0
+-4 \\
+-1
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 42</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 42)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 42)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 4 \\
@@ -2581,18 +2147,12 @@
 0 \\
 -1 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--2 \\
--4 \\
--3
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--3 \\
--1 \\
-3 \\
-3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-4 \\
+2 \\
+4 \\
+-6
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -2610,149 +2170,106 @@
 0 \\
 -1 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--2 \\
--4 \\
--3
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
--3 \\
--1 \\
-3 \\
-3
+-4 \\
+2 \\
+4 \\
+-6
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 43</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 43)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 43)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 -1 \\
-1 \\
-0
+1
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
 3 \\
-4 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--1 \\
-4 \\
--2
+4
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--4 \\
-1 \\
-3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-2 \\
+7 \\
+7
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
 -1 \\
-1 \\
-0
+1
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
 3 \\
-4 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--1 \\
-4 \\
--2
+4
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--4 \\
-1 \\
-3
+-2 \\
+7 \\
+7
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 44</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 44)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 44)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -5 \\
 -5 \\
--5 \\
-0
+-5
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
 -2 \\
-2 \\
--5 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--16 \\
--4 \\
--25 \\
--12
+2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-29 \\
-1 \\
-50 \\
-28
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-5 \\
+-4 \\
+1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -5 \\
 -5 \\
--5 \\
-0
+-5
 \end{array}\right] , \left[\begin{array}{r}
+0 \\
 -2 \\
-2 \\
--5 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--16 \\
--4 \\
--25 \\
--12
+2
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-29 \\
-1 \\
-50 \\
-28
+-5 \\
+-4 \\
+1
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 45</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 45)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 45)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -5 \\
 1 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--3 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
 -4 \\
-1 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
+-3 \\
+2 \\
+0 \\
+-2 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-3 \\
 2 \\
 -5 \\
-3 \\
-1
+3
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
 -4 \\
 -4 \\
 4 \\
@@ -2761,32 +2278,31 @@
 2 \\
 4 \\
 3 \\
--3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+-3 \\
+1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 -5 \\
 1 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--3 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
 -4 \\
-1 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
+-3 \\
+2 \\
+0 \\
+-2 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-3 \\
 2 \\
 -5 \\
-3 \\
-1
+3
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
 -4 \\
 -4 \\
 4 \\
@@ -2795,14 +2311,14 @@
 2 \\
 4 \\
 3 \\
--3
+-3 \\
+1
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 46</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 46)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 46)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 2 \\
@@ -2819,18 +2335,12 @@
 1 \\
 1 \\
 -2
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 4 \\
 3 \\
 2 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-4 \\
--3 \\
-4 \\
-4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -2848,45 +2358,38 @@
 1 \\
 1 \\
 -2
-\end{array}\right] , \left[\begin{array}{r}
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 4 \\
 3 \\
 2 \\
 -2
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-4 \\
--3 \\
-4 \\
-4
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 47</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 47)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 47)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
 -5 \\
 -3 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--4 \\
-3 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
-1 \\
-0 \\
+-5 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
+-4 \\
+3 \\
+-1 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-3 \\
 -5 \\
 -1 \\
-3 \\
-4
+3
 \end{array}\right] , \left[\begin{array}{r}
+4 \\
 1 \\
 4 \\
 1 \\
@@ -2895,32 +2398,31 @@
 -5 \\
 -4 \\
 -4 \\
-3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+3 \\
+0
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^5\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -2 \\
 -5 \\
 -3 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--4 \\
-3 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
-1 \\
-0 \\
+-5 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
+-4 \\
+3 \\
+-1 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-3 \\
 -5 \\
 -1 \\
-3 \\
-4
+3
 \end{array}\right] , \left[\begin{array}{r}
+4 \\
 1 \\
 4 \\
 1 \\
@@ -2929,66 +2431,48 @@
 -5 \\
 -4 \\
 -4 \\
-3
+3 \\
+0
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^5\)</span>.
   </p>
   </div>
 </div><h4>Example 48</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 48)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 48)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 1 \\
-3 \\
-2
+3
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--5 \\
--3 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-3 \\
-3 \\
--1
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--4 \\
 2 \\
--4
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+1 \\
+-5
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+-3 \\
+-1
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^3\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
 1 \\
-3 \\
-2
+3
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--5 \\
--3 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-3 \\
-3 \\
--1
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
--4 \\
 2 \\
--4
+1 \\
+-5
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+-3 \\
+-1
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^3\)</span>.
   </p>
   </div>
 </div><h4>Example 49</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 49)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 49)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -3 \\
@@ -3001,22 +2485,16 @@
 -3 \\
 3
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
--3 \\
 -5 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-4 \\
-3 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--4 \\
-3 \\
 -1 \\
--3
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+7 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+7 \\
+11 \\
+11 \\
+14
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -3030,27 +2508,21 @@
 -3 \\
 3
 \end{array}\right] , \left[\begin{array}{r}
-0 \\
--3 \\
 -5 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
-4 \\
-3 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{r}
--4 \\
-3 \\
 -1 \\
--3
+7 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+7 \\
+11 \\
+11 \\
+14
 \end{array}\right]\)</span> 
-  	 do  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are not  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div><h4>Example 50</h4><div class="exercise">
-  <h2 class="title">V3 - Spanning sets (ver. 50)</h2>
+  <h2 class="title">V6 - Basis verification (ver. 50)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -5 \\
@@ -3063,22 +2535,16 @@
 1 \\
 3
 \end{array}\right] , \left[\begin{array}{r}
--8 \\
-10 \\
-1 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--13 \\
-14 \\
-2 \\
--6
+-3 \\
+4 \\
+0 \\
+1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+-1 \\
 -2 \\
--5 \\
--5
-\end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
-	</p>
+2 \\
+-4
+\end{array}\right]\)</span> are or are not a basis of <span class="m">\(\mathbb{R}^4\)</span>	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
@@ -3092,23 +2558,17 @@
 1 \\
 3
 \end{array}\right] , \left[\begin{array}{r}
--8 \\
-10 \\
-1 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--13 \\
-14 \\
-2 \\
--6
+-3 \\
+4 \\
+0 \\
+1
 \end{array}\right] , \text{ and } \left[\begin{array}{r}
-3 \\
+-1 \\
 -2 \\
--5 \\
--5
+2 \\
+-4
 \end{array}\right]\)</span> 
-  	 do not  
-	span <span class="m">\(\mathbb{R}^4\)</span>.
+  	 are  a basis of <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
 </div>
@@ -3127,23 +2587,23 @@
         
           <li><a href="/lin-alg/E2/">Linear Algebra E2</a></li>
         
-          <li><a href="/lin-alg/V1/">Linear Algebra V1</a></li>
+          <li><a href="/lin-alg/V01/">Linear Algebra V01</a></li>
+        
+          <li><a href="/lin-alg/V02/">Linear Algebra V02</a></li>
+        
+          <li><a href="/lin-alg/V03/">Linear Algebra V03</a></li>
+        
+          <li><a href="/lin-alg/V05/">Linear Algebra V05</a></li>
+        
+          <li><a href="/lin-alg/V06/">Linear Algebra V06</a></li>
+        
+          <li><a href="/lin-alg/V07/">Linear Algebra V07</a></li>
+        
+          <li><a href="/lin-alg/V08/">Linear Algebra V08</a></li>
+        
+          <li><a href="/lin-alg/V09/">Linear Algebra V09</a></li>
         
           <li><a href="/lin-alg/V10/">Linear Algebra V10</a></li>
-        
-          <li><a href="/lin-alg/V2/">Linear Algebra V2</a></li>
-        
-          <li><a href="/lin-alg/V3/">Linear Algebra V3</a></li>
-        
-          <li><a href="/lin-alg/V5/">Linear Algebra V5</a></li>
-        
-          <li><a href="/lin-alg/V6/">Linear Algebra V6</a></li>
-        
-          <li><a href="/lin-alg/V7/">Linear Algebra V7</a></li>
-        
-          <li><a href="/lin-alg/V8/">Linear Algebra V8</a></li>
-        
-          <li><a href="/lin-alg/V9/">Linear Algebra V9</a></li>
         
       </ul>
     </div>
