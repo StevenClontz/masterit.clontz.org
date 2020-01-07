@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mastr - LIN-ALG E2</title>
+    <title>Mastr - Linear Algebra E2</title>
     <link rel="stylesheet" href="/stylesheet.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
@@ -17,19 +17,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--2 &amp; 0 &amp; 8 \\
-0 &amp; 0 &amp; 4 \\
 -1 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-1 &amp; -1 &amp; 0
+0 &amp; 1 &amp; 1 \\
+-4 &amp; 12 &amp; 8 \\
+-2 &amp; 3 &amp; 1 \\
+-2 &amp; 5 &amp; 3
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -40,11 +40,11 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--2 &amp; -2 &amp; 2 \\
-0 &amp; 0 &amp; 0 \\
-1 &amp; 1 &amp; -1 \\
-0 &amp; 0 &amp; 0 \\
--2 &amp; -3 &amp; 0
+1 &amp; 5 &amp; 7 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 4 &amp; 8 \\
+2 &amp; 8 &amp; 10 \\
+-2 &amp; -7 &amp; -8
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -63,19 +63,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 1 &amp; 0 \\
--1 &amp; 1 &amp; 0 &amp; 0 \\
-3 &amp; -3 &amp; -3 &amp; 0 \\
-0 &amp; 0 &amp; -4 &amp; -2
+1 &amp; 1 &amp; 0 &amp; 2 \\
+-3 &amp; -2 &amp; -1 &amp; -7 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; -2 &amp; -5 &amp; -12
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 4</h4><div class="exercise">
@@ -84,10 +84,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 \\
--3 &amp; 3 &amp; -3 &amp; 0 \\
--2 &amp; 0 &amp; -2 &amp; 4
+0 &amp; -1 &amp; 0 &amp; 2 \\
+1 &amp; 0 &amp; 1 &amp; -2 \\
+2 &amp; 0 &amp; 2 &amp; -4 \\
+-3 &amp; 7 &amp; -3 &amp; -8
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -105,17 +105,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-8 &amp; -2 &amp; 0 &amp; 16 &amp; -18 \\
--2 &amp; 0 &amp; 2 &amp; -2 &amp; 8 \\
-1 &amp; 0 &amp; 0 &amp; 1 &amp; -2
+-1 &amp; -3 &amp; 11 &amp; 6 &amp; 0 \\
+3 &amp; 1 &amp; -1 &amp; -10 &amp; 8 \\
+-2 &amp; -3 &amp; 10 &amp; 9 &amp; -3
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; -4 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; 2
+1 &amp; 0 &amp; 1 &amp; -3 &amp; 3 \\
+0 &amp; 1 &amp; -4 &amp; -1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 6</h4><div class="exercise">
@@ -124,19 +124,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--2 &amp; 2 &amp; 1 \\
--1 &amp; 1 &amp; 0 \\
--2 &amp; 2 &amp; 0 \\
-2 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 8
+1 &amp; 4 &amp; 1 \\
+-5 &amp; -9 &amp; -5 \\
+-2 &amp; 0 &amp; -2 \\
+1 &amp; -3 &amp; 1 \\
+0 &amp; 2 &amp; 0
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 \\
 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -147,19 +147,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--3 &amp; -3 &amp; 0 \\
-1 &amp; 0 &amp; 0 \\
-2 &amp; 2 &amp; 0 \\
-9 &amp; 9 &amp; -4 \\
--2 &amp; -2 &amp; 1
+-1 &amp; -1 &amp; -4 \\
+-1 &amp; -2 &amp; -7 \\
+-1 &amp; -2 &amp; -7 \\
+-2 &amp; -2 &amp; -8 \\
+1 &amp; 0 &amp; 1
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -170,19 +170,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--6 &amp; 3 &amp; -3 \\
-2 &amp; -1 &amp; 0 \\
--1 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; -4 \\
--2 &amp; 2 &amp; 0
+-2 &amp; -10 &amp; 2 \\
+2 &amp; 10 &amp; 11 \\
+-2 &amp; -10 &amp; -9 \\
+-2 &amp; -10 &amp; -9 \\
+1 &amp; 5 &amp; 1
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
+1 &amp; 5 &amp; 0 \\
 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -193,10 +193,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-3 &amp; -15 &amp; 0 &amp; 3 \\
--3 &amp; 15 &amp; -3 &amp; -6 \\
-0 &amp; 0 &amp; 0 &amp; 0 \\
--3 &amp; 15 &amp; -3 &amp; -6
+-1 &amp; 5 &amp; -3 &amp; -4 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+1 &amp; -5 &amp; 5 &amp; 6 \\
+-2 &amp; 10 &amp; -6 &amp; -8
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -215,9 +215,9 @@
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
 -1 &amp; 1 &amp; -4 \\
-1 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 \\
-4 &amp; -4 &amp; 16 \\
+1 &amp; -2 &amp; 7 \\
+-1 &amp; 3 &amp; -10 \\
+1 &amp; -1 &amp; 4 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span>.
     </p>
@@ -237,18 +237,18 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; -3 &amp; 0 \\
-0 &amp; 0 &amp; -1 &amp; 0 \\
-0 &amp; 2 &amp; -6 &amp; -4 \\
--1 &amp; 1 &amp; -3 &amp; 1
+-1 &amp; 5 &amp; -8 &amp; 11 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+-1 &amp; 5 &amp; -3 &amp; 6 \\
+-1 &amp; 5 &amp; 4 &amp; -1
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; -3 \\
-0 &amp; 1 &amp; 0 &amp; -2 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; -5 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
@@ -258,10 +258,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; -10 &amp; 20 \\
-1 &amp; 1 &amp; 5 &amp; -9 \\
-1 &amp; 0 &amp; 0 &amp; -1 \\
-0 &amp; 0 &amp; 1 &amp; -2
+1 &amp; -2 &amp; -6 &amp; 7 \\
+0 &amp; 1 &amp; 3 &amp; -4 \\
+0 &amp; 2 &amp; 7 &amp; -10 \\
+0 &amp; -3 &amp; -5 &amp; 4
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -279,17 +279,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-1 &amp; 1 &amp; 0 &amp; -2 &amp; 2 \\
-0 &amp; 0 &amp; -3 &amp; 3 &amp; 12 \\
--2 &amp; 0 &amp; -2 &amp; 6 &amp; 6
+1 &amp; -4 &amp; 2 &amp; -1 &amp; -1 \\
+3 &amp; -12 &amp; 7 &amp; -3 &amp; -4 \\
+3 &amp; -12 &amp; 2 &amp; -3 &amp; 1
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; -2 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; -1 &amp; -4
+1 &amp; -4 &amp; 0 &amp; -1 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 14</h4><div class="exercise">
@@ -298,9 +298,9 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; -3 &amp; 1 &amp; 0 \\
--2 &amp; 1 &amp; 7 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+-1 &amp; 4 &amp; 7 &amp; 7 &amp; 4 \\
+-1 &amp; 3 &amp; 6 &amp; 5 &amp; 3 \\
+-2 &amp; 2 &amp; 8 &amp; 2 &amp; 2
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -317,19 +317,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
--12 &amp; -3 &amp; -6 \\
-0 &amp; 0 &amp; -2 \\
-0 &amp; 0 &amp; 1 \\
-1 &amp; 1 &amp; 0
+1 &amp; 2 &amp; -7 \\
+-2 &amp; -3 &amp; 10 \\
+1 &amp; -1 &amp; 5 \\
+-1 &amp; 0 &amp; -1 \\
+2 &amp; 2 &amp; -6
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; -4 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -340,10 +340,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-2 &amp; -2 &amp; 2 &amp; -10 \\
--5 &amp; 6 &amp; -6 &amp; 28 \\
-2 &amp; -2 &amp; 0 &amp; -6 \\
-0 &amp; 0 &amp; 1 &amp; -2
+1 &amp; -5 &amp; -9 &amp; 11 \\
+1 &amp; -4 &amp; -8 &amp; 10 \\
+1 &amp; 0 &amp; -3 &amp; 4 \\
+-1 &amp; 5 &amp; 6 &amp; -5
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -361,18 +361,18 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-1 &amp; 2 &amp; 1 &amp; -1 \\
-0 &amp; 0 &amp; -2 &amp; 2 \\
--1 &amp; 0 &amp; 1 &amp; 1 \\
-1 &amp; 0 &amp; 0 &amp; -2
+1 &amp; -3 &amp; -5 &amp; 10 \\
+1 &amp; -2 &amp; -4 &amp; 7 \\
+1 &amp; 1 &amp; -1 &amp; -2 \\
+0 &amp; -2 &amp; -2 &amp; 6
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; -1 \\
+1 &amp; 0 &amp; -2 &amp; 1 \\
+0 &amp; 1 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
@@ -382,11 +382,11 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 1 \\
--2 &amp; -2 &amp; 0 \\
-0 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 1 \\
-1 &amp; 1 &amp; 0
+4 &amp; -4 &amp; 8 \\
+-1 &amp; -1 &amp; 0 \\
+1 &amp; -2 &amp; 3 \\
+-1 &amp; -6 &amp; 5 \\
+0 &amp; 4 &amp; -4
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -405,19 +405,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; 3 &amp; 0 \\
-13 &amp; 10 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -3 &amp; 3 \\
-4 &amp; 3 &amp; 0 &amp; 0
+1 &amp; -2 &amp; -1 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+1 &amp; 8 &amp; 0 &amp; -9 \\
+0 &amp; 3 &amp; 0 &amp; -3
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 20</h4><div class="exercise">
@@ -426,10 +426,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-2 &amp; 0 &amp; 0 &amp; 4 \\
-1 &amp; 1 &amp; 0 &amp; 1 \\
-2 &amp; -6 &amp; 2 &amp; 6 \\
-0 &amp; 0 &amp; 2 &amp; -4
+1 &amp; 2 &amp; 6 &amp; -12 \\
+0 &amp; 1 &amp; 1 &amp; -3 \\
+0 &amp; 3 &amp; 4 &amp; -11 \\
+1 &amp; -2 &amp; 6 &amp; -8
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -447,9 +447,9 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 2 &amp; -3 &amp; -2 \\
--6 &amp; 2 &amp; -14 &amp; 16 &amp; 12
+1 &amp; 3 &amp; -1 &amp; -6 &amp; -2 \\
+0 &amp; 1 &amp; -1 &amp; -1 &amp; 0 \\
+-1 &amp; -1 &amp; -1 &amp; 4 &amp; 2
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -466,9 +466,9 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-6 &amp; 0 &amp; 6 &amp; 6 &amp; -6 \\
-1 &amp; 1 &amp; 2 &amp; 3 &amp; -2 \\
--2 &amp; -2 &amp; -4 &amp; -6 &amp; 4
+-1 &amp; -1 &amp; -2 &amp; -3 &amp; 2 \\
+-1 &amp; -2 &amp; -3 &amp; -5 &amp; 3 \\
+2 &amp; 3 &amp; 5 &amp; 8 &amp; -5
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -485,9 +485,9 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
--2 &amp; -4 &amp; -4 &amp; 10 &amp; 12 \\
-1 &amp; 2 &amp; 5 &amp; -14 &amp; -15 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+-1 &amp; -2 &amp; 1 &amp; -4 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; -3 &amp; -3 \\
+-1 &amp; -2 &amp; 2 &amp; -7 &amp; -6
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -504,19 +504,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-4 &amp; 3 &amp; -1 &amp; -1 \\
--3 &amp; -3 &amp; 1 &amp; 1 \\
-2 &amp; 2 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 2 &amp; 0
+1 &amp; 0 &amp; 0 &amp; 1 \\
+-4 &amp; 1 &amp; -5 &amp; -6 \\
+-2 &amp; -2 &amp; 11 &amp; 2 \\
+5 &amp; 0 &amp; 5 &amp; 5
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; -2 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 25</h4><div class="exercise">
@@ -525,19 +525,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; -2 &amp; 1 \\
--3 &amp; -3 &amp; 1 &amp; 0 \\
--2 &amp; -2 &amp; 0 &amp; 0 \\
-6 &amp; 9 &amp; -3 &amp; 0
+-2 &amp; 0 &amp; 5 &amp; 6 \\
+-1 &amp; 2 &amp; -5 &amp; 5 \\
+3 &amp; -1 &amp; -4 &amp; -10 \\
+-2 &amp; 0 &amp; 6 &amp; 6
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 26</h4><div class="exercise">
@@ -546,19 +546,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -4 \\
--3 &amp; -3 &amp; 0 \\
-0 &amp; 0 &amp; -3 \\
-4 &amp; 2 &amp; 0
+2 &amp; 7 &amp; 9 \\
+1 &amp; 5 &amp; 6 \\
+0 &amp; 4 &amp; 4 \\
+1 &amp; 3 &amp; 4 \\
+-1 &amp; -4 &amp; -5
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -569,17 +569,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-9 &amp; 0 &amp; 0 &amp; -9 &amp; 9 \\
-2 &amp; 1 &amp; 0 &amp; -1 &amp; 1 \\
-6 &amp; 0 &amp; 1 &amp; -8 &amp; 6
+-1 &amp; -1 &amp; 0 &amp; 0 &amp; 2 \\
+1 &amp; 4 &amp; 3 &amp; 0 &amp; -5 \\
+-2 &amp; -4 &amp; -2 &amp; 0 &amp; 6
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; -1 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 1 &amp; -1 \\
-0 &amp; 0 &amp; 1 &amp; -2 &amp; 0
+1 &amp; 0 &amp; -1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 28</h4><div class="exercise">
@@ -588,19 +588,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; 1 &amp; 1 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 6 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0
+-1 &amp; 5 &amp; -8 &amp; -2 \\
+-1 &amp; -4 &amp; 3 &amp; 0 \\
+1 &amp; 0 &amp; 2 &amp; 1 \\
+2 &amp; 7 &amp; -10 &amp; -5
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 29</h4><div class="exercise">
@@ -609,19 +609,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--1 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; -2 \\
--1 &amp; 4 &amp; 0 \\
-0 &amp; 0 &amp; 2 \\
-1 &amp; -1 &amp; 0
+-3 &amp; 3 &amp; -3 \\
+1 &amp; -2 &amp; 1 \\
+4 &amp; -11 &amp; 4 \\
+-4 &amp; 8 &amp; -4 \\
+2 &amp; -3 &amp; 2
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 \\
 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -632,19 +632,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-3 &amp; 0 &amp; -3 &amp; -3 \\
--3 &amp; -3 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-9 &amp; 9 &amp; 1 &amp; 0
+-2 &amp; 7 &amp; 8 &amp; -1 \\
+-3 &amp; 10 &amp; 12 &amp; -1 \\
+-2 &amp; 6 &amp; 9 &amp; 1 \\
+-2 &amp; 11 &amp; 4 &amp; -9
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 31</h4><div class="exercise">
@@ -653,17 +653,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\
-2 &amp; 4 &amp; 0 &amp; -2 &amp; -12
+2 &amp; 6 &amp; 9 &amp; -9 &amp; 7 \\
+1 &amp; 3 &amp; 6 &amp; -6 &amp; 5 \\
+-1 &amp; -3 &amp; -4 &amp; 4 &amp; -3
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; -1 &amp; -2 \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; 2
+1 &amp; 3 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 32</h4><div class="exercise">
@@ -672,10 +672,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
--2 &amp; -2 &amp; -2 &amp; 4 \\
--3 &amp; -4 &amp; 0 &amp; 9 \\
-0 &amp; 0 &amp; 2 &amp; 2 \\
--2 &amp; -2 &amp; 0 &amp; 6
+-5 &amp; -2 &amp; -5 &amp; 10 \\
+-2 &amp; -1 &amp; -1 &amp; 5 \\
+3 &amp; 2 &amp; 0 &amp; -9 \\
+1 &amp; -1 &amp; 8 &amp; 5
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -693,9 +693,9 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
-3 &amp; 0 &amp; -3 &amp; 3 &amp; -6 \\
--2 &amp; 1 &amp; 4 &amp; -1 &amp; 2
+1 &amp; 1 &amp; 1 &amp; 2 &amp; -4 \\
+0 &amp; 1 &amp; 2 &amp; 1 &amp; -2 \\
+-1 &amp; 2 &amp; 5 &amp; 1 &amp; -2
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -712,19 +712,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-2 &amp; -2 &amp; 0 &amp; 0 \\
-2 &amp; -2 &amp; -2 &amp; 0 \\
-3 &amp; -2 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 2 &amp; 1
+1 &amp; -5 &amp; -2 &amp; -8 \\
+-1 &amp; 6 &amp; 3 &amp; 8 \\
+-1 &amp; 5 &amp; 3 &amp; 5 \\
+0 &amp; -5 &amp; -6 &amp; 3
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 35</h4><div class="exercise">
@@ -733,17 +733,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 \\
-3 &amp; 0 &amp; 0 &amp; 3 &amp; 0 \\
--15 &amp; -3 &amp; -3 &amp; -27 &amp; -6
+-1 &amp; -2 &amp; 3 &amp; -1 &amp; -5 \\
+-2 &amp; -4 &amp; 5 &amp; -2 &amp; -9 \\
+0 &amp; 0 &amp; 5 &amp; 0 &amp; -5
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 2 &amp; 2 \\
-0 &amp; 0 &amp; 1 &amp; 2 &amp; 0
+1 &amp; 2 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 36</h4><div class="exercise">
@@ -752,11 +752,11 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--2 &amp; 0 &amp; 2 \\
--1 &amp; 1 &amp; -1 \\
--9 &amp; 3 &amp; 3 \\
-0 &amp; 0 &amp; 0 \\
--2 &amp; 2 &amp; -2
+0 &amp; 4 &amp; -8 \\
+2 &amp; -1 &amp; 0 \\
+2 &amp; 2 &amp; -6 \\
+1 &amp; -5 &amp; 9 \\
+1 &amp; 1 &amp; -3
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -775,19 +775,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
--51 &amp; 54 &amp; -9 \\
-0 &amp; 0 &amp; -2 \\
-6 &amp; -6 &amp; 1 \\
-2 &amp; -2 &amp; 0 \\
-2 &amp; -2 &amp; 0
+0 &amp; 0 &amp; 0 \\
+1 &amp; -4 &amp; -6 \\
+-1 &amp; 6 &amp; 8 \\
+-1 &amp; 2 &amp; 4 \\
+1 &amp; -5 &amp; -7
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -798,9 +798,9 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; -1 &amp; -1 &amp; -2 \\
--3 &amp; -3 &amp; -3 &amp; 6 &amp; 3 \\
--6 &amp; -6 &amp; -6 &amp; 12 &amp; 6
+1 &amp; 4 &amp; 7 &amp; -5 &amp; 2 \\
+1 &amp; 5 &amp; 9 &amp; -6 &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -817,11 +817,11 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
-3 &amp; 0 &amp; -6 \\
--3 &amp; 0 &amp; 6 \\
--2 &amp; -2 &amp; 4 \\
-4 &amp; 4 &amp; -8 \\
-2 &amp; 2 &amp; -4
+0 &amp; -5 &amp; 0 \\
+-2 &amp; -9 &amp; 4 \\
+-2 &amp; -12 &amp; 4 \\
+-1 &amp; -10 &amp; 2 \\
+-1 &amp; -5 &amp; 2
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -840,18 +840,18 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; 2 &amp; -4 \\
-0 &amp; 0 &amp; -3 &amp; 6 \\
-2 &amp; 0 &amp; 0 &amp; 4 \\
--1 &amp; 1 &amp; 3 &amp; -6
+-1 &amp; -4 &amp; -5 &amp; 6 \\
+2 &amp; 8 &amp; 7 &amp; -9 \\
+2 &amp; 8 &amp; 8 &amp; -10 \\
+1 &amp; 4 &amp; 4 &amp; -5
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 2 \\
-0 &amp; 1 &amp; 0 &amp; 2 \\
-0 &amp; 0 &amp; 1 &amp; -2 \\
+1 &amp; 4 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
@@ -861,17 +861,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
-3 &amp; 3 &amp; 0 &amp; -3 &amp; 3 \\
-1 &amp; 0 &amp; 1 &amp; -1 &amp; 0 \\
--9 &amp; -6 &amp; 0 &amp; 15 &amp; -9
+-1 &amp; 0 &amp; 3 &amp; -1 &amp; 2 \\
+-4 &amp; -3 &amp; 6 &amp; -10 &amp; 8 \\
+2 &amp; 1 &amp; -4 &amp; 4 &amp; -4
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; -3 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 2 &amp; -1
+1 &amp; 0 &amp; -3 &amp; 1 &amp; -2 \\
+0 &amp; 1 &amp; 2 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 42</h4><div class="exercise">
@@ -880,19 +880,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-1 &amp; 1 &amp; -9 &amp; 0 \\
-0 &amp; 0 &amp; -3 &amp; 0 \\
-2 &amp; 0 &amp; 0 &amp; 0 \\
--4 &amp; 0 &amp; -1 &amp; 1
+0 &amp; 1 &amp; -2 &amp; -4 \\
+-1 &amp; 1 &amp; 2 &amp; 1 \\
+0 &amp; -1 &amp; 2 &amp; 5 \\
+0 &amp; 1 &amp; -2 &amp; -5
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; -4 &amp; 0 \\
+0 &amp; 1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 43</h4><div class="exercise">
@@ -901,17 +901,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
--3 &amp; 0 &amp; 0 &amp; -6 &amp; 6 \\
-10 &amp; 1 &amp; 0 &amp; 22 &amp; -22 \\
-6 &amp; 0 &amp; -3 &amp; 9 &amp; -9
+4 &amp; -4 &amp; 0 &amp; 4 &amp; -8 \\
+2 &amp; -3 &amp; -2 &amp; 3 &amp; -6 \\
+3 &amp; -2 &amp; 2 &amp; 2 &amp; -4
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; 2 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; 2 &amp; -2 \\
-0 &amp; 0 &amp; 1 &amp; 1 &amp; -1
+1 &amp; 0 &amp; 2 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; -1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 44</h4><div class="exercise">
@@ -920,9 +920,9 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
--2 &amp; 3 &amp; -7 &amp; -9 &amp; -4 \\
--3 &amp; 3 &amp; -9 &amp; -9 &amp; -6 \\
--2 &amp; 0 &amp; -4 &amp; 0 &amp; -4
+1 &amp; 0 &amp; 2 &amp; 0 &amp; 2 \\
+1 &amp; 1 &amp; 1 &amp; -3 &amp; 2 \\
+5 &amp; 3 &amp; 7 &amp; -9 &amp; 10
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -939,19 +939,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
-9 &amp; 8 &amp; -1 \\
-1 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -3 \\
--4 &amp; -4 &amp; 0
+-3 &amp; 7 &amp; -1 \\
+2 &amp; -5 &amp; 1 \\
+-2 &amp; 9 &amp; -5 \\
+3 &amp; -9 &amp; 3 \\
+2 &amp; -8 &amp; 4
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrr}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
@@ -962,19 +962,19 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; 1 &amp; 0 \\
-3 &amp; 0 &amp; 9 &amp; 0 \\
--6 &amp; -3 &amp; -27 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 1
+-1 &amp; 1 &amp; -4 &amp; 5 \\
+-1 &amp; 0 &amp; -4 &amp; 7 \\
+0 &amp; 2 &amp; 1 &amp; -6 \\
+-1 &amp; -2 &amp; 0 &amp; 3
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrr}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 47</h4><div class="exercise">
@@ -983,11 +983,11 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrr}
-2 &amp; 2 &amp; -8 \\
-0 &amp; 0 &amp; 0 \\
-8 &amp; -8 &amp; 0 \\
+1 &amp; -1 &amp; 0 \\
+2 &amp; -7 &amp; 10 \\
 1 &amp; 0 &amp; -2 \\
-2 &amp; -2 &amp; 0
+0 &amp; -1 &amp; 2 \\
+1 &amp; -6 &amp; 10
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -1006,17 +1006,17 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrrr}
--2 &amp; 0 &amp; 0 &amp; 0 &amp; 4 \\
-1 &amp; 1 &amp; 0 &amp; 3 &amp; -4 \\
-0 &amp; 0 &amp; 2 &amp; -4 &amp; 0
+1 &amp; 1 &amp; 4 &amp; -5 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 1 \\
+2 &amp; 2 &amp; 7 &amp; -9 &amp; 5
 \end{array}\right]\)</span>.
     </p>
   </div>
   <div class="answer"><h4>Answer.</h4>
     <p><span class="m">\(\left[\begin{array}{rrrrr}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; 3 &amp; -2 \\
-0 &amp; 0 &amp; 1 &amp; -2 &amp; 0
+1 &amp; 1 &amp; 0 &amp; -1 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right]\)</span></p>
   </div>
 </div><h4>Example 49</h4><div class="exercise">
@@ -1025,10 +1025,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-0 &amp; 0 &amp; 0 &amp; 0 \\
--3 &amp; 0 &amp; 3 &amp; 9 \\
-0 &amp; 0 &amp; 0 &amp; 0 \\
--3 &amp; -3 &amp; 0 &amp; 3
+1 &amp; 0 &amp; -1 &amp; -3 \\
+-1 &amp; 1 &amp; 2 &amp; 5 \\
+-4 &amp; -3 &amp; 1 &amp; 6 \\
+-4 &amp; -5 &amp; -1 &amp; 2
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -1046,10 +1046,10 @@
     <p>
       Show how to compute <span class="m">\(\operatorname{RREF}(A)\)</span> given
       <span class="m">\(A=\left[\begin{array}{rrrr}
-6 &amp; 0 &amp; -6 &amp; 12 \\
-3 &amp; 0 &amp; -3 &amp; 6 \\
-0 &amp; 0 &amp; 0 &amp; 0 \\
--1 &amp; 1 &amp; 0 &amp; -1
+4 &amp; -8 &amp; 4 &amp; 0 \\
+2 &amp; -3 &amp; 1 &amp; 1 \\
+-1 &amp; 7 &amp; -6 &amp; 5 \\
+-1 &amp; 2 &amp; -1 &amp; 0
 \end{array}\right]\)</span>.
     </p>
   </div>
@@ -1071,79 +1071,29 @@
       <h2>Diff EQ Standards</h2>
       <ul>
         
-          <li><a href="/diff-eq/C1/">DIFF-EQ C1</a></li>
-        
-          <li><a href="/diff-eq/C2/">DIFF-EQ C2</a></li>
-        
-          <li><a href="/diff-eq/C3m/">DIFF-EQ C3m</a></li>
-        
-          <li><a href="/diff-eq/C4/">DIFF-EQ C4</a></li>
-        
-          <li><a href="/diff-eq/C4b/">DIFF-EQ C4b</a></li>
-        
-          <li><a href="/diff-eq/C5/">DIFF-EQ C5</a></li>
-        
-          <li><a href="/diff-eq/C5b/">DIFF-EQ C5b</a></li>
-        
-          <li><a href="/diff-eq/C6/">DIFF-EQ C6</a></li>
-        
-          <li><a href="/diff-eq/C7m/">DIFF-EQ C7m</a></li>
-        
-          <li><a href="/diff-eq/D1/">DIFF-EQ D1</a></li>
-        
-          <li><a href="/diff-eq/D2/">DIFF-EQ D2</a></li>
-        
-          <li><a href="/diff-eq/D3m/">DIFF-EQ D3m</a></li>
-        
-          <li><a href="/diff-eq/D4m/">DIFF-EQ D4m</a></li>
-        
-          <li><a href="/diff-eq/F2/">DIFF-EQ F2</a></li>
-        
-          <li><a href="/diff-eq/F2b/">DIFF-EQ F2b</a></li>
-        
-          <li><a href="/diff-eq/F2c/">DIFF-EQ F2c</a></li>
-        
-          <li><a href="/diff-eq/F3m/">DIFF-EQ F3m</a></li>
-        
-          <li><a href="/diff-eq/F4/">DIFF-EQ F4</a></li>
-        
-          <li><a href="/diff-eq/F5/">DIFF-EQ F5</a></li>
-        
-          <li><a href="/diff-eq/F6/">DIFF-EQ F6</a></li>
-        
-          <li><a href="/diff-eq/N1/">DIFF-EQ N1</a></li>
-        
-          <li><a href="/diff-eq/N2/">DIFF-EQ N2</a></li>
-        
-          <li><a href="/diff-eq/N3m/">DIFF-EQ N3m</a></li>
-        
-          <li><a href="/diff-eq/S1/">DIFF-EQ S1</a></li>
-        
-          <li><a href="/diff-eq/S2m/">DIFF-EQ S2m</a></li>
-        
-          <li><a href="/diff-eq/S3/">DIFF-EQ S3</a></li>
-        
-          <li><a href="/diff-eq/S4m/">DIFF-EQ S4m</a></li>
-        
       </ul>
       <h2>Lin Alg Standards</h2>
       <ul>
         
-          <li><a href="/lin-alg/E2/">LIN-ALG E2</a></li>
+          <li><a href="/lin-alg/E2/">Linear Algebra E2</a></li>
         
-          <li><a href="/lin-alg/V2/">LIN-ALG V2</a></li>
+          <li><a href="/lin-alg/V1/">Linear Algebra V1</a></li>
         
-          <li><a href="/lin-alg/V3/">LIN-ALG V3</a></li>
+          <li><a href="/lin-alg/V10/">Linear Algebra V10</a></li>
         
-          <li><a href="/lin-alg/V5/">LIN-ALG V5</a></li>
+          <li><a href="/lin-alg/V2/">Linear Algebra V2</a></li>
         
-          <li><a href="/lin-alg/V6/">LIN-ALG V6</a></li>
+          <li><a href="/lin-alg/V3/">Linear Algebra V3</a></li>
         
-          <li><a href="/lin-alg/V7/">LIN-ALG V7</a></li>
+          <li><a href="/lin-alg/V5/">Linear Algebra V5</a></li>
         
-          <li><a href="/lin-alg/V8/">LIN-ALG V8</a></li>
+          <li><a href="/lin-alg/V6/">Linear Algebra V6</a></li>
         
-          <li><a href="/lin-alg/V9/">LIN-ALG V9</a></li>
+          <li><a href="/lin-alg/V7/">Linear Algebra V7</a></li>
+        
+          <li><a href="/lin-alg/V8/">Linear Algebra V8</a></li>
+        
+          <li><a href="/lin-alg/V9/">Linear Algebra V9</a></li>
         
       </ul>
     </div>

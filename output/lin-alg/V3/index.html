@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mastr - LIN-ALG V3</title>
+    <title>Mastr - Linear Algebra V3</title>
     <link rel="stylesheet" href="/stylesheet.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
@@ -15,59 +15,69 @@
   <h2 class="title">V3 - Spanning sets (ver. 1)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-1 \\
--2 \\
--10
-\end{array}\right] , \left[\begin{array}{r}
-8 \\
-4 \\
--8 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
--6 \\
+0 \\
 -1 \\
--7
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
--4 \\
-8 \\
-1
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--6 \\
-2 \\
 -5 \\
--10
+4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-4 \\
+-4 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-1 \\
+-4 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+4 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-3 \\
+-5 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+1 \\
+-1 \\
+1
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-1 \\
--2 \\
--10
-\end{array}\right] , \left[\begin{array}{r}
-8 \\
-4 \\
--8 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
--6 \\
+0 \\
 -1 \\
--7
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
--4 \\
-8 \\
-1
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--6 \\
-2 \\
 -5 \\
--10
+4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-4 \\
+-4 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-1 \\
+-4 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+4 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-3 \\
+-5 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+1 \\
+-1 \\
+1
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -77,61 +87,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 2)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-9 \\
+-1 \\
+-4 \\
 -2 \\
--8 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
--5 \\
+1 \\
+4 \\
 3 \\
-9 \\
-7
+-2
 \end{array}\right] , \left[\begin{array}{r}
+2 \\
+-1 \\
+0 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-4 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+3 \\
+-3 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
 -4 \\
 4 \\
--1 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--64 \\
-28 \\
-66 \\
-40
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
-0
+2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-9 \\
+-1 \\
+-4 \\
 -2 \\
--8 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
--5 \\
+1 \\
+4 \\
 3 \\
-9 \\
-7
+-2
 \end{array}\right] , \left[\begin{array}{r}
+2 \\
+-1 \\
+0 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-4 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+3 \\
+-3 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
 -4 \\
 4 \\
--1 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--64 \\
-28 \\
-66 \\
-40
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-0 \\
-0 \\
-0 \\
-0
+2
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -139,58 +159,58 @@
   <h2 class="title">V3 - Spanning sets (ver. 3)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--2 \\
-6 \\
-6 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
-5 \\
-5 \\
 3 \\
--7
+3 \\
+-1 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
-9 \\
-5 \\
-1
+2 \\
+1 \\
+-4 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
--26 \\
+-6 \\
+-6 \\
+2 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-5 \\
 -2 \\
-6 \\
-25
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--10 \\
--36 \\
--28 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+2 \\
+-1 \\
 1
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--2 \\
-6 \\
-6 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
-5 \\
-5 \\
 3 \\
--7
+3 \\
+-1 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
-9 \\
-5 \\
-1
+2 \\
+1 \\
+-4 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
--26 \\
+-6 \\
+-6 \\
+2 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-5 \\
 -2 \\
-6 \\
-25
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--10 \\
--36 \\
--28 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+2 \\
+-1 \\
 1
 \end{array}\right]\)</span> 
   	 do not  
@@ -201,61 +221,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 4)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-2 \\
+-2 \\
 -4 \\
--7 \\
-1
+0 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
--10 \\
+-5 \\
+0 \\
+-3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
 1 \\
--6
+3 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
--25 \\
-38 \\
-11 \\
-16
-\end{array}\right] , \left[\begin{array}{r}
--95 \\
-146 \\
-52 \\
-57
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--109 \\
-166 \\
-50 \\
-69
+1 \\
+-3 \\
+-4 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
+-1 \\
+-3 \\
+3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-2 \\
+-2 \\
 -4 \\
--7 \\
-1
+0 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
--10 \\
+-5 \\
+0 \\
+-3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
 1 \\
--6
+3 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
--25 \\
-38 \\
-11 \\
-16
-\end{array}\right] , \left[\begin{array}{r}
--95 \\
-146 \\
-52 \\
-57
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--109 \\
-166 \\
-50 \\
-69
+1 \\
+-3 \\
+-4 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
+-1 \\
+-3 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -263,59 +283,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 5)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
 0 \\
--6 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--5 \\
+-3 \\
 -2 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-40 \\
--15 \\
-18 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--190 \\
-95 \\
--76 \\
 0
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-150 \\
--60 \\
-66 \\
-12
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-1 \\
+-2 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-9 \\
+3 \\
+-2 \\
+-6
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+0 \\
+6 \\
+4 \\
+0
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
 0 \\
--6 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--5 \\
+-3 \\
 -2 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-40 \\
--15 \\
-18 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--190 \\
-95 \\
--76 \\
 0
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-150 \\
--60 \\
-66 \\
-12
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-1 \\
+-2 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-9 \\
+3 \\
+-2 \\
+-6
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+0 \\
+6 \\
+4 \\
+0
 \end{array}\right]\)</span> 
   	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -325,61 +335,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 6)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-7 \\
-7 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
 3 \\
 -2 \\
-4 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--26 \\
--6 \\
--10 \\
--18
-\end{array}\right] , \left[\begin{array}{r}
-7 \\
-7 \\
 -3 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+2 \\
+3 \\
 -5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--109 \\
--9 \\
--59 \\
--105
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-5 \\
+-3 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+4 \\
+1 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+3 \\
+-5 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+-2 \\
+-4 \\
+3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-7 \\
-7 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
 3 \\
 -2 \\
-4 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--26 \\
--6 \\
--10 \\
--18
-\end{array}\right] , \left[\begin{array}{r}
-7 \\
-7 \\
 -3 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+2 \\
+3 \\
 -5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--109 \\
--9 \\
--59 \\
--105
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+-5 \\
+-3 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+4 \\
+1 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+3 \\
+-5 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+-2 \\
+-4 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -387,61 +407,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 7)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-5 \\
+2 \\
 0 \\
-8
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-5 \\
+0 \\
+2 \\
+0 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+0 \\
+-12 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+12 \\
+0 \\
+24 \\
+12
+\end{array}\right] , \left[\begin{array}{r}
 1 \\
-5 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--50 \\
--29 \\
--20 \\
--44
-\end{array}\right] , \left[\begin{array}{r}
--63 \\
--24 \\
--45 \\
--33
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-70 \\
-33 \\
-40 \\
-48
+-5 \\
+3 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+1 \\
+-5 \\
+-4 \\
+2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-5 \\
+2 \\
 0 \\
-8
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-5 \\
+0 \\
+2 \\
+0 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+0 \\
+-12 \\
+-6
+\end{array}\right] , \left[\begin{array}{r}
+12 \\
+0 \\
+24 \\
+12
+\end{array}\right] , \left[\begin{array}{r}
 1 \\
-5 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--50 \\
--29 \\
--20 \\
--44
-\end{array}\right] , \left[\begin{array}{r}
--63 \\
--24 \\
--45 \\
--33
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-70 \\
-33 \\
-40 \\
-48
+-5 \\
+3 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+1 \\
+-5 \\
+-4 \\
+2
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -449,61 +479,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 8)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-7 \\
-8 \\
+4 \\
+0 \\
+-4 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+0 \\
 1 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+-4 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-2 \\
+10 \\
 -7
 \end{array}\right] , \left[\begin{array}{r}
-9 \\
-9 \\
-1 \\
+0 \\
+0 \\
+-4 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
--57 \\
--60 \\
--7 \\
-13
-\end{array}\right] , \left[\begin{array}{r}
-16 \\
-17 \\
-2 \\
--5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-275 \\
-286 \\
-33 \\
--33
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-3 \\
+-4 \\
+-2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-7 \\
-8 \\
+4 \\
+0 \\
+-4 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+0 \\
 1 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+-4 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-2 \\
+10 \\
 -7
 \end{array}\right] , \left[\begin{array}{r}
-9 \\
-9 \\
-1 \\
+0 \\
+0 \\
+-4 \\
 2
-\end{array}\right] , \left[\begin{array}{r}
--57 \\
--60 \\
--7 \\
-13
-\end{array}\right] , \left[\begin{array}{r}
-16 \\
-17 \\
-2 \\
--5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-275 \\
-286 \\
-33 \\
--33
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-3 \\
+-4 \\
+-2
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -511,59 +551,59 @@
   <h2 class="title">V3 - Spanning sets (ver. 9)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-2 \\
--5 \\
-1 \\
--4
+-3 \\
+0 \\
+-2 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
 -1 \\
 0 \\
-8
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-5 \\
-3 \\
+1 \\
+0 \\
 0 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--3 \\
-1 \\
-7
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+-2 \\
+0 \\
 3 \\
-6 \\
-9 \\
-2
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+4 \\
+1 \\
+-5
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-2 \\
--5 \\
-1 \\
--4
+-3 \\
+0 \\
+-2 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
 -1 \\
 0 \\
-8
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-5 \\
-3 \\
+1 \\
+0 \\
 0 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--3 \\
-1 \\
-7
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+-2 \\
+0 \\
 3 \\
-6 \\
-9 \\
-2
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+4 \\
+1 \\
+-5
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -573,61 +613,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 10)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-9 \\
--2 \\
--2 \\
--9
+-1 \\
+-1 \\
+-5 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
--7 \\
--6 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--20 \\
--6 \\
 -4 \\
-34
+-3 \\
+-1 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
--109 \\
-19 \\
-20 \\
-116
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-81 \\
-29 \\
-20 \\
--144
+4 \\
+3 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+3 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+3 \\
+2 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+-4 \\
+2 \\
+-5
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-9 \\
--2 \\
--2 \\
--9
+-1 \\
+-1 \\
+-5 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
--7 \\
--6 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--20 \\
--6 \\
 -4 \\
-34
+-3 \\
+-1 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
--109 \\
-19 \\
-20 \\
-116
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-81 \\
-29 \\
-20 \\
--144
+4 \\
+3 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+3 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+3 \\
+2 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+-4 \\
+2 \\
+-5
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -636,60 +686,60 @@
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
--1 \\
--7 \\
--7
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--7 \\
 -4 \\
+-4 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-2 \\
+-1 \\
 -2
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
--10 \\
-2 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
--1 \\
--3 \\
--3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-3 \\
 7 \\
+0 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
 -3 \\
-9
+2 \\
+3 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-2 \\
+4 \\
+-5
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
--1 \\
--7 \\
--7
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--7 \\
 -4 \\
+-4 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-2 \\
+-1 \\
 -2
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
--10 \\
-2 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
--1 \\
--3 \\
--3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-3 \\
 7 \\
+0 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
 -3 \\
-9
+2 \\
+3 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-2 \\
+4 \\
+-5
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -697,61 +747,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 12)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
+0 \\
 -1 \\
-1 \\
--1 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
-7 \\
--4 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
-7 \\
-4 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
-4 \\
--6 \\
-6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 3 \\
-6 \\
-6 \\
--6
+-1
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-2 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-9 \\
+9 \\
+-18 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+3 \\
+-3 \\
+-5
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+3 \\
+-3 \\
+-1
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
+0 \\
 -1 \\
-1 \\
--1 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
-7 \\
--4 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
-7 \\
-4 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
-4 \\
--6 \\
-6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 3 \\
-6 \\
-6 \\
--6
+-1
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-2 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-9 \\
+9 \\
+-18 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+3 \\
+-3 \\
+-5
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+3 \\
+-3 \\
+-1
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -759,59 +809,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 13)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
-7 \\
--8 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--3 \\
--9 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-4 \\
 2 \\
-0 \\
--8 \\
-2
+-4
 \end{array}\right] , \left[\begin{array}{r}
--7 \\
-9 \\
-6 \\
--8
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--8 \\
+-2 \\
+-5 \\
+-1 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-4 \\
+1 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 4 \\
--9 \\
-2
+3 \\
+-4 \\
+-4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
-7 \\
--8 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--3 \\
--9 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-4 \\
 2 \\
-0 \\
--8 \\
-2
+-4
 \end{array}\right] , \left[\begin{array}{r}
--7 \\
-9 \\
-6 \\
--8
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--8 \\
+-2 \\
+-5 \\
+-1 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-4 \\
+1 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 4 \\
--9 \\
-2
+3 \\
+-4 \\
+-4
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -821,61 +861,51 @@
   <h2 class="title">V3 - Spanning sets (ver. 14)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
--8 \\
-7 \\
--6
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-1 \\
 -4 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
 3 \\
--7 \\
-1 \\
-6
+-3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-17 \\
-27 \\
+0 \\
+-2 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
 -4 \\
--15
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--20 \\
--46 \\
-28 \\
--5
+0 \\
+3 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-4 \\
+3 \\
+2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
--8 \\
-7 \\
--6
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
-1 \\
 -4 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
 3 \\
--7 \\
-1 \\
-6
+-3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-17 \\
-27 \\
+0 \\
+-2 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
 -4 \\
--15
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--20 \\
--46 \\
-28 \\
--5
+0 \\
+3 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-4 \\
+3 \\
+2
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -883,59 +913,69 @@
   <h2 class="title">V3 - Spanning sets (ver. 15)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-3 \\
-3 \\
--7 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
--7 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--4 \\
--10 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--4 \\
--2 \\
--2
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 1 \\
+-4 \\
+1 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+2 \\
+-3 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
 -2 \\
-6 \\
-8
+-5 \\
+2 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+-1 \\
+-1 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+3 \\
+4 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+2 \\
+-3 \\
+2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-3 \\
-3 \\
--7 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
--7 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{r}
-3 \\
--4 \\
--10 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--4 \\
--2 \\
--2
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 1 \\
+-4 \\
+1 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+2 \\
+-3 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
 -2 \\
-6 \\
-8
+-5 \\
+2 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+-1 \\
+-1 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+3 \\
+4 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+2 \\
+-3 \\
+2
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -945,61 +985,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 16)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--2 \\
-1 \\
--10 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
-7 \\
--9 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
+0 \\
 -5 \\
--10 \\
-9
+2 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-5 \\
+-4 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
 0 \\
-5 \\
--7 \\
-2
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--2 \\
+0 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
 3 \\
--3 \\
-5
+5 \\
+-8 \\
+10
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+1 \\
+-2 \\
+2 \\
+-3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--2 \\
-1 \\
--10 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
-7 \\
--9 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
+0 \\
 -5 \\
--10 \\
-9
+2 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-5 \\
+-4 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
 0 \\
-5 \\
--7 \\
-2
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--2 \\
+0 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
 3 \\
--3 \\
-5
+5 \\
+-8 \\
+10
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+1 \\
+-2 \\
+2 \\
+-3
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1008,58 +1048,58 @@
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
--2 \\
 -1 \\
-6
+3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--2 \\
-4 \\
--6 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
--6 \\
-7 \\
-9
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
--6 \\
+2 \\
 -3 \\
-5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--9 \\
-7 \\
+3 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+3 \\
 4 \\
-2
+-2
+\end{array}\right] , \left[\begin{array}{r}
+12 \\
+-10 \\
+-8 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+2 \\
+1 \\
+-5
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 -1 \\
--2 \\
 -1 \\
-6
+3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--2 \\
-4 \\
--6 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
--6 \\
-7 \\
-9
-\end{array}\right] , \left[\begin{array}{r}
--4 \\
--6 \\
+2 \\
 -3 \\
-5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--9 \\
-7 \\
+3 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+3 \\
 4 \\
-2
+-2
+\end{array}\right] , \left[\begin{array}{r}
+12 \\
+-10 \\
+-8 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+2 \\
+1 \\
+-5
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -1069,61 +1109,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 18)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-9 \\
--3 \\
-1 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
-9 \\
--1 \\
-3 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
-7 \\
 -2 \\
+0 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+1 \\
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-1 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-1 \\
+19 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
-86 \\
--42 \\
-18 \\
--44
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--30 \\
--13 \\
--10 \\
-39
+2 \\
+2 \\
+-3 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+4 \\
+2 \\
+-4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-9 \\
--3 \\
-1 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
-9 \\
--1 \\
-3 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
-7 \\
 -2 \\
+0 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+1 \\
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-1 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-1 \\
+19 \\
 2
 \end{array}\right] , \left[\begin{array}{r}
-86 \\
--42 \\
-18 \\
--44
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--30 \\
--13 \\
--10 \\
-39
+2 \\
+2 \\
+-3 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+4 \\
+2 \\
+-4
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1131,58 +1181,58 @@
   <h2 class="title">V3 - Spanning sets (ver. 19)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
-9 \\
-9 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--5 \\
-2 \\
+4 \\
+4 \\
+0 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
--1 \\
--1 \\
-7 \\
-6
+-3 \\
+1 \\
+-2 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
--8 \\
-4 \\
-4
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+-1 \\
 3 \\
-7 \\
--7 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+2 \\
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-4 \\
+-3 \\
 -5
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
-9 \\
-9 \\
-0
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
--5 \\
-2 \\
+4 \\
+4 \\
+0 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
--1 \\
--1 \\
-7 \\
-6
+-3 \\
+1 \\
+-2 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
--8 \\
-4 \\
-4
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+-1 \\
 3 \\
-7 \\
--7 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+2 \\
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-4 \\
+-3 \\
 -5
 \end{array}\right]\)</span> 
   	 do  
@@ -1193,59 +1243,59 @@
   <h2 class="title">V3 - Spanning sets (ver. 20)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--2 \\
-3 \\
 1 \\
-5
+0 \\
+2 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-6 \\
--8 \\
--6 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-7 \\
-4 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
--8 \\
 -4 \\
-1
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--6 \\
--6 \\
--8 \\
-6
+-3 \\
+3 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+2 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-2 \\
+1 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+-4 \\
+3 \\
+-5
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--2 \\
-3 \\
 1 \\
-5
+0 \\
+2 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-6 \\
--8 \\
--6 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-7 \\
-4 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-4 \\
--8 \\
 -4 \\
-1
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--6 \\
--6 \\
--8 \\
-6
+-3 \\
+3 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+2 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-2 \\
+1 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+-4 \\
+3 \\
+-5
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -1255,58 +1305,48 @@
   <h2 class="title">V3 - Spanning sets (ver. 21)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
--10 \\
--6 \\
-2
+-5 \\
+-3 \\
+1 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
--4 \\
-3 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
 -2 \\
+1 \\
 -1 \\
-6
+-3
 \end{array}\right] , \left[\begin{array}{r}
-9 \\
-6 \\
+-1 \\
+-1 \\
+3 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-2 \\
 -4 \\
--8
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--8 \\
-5 \\
--10 \\
 -4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
--10 \\
--6 \\
-2
+-5 \\
+-3 \\
+1 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
--4 \\
-3 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--6 \\
 -2 \\
+1 \\
 -1 \\
-6
+-3
 \end{array}\right] , \left[\begin{array}{r}
-9 \\
-6 \\
+-1 \\
+-1 \\
+3 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-2 \\
 -4 \\
--8
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--8 \\
-5 \\
--10 \\
 -4
 \end{array}\right]\)</span> 
   	 do  
@@ -1317,59 +1357,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 22)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--5 \\
 -1 \\
--7 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
-8 \\
-9 \\
-0 \\
+-4 \\
+-5 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
-6 \\
--5 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-5 \\
--6 \\
-7 \\
-3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--3 \\
 4 \\
--5 \\
--5
+0 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-3 \\
+-2 \\
+2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+3 \\
+1 \\
+-2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--5 \\
 -1 \\
--7 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
-8 \\
-9 \\
-0 \\
+-4 \\
+-5 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
-2 \\
-6 \\
--5 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-5 \\
--6 \\
-7 \\
-3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--3 \\
 4 \\
--5 \\
--5
+0 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-3 \\
+-2 \\
+2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+3 \\
+1 \\
+-2
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -1379,59 +1409,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 23)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--9 \\
--7 \\
--8 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-7 \\
--7 \\
-1 \\
--10
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-7 \\
 -4 \\
--6
+-4 \\
+-2 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-23 \\
-14 \\
-43 \\
-44
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-40 \\
--21 \\
-54 \\
-26
+-4 \\
+0 \\
+-5 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+8 \\
+-11 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+20 \\
+-4 \\
+28 \\
+-3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--9 \\
--7 \\
--8 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
-7 \\
--7 \\
-1 \\
--10
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-7 \\
 -4 \\
--6
+-4 \\
+-2 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-23 \\
-14 \\
-43 \\
-44
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-40 \\
--21 \\
-54 \\
-26
+-4 \\
+0 \\
+-5 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+8 \\
+-11 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+20 \\
+-4 \\
+28 \\
+-3
 \end{array}\right]\)</span> 
   	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -1441,59 +1461,59 @@
   <h2 class="title">V3 - Spanning sets (ver. 24)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
+3 \\
 -2 \\
-7 \\
--4 \\
-1
+0 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-6 \\
+-2 \\
 -3 \\
--5 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
-8 \\
-8 \\
-0
+-1 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
-5 \\
-5 \\
--10
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--4 \\
-8 \\
+4 \\
 0 \\
--8
+2
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+-5 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+4 \\
+0 \\
+-4 \\
+-2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
+3 \\
 -2 \\
-7 \\
--4 \\
-1
+0 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-6 \\
+-2 \\
 -3 \\
--5 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
-8 \\
-8 \\
-0
+-1 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
-5 \\
-5 \\
--10
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--4 \\
-8 \\
+4 \\
 0 \\
--8
+2
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+-5 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+4 \\
+0 \\
+-4 \\
+-2
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -1503,61 +1523,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 25)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--1 \\
-5 \\
-8 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-8 \\
--5 \\
--6
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--1 \\
--8 \\
--1
+2 \\
+4 \\
+2 \\
+-2
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
--4 \\
 -3 \\
-5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-5 \\
--4 \\
+-3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+11 \\
+7 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+15 \\
+9 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
 -1 \\
--10
+-5 \\
+-1
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--1 \\
-5 \\
-8 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-8 \\
--5 \\
--6
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--1 \\
--8 \\
--1
+2 \\
+4 \\
+2 \\
+-2
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
--4 \\
 -3 \\
-5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-5 \\
--4 \\
+-3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+11 \\
+7 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+15 \\
+9 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
 -1 \\
--10
+-5 \\
+-1
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1565,61 +1585,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 26)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-8 \\
+2 \\
+-5 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
 4 \\
--9 \\
-4
+3 \\
+3 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-3 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+0 \\
+0 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
 1 \\
-9 \\
-7 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-16 \\
-8 \\
--18 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-25 \\
-21 \\
--20 \\
-19
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--70 \\
--18 \\
-95 \\
--22
+-2 \\
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+1 \\
+2 \\
+0 \\
+-1
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-8 \\
+2 \\
+-5 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
 4 \\
--9 \\
-4
+3 \\
+3 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-3 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+0 \\
+0 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
 1 \\
-9 \\
-7 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
-16 \\
-8 \\
--18 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-25 \\
-21 \\
--20 \\
-19
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--70 \\
--18 \\
-95 \\
--22
+-2 \\
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+1 \\
+2 \\
+0 \\
+-1
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1627,59 +1657,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 27)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--7 \\
-6 \\
-8 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
-2 \\
--9 \\
+3 \\
+4 \\
+-2 \\
 -5
 \end{array}\right] , \left[\begin{array}{r}
--18 \\
-4 \\
--18 \\
--10
+1 \\
+-5 \\
+-3 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-120 \\
--40 \\
-75 \\
-67
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-40 \\
+-6 \\
+-8 \\
+4 \\
+10
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 0 \\
-70 \\
-22
+0 \\
+0 \\
+0
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--7 \\
-6 \\
-8 \\
--4
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
-2 \\
--9 \\
+3 \\
+4 \\
+-2 \\
 -5
 \end{array}\right] , \left[\begin{array}{r}
--18 \\
-4 \\
--18 \\
--10
+1 \\
+-5 \\
+-3 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
-120 \\
--40 \\
-75 \\
-67
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-40 \\
+-6 \\
+-8 \\
+4 \\
+10
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 0 \\
-70 \\
-22
+0 \\
+0 \\
+0
 \end{array}\right]\)</span> 
   	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -1689,59 +1709,59 @@
   <h2 class="title">V3 - Spanning sets (ver. 28)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
+4 \\
+3 \\
 -2 \\
-9 \\
-6 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+0 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+4 \\
+-5 \\
 -4
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
-5 \\
-5 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--9 \\
-9 \\
--10
-\end{array}\right] , \left[\begin{array}{r}
--7 \\
--2 \\
+-1 \\
 0 \\
--5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+-3 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+4 \\
 -4 \\
-7 \\
-8 \\
--7
+-3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
+4 \\
+3 \\
 -2 \\
-9 \\
-6 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+2 \\
+0 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+4 \\
+-5 \\
 -4
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
-5 \\
-5 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
--9 \\
-9 \\
--10
-\end{array}\right] , \left[\begin{array}{r}
--7 \\
--2 \\
+-1 \\
 0 \\
--5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+-3 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+4 \\
 -4 \\
-7 \\
-8 \\
--7
+-3
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -1751,61 +1771,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 29)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-1 \\
--4 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-1 \\
--6 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
--7 \\
-5 \\
 0 \\
-6
+-2 \\
+-5 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
--34 \\
-12 \\
-14 \\
-34
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--38 \\
-8 \\
-38 \\
-26
+0 \\
+-3 \\
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+0 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+-4 \\
+-2 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+0 \\
+-5 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-2 \\
+-1 \\
+3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-1 \\
--4 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-1 \\
--6 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
--7 \\
-5 \\
 0 \\
-6
+-2 \\
+-5 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
--34 \\
-12 \\
-14 \\
-34
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--38 \\
-8 \\
-38 \\
-26
+0 \\
+-3 \\
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+0 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-6 \\
+-4 \\
+-2 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+0 \\
+-5 \\
+0
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-2 \\
+-1 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1813,61 +1843,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 30)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
-5 \\
--9 \\
+2 \\
+-5 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+2 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-4 \\
+-1 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
-3 \\
--10 \\
-5 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--7 \\
--7 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-50 \\
-47 \\
-17
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-6 \\
-21 \\
-47 \\
-3
+16 \\
+9 \\
+8 \\
+-9
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-5 \\
+-5 \\
+4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
-5 \\
--9 \\
+2 \\
+-5 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+2 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-4 \\
+-1 \\
 4
 \end{array}\right] , \left[\begin{array}{r}
-3 \\
--10 \\
-5 \\
--8
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
--7 \\
--7 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-50 \\
-47 \\
-17
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-6 \\
-21 \\
-47 \\
-3
+16 \\
+9 \\
+8 \\
+-9
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
+-5 \\
+-5 \\
+4
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1875,61 +1905,51 @@
   <h2 class="title">V3 - Spanning sets (ver. 31)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
-2 \\
-2 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
-7 \\
--2 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
--10 \\
-9 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-9 \\
 1 \\
--6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+1 \\
 -5 \\
--9 \\
--3 \\
-2
+3
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-1 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+4 \\
+4 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+12 \\
+-6 \\
+-4 \\
+0
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
-2 \\
-2 \\
--9
-\end{array}\right] , \left[\begin{array}{r}
-7 \\
--2 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--1 \\
--10 \\
-9 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-2 \\
-9 \\
 1 \\
--6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+1 \\
 -5 \\
--9 \\
--3 \\
-2
+3
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+-1 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+4 \\
+4 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+12 \\
+-6 \\
+-4 \\
+0
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1938,60 +1958,60 @@
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
-1 \\
-5 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
-9 \\
 2 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
-0 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
 3 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+1 \\
+2 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
 -4 \\
+-6 \\
 6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--2 \\
--2 \\
--5 \\
-1
+\end{array}\right] , \left[\begin{array}{r}
+-12 \\
+1 \\
+0 \\
+9
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
+-3 \\
+0 \\
+-4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
 0 \\
-1 \\
-5 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
--5 \\
-9 \\
 2 \\
-4
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
-0 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
 3 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+1 \\
+2 \\
+-5
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
 -4 \\
+-6 \\
 6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--2 \\
--2 \\
--5 \\
-1
+\end{array}\right] , \left[\begin{array}{r}
+-12 \\
+1 \\
+0 \\
+9
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
+-3 \\
+0 \\
+-4
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -1999,59 +2019,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 33)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
--2 \\
-6 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
-4 \\
+-1 \\
+3 \\
 2 \\
-5
+-5
 \end{array}\right] , \left[\begin{array}{r}
-30 \\
-18 \\
--26 \\
--15
+2 \\
+1 \\
+2 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
--80 \\
--4 \\
-40 \\
-40
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--140 \\
--112 \\
-140 \\
-70
+2 \\
+1 \\
+2 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+1 \\
+-2 \\
+-13
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
--2 \\
-6 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
-4 \\
+-1 \\
+3 \\
 2 \\
-5
+-5
 \end{array}\right] , \left[\begin{array}{r}
-30 \\
-18 \\
--26 \\
--15
+2 \\
+1 \\
+2 \\
+4
 \end{array}\right] , \left[\begin{array}{r}
--80 \\
--4 \\
-40 \\
-40
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--140 \\
--112 \\
-140 \\
-70
+2 \\
+1 \\
+2 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+1 \\
+-2 \\
+-13
 \end{array}\right]\)</span> 
   	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -2061,61 +2071,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 34)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-2 \\
-6 \\
+3 \\
+-2 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-1 \\
+3 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-9 \\
+4 \\
 -4 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
-6 \\
+9 \\
 -2 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
--3 \\
--9 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
--8 \\
--6 \\
+14 \\
 -3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--10 \\
--3 \\
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
 -1 \\
+-2 \\
 -3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-2 \\
-6 \\
+3 \\
+-2 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{r}
+3 \\
+-1 \\
+3 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-9 \\
+4 \\
 -4 \\
 -3
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
-6 \\
+9 \\
 -2 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
--3 \\
--9 \\
--1
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
--8 \\
--6 \\
+14 \\
 -3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--10 \\
--3 \\
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
 -1 \\
+-2 \\
 -3
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2123,59 +2133,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 35)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--5 \\
-7 \\
+3 \\
 0 \\
-9
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
-8 \\
-5 \\
-1
+2 \\
+0 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
-6 \\
+3 \\
+-2 \\
+-3 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
 -4 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
-9 \\
--4 \\
--7 \\
-8
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--1 \\
-7 \\
-7 \\
--7
+4 \\
+-1
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--5 \\
-7 \\
+3 \\
 0 \\
-9
+4 \\
+2
 \end{array}\right] , \left[\begin{array}{r}
 4 \\
-8 \\
-5 \\
-1
+2 \\
+0 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
-6 \\
+3 \\
+-2 \\
+-3 \\
+4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-2 \\
 -4 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
-9 \\
--4 \\
--7 \\
-8
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--1 \\
-7 \\
-7 \\
--7
+4 \\
+-1
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -2185,59 +2185,69 @@
   <h2 class="title">V3 - Spanning sets (ver. 36)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
--3 \\
+-2 \\
 0 \\
--6
+-3 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-1 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+8 \\
+2 \\
+-9 \\
+6
 \end{array}\right] , \left[\begin{array}{r}
 -4 \\
--9 \\
--2 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
-4 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-1 \\
-1 \\
--3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 0 \\
-9 \\
-2 \\
-8
+-6 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+1 \\
+4 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+-4 \\
+-3 \\
+-4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
--3 \\
+-2 \\
 0 \\
--6
+-3 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-1 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+8 \\
+2 \\
+-9 \\
+6
 \end{array}\right] , \left[\begin{array}{r}
 -4 \\
--9 \\
--2 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
-4 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
-1 \\
-1 \\
-1 \\
--3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 0 \\
-9 \\
-2 \\
-8
+-6 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+4 \\
+1 \\
+4 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+-4 \\
+-3 \\
+-4
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -2247,61 +2257,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 37)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-5 \\
-4 \\
-9 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-0 \\
--9 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
--7 \\
--8 \\
--9 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-49 \\
-44 \\
-81 \\
--51
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 2 \\
--20 \\
-36 \\
-7
+4 \\
+-3 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-5 \\
+1 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+1 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-17 \\
+6 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+2 \\
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-2 \\
+-1 \\
+3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-5 \\
-4 \\
-9 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--3 \\
-0 \\
--9 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
--7 \\
--8 \\
--9 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-49 \\
-44 \\
-81 \\
--51
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 2 \\
--20 \\
-36 \\
-7
+4 \\
+-3 \\
+-2
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-5 \\
+1 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+1 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-17 \\
+6 \\
+-1
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+2 \\
+2 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-2 \\
+-1 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2309,61 +2329,51 @@
   <h2 class="title">V3 - Spanning sets (ver. 38)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
--7 \\
--9 \\
-4
+-4 \\
+-5 \\
+2 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-9 \\
--10 \\
--10
+4 \\
+-5 \\
+-5 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
 0 \\
--6 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
-6 \\
-0 \\
+-3 \\
 1 \\
-0
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-7 \\
--10 \\
--8 \\
-0
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+14 \\
+2 \\
+-6
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
--7 \\
--9 \\
-4
+-4 \\
+-5 \\
+2 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
--9 \\
-9 \\
--10 \\
--10
+4 \\
+-5 \\
+-5 \\
+-3
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
 0 \\
--6 \\
-2
-\end{array}\right] , \left[\begin{array}{r}
-6 \\
-0 \\
+-3 \\
 1 \\
-0
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-7 \\
--10 \\
--8 \\
-0
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+14 \\
+2 \\
+-6
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2371,61 +2381,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 39)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
--6 \\
-3 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
--6 \\
-9 \\
+-3 \\
+1 \\
+-2 \\
 -5
 \end{array}\right] , \left[\begin{array}{r}
--28 \\
-12 \\
-0 \\
-4
+-3 \\
+4 \\
+-3 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
-90 \\
-6 \\
--39 \\
-15
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-102 \\
--54 \\
-9 \\
--21
+-1 \\
+3 \\
+4 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-2 \\
+-5 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-3 \\
+1 \\
+2
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
--6 \\
-3 \\
--3
-\end{array}\right] , \left[\begin{array}{r}
--10 \\
--6 \\
-9 \\
+-3 \\
+1 \\
+-2 \\
 -5
 \end{array}\right] , \left[\begin{array}{r}
--28 \\
-12 \\
-0 \\
-4
+-3 \\
+4 \\
+-3 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
-90 \\
-6 \\
--39 \\
-15
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-102 \\
--54 \\
-9 \\
--21
+-1 \\
+3 \\
+4 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-2 \\
+-5 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-3 \\
+1 \\
+2
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2433,61 +2453,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 40)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
--3 \\
--8 \\
--7
+-2 \\
+-4 \\
+-4 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+-5 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
 0 \\
 2 \\
--10 \\
--5
+-4
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
--14 \\
-24 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
-6 \\
-8 \\
-6 \\
-9
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-9 \\
-9 \\
-24 \\
-21
+1 \\
+1 \\
+4 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+3 \\
+0 \\
+0
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
--3 \\
--8 \\
--7
+-2 \\
+-4 \\
+-4 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
+1 \\
+-5 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
 0 \\
 2 \\
--10 \\
--5
+-4
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
--14 \\
-24 \\
-6
-\end{array}\right] , \left[\begin{array}{r}
-6 \\
-8 \\
-6 \\
-9
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-9 \\
-9 \\
-24 \\
-21
+1 \\
+1 \\
+4 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+3 \\
+0 \\
+0
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2495,61 +2515,51 @@
   <h2 class="title">V3 - Spanning sets (ver. 41)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--4 \\
-9 \\
-8 \\
--6
+4 \\
+4 \\
+-3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--1 \\
-9 \\
-3 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
--9 \\
+4 \\
+1 \\
+4 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
-27 \\
-5 \\
-10
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 0 \\
-27 \\
-40 \\
-38
+-5 \\
+0 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
+-4 \\
+1 \\
+0
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--4 \\
-9 \\
-8 \\
--6
+4 \\
+4 \\
+-3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--1 \\
-9 \\
-3 \\
-8
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-0 \\
--9 \\
+4 \\
+1 \\
+4 \\
 0
 \end{array}\right] , \left[\begin{array}{r}
--6 \\
-27 \\
-5 \\
-10
-\end{array}\right] , \text{and} \left[\begin{array}{r}
 0 \\
-27 \\
-40 \\
-38
+-5 \\
+0 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-1 \\
+-4 \\
+1 \\
+0
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2557,61 +2567,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 42)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
-8 \\
-5 \\
-4
+4 \\
+2 \\
+2 \\
+-2
 \end{array}\right] , \left[\begin{array}{r}
--3 \\
--3 \\
--9 \\
--7
+-2 \\
+-5 \\
+-4 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-9 \\
--24 \\
--15 \\
--12
-\end{array}\right] , \left[\begin{array}{r}
--33 \\
-44 \\
+4 \\
+0 \\
 -1 \\
-0
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--30 \\
-91 \\
-64 \\
-51
+2
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-2 \\
+-4 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+-1 \\
+3 \\
+3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--3 \\
-8 \\
-5 \\
-4
+4 \\
+2 \\
+2 \\
+-2
 \end{array}\right] , \left[\begin{array}{r}
--3 \\
--3 \\
--9 \\
--7
+-2 \\
+-5 \\
+-4 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
-9 \\
--24 \\
--15 \\
--12
-\end{array}\right] , \left[\begin{array}{r}
--33 \\
-44 \\
+4 \\
+0 \\
 -1 \\
-0
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--30 \\
-91 \\
-64 \\
-51
+2
+\end{array}\right] , \left[\begin{array}{r}
+0 \\
+-2 \\
+-4 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-3 \\
+-1 \\
+3 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2619,59 +2629,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 43)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
-4 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-7 \\
-8 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--9 \\
+2 \\
 -1 \\
-9
+1 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
-7 \\
--8 \\
-3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-6 \\
-0 \\
 3 \\
--8
+4 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-1 \\
+4 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-4 \\
+1 \\
+3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--6 \\
-4 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
-0 \\
-7 \\
-8 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--9 \\
+2 \\
 -1 \\
-9
+1 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
--4 \\
-7 \\
--8 \\
-3
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-6 \\
-0 \\
 3 \\
--8
+4 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-1 \\
+4 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-4 \\
+1 \\
+3
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -2681,59 +2681,49 @@
   <h2 class="title">V3 - Spanning sets (ver. 44)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
--10 \\
--10 \\
--9
+-5 \\
+-5 \\
+-5 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--3 \\
-5 \\
--10
+-2 \\
+2 \\
+-5 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
-17 \\
+-16 \\
+-4 \\
+-25 \\
+-12
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 29 \\
-5 \\
-48
-\end{array}\right] , \left[\begin{array}{r}
-98 \\
-146 \\
+1 \\
 50 \\
-219
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--73 \\
--101 \\
--45 \\
--142
+28
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--10 \\
--10 \\
--10 \\
--9
+-5 \\
+-5 \\
+-5 \\
+0
 \end{array}\right] , \left[\begin{array}{r}
-1 \\
--3 \\
-5 \\
--10
+-2 \\
+2 \\
+-5 \\
+-4
 \end{array}\right] , \left[\begin{array}{r}
-17 \\
+-16 \\
+-4 \\
+-25 \\
+-12
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 29 \\
-5 \\
-48
-\end{array}\right] , \left[\begin{array}{r}
-98 \\
-146 \\
+1 \\
 50 \\
-219
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--73 \\
--101 \\
--45 \\
--142
+28
 \end{array}\right]\)</span> 
   	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -2743,59 +2733,69 @@
   <h2 class="title">V3 - Spanning sets (ver. 45)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-1 \\
--10 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--5 \\
--6 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
 0 \\
--4 \\
--8 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
 -5 \\
-5 \\
--9 \\
-7
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-3 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+-4 \\
+1 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-5 \\
 3 \\
--8 \\
--7 \\
-9
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-4 \\
+4 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+4 \\
+3 \\
+-3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
-1 \\
--10 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
--8 \\
--5 \\
--6 \\
-5
-\end{array}\right] , \left[\begin{array}{r}
 0 \\
--4 \\
--8 \\
-3
-\end{array}\right] , \left[\begin{array}{r}
 -5 \\
-5 \\
--9 \\
-7
-\end{array}\right] , \text{and} \left[\begin{array}{r}
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-3 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+-4 \\
+1 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+2 \\
+-5 \\
 3 \\
--8 \\
--7 \\
-9
+1
+\end{array}\right] , \left[\begin{array}{r}
+-4 \\
+-4 \\
+4 \\
+-4
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+2 \\
+4 \\
+3 \\
+-3
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -2805,61 +2805,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 46)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--4 \\
-5 \\
+2 \\
+-1 \\
 -2 \\
--4
+4
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
--8 \\
--9 \\
-7
+-4 \\
+-5 \\
+3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--24 \\
-26 \\
-14 \\
--22
+3 \\
+1 \\
+1 \\
+-2
 \end{array}\right] , \left[\begin{array}{r}
--112 \\
-122 \\
-61 \\
--103
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-20 \\
--21 \\
--16 \\
-18
+4 \\
+3 \\
+2 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+4 \\
+-3 \\
+4 \\
+4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--4 \\
-5 \\
+2 \\
+-1 \\
 -2 \\
--4
+4
 \end{array}\right] , \left[\begin{array}{r}
-8 \\
--8 \\
--9 \\
-7
+-4 \\
+-5 \\
+3 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--24 \\
-26 \\
-14 \\
--22
+3 \\
+1 \\
+1 \\
+-2
 \end{array}\right] , \left[\begin{array}{r}
--112 \\
-122 \\
-61 \\
--103
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-20 \\
--21 \\
--16 \\
-18
+4 \\
+3 \\
+2 \\
+-2
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+4 \\
+-3 \\
+4 \\
+4
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2867,61 +2867,71 @@
   <h2 class="title">V3 - Spanning sets (ver. 47)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
--4 \\
--9 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
+-2 \\
 -5 \\
--8 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
 -3 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
-6 \\
-27 \\
-74 \\
 -5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-2 \\
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-4 \\
 3 \\
--2 \\
 -1
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+1 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-1 \\
+3 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+4 \\
+1 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+-4 \\
+-4 \\
+3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
-6 \\
--4 \\
--9 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--9 \\
+-2 \\
 -5 \\
--8 \\
-7
-\end{array}\right] , \left[\begin{array}{r}
--2 \\
 -3 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{r}
-6 \\
-27 \\
-74 \\
 -5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-2 \\
+\end{array}\right] , \left[\begin{array}{r}
+-3 \\
+-4 \\
 3 \\
--2 \\
 -1
+\end{array}\right] , \left[\begin{array}{r}
+-2 \\
+1 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-5 \\
+-1 \\
+3 \\
+4
+\end{array}\right] , \left[\begin{array}{r}
+1 \\
+4 \\
+1 \\
+1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-5 \\
+-4 \\
+-4 \\
+3
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2929,61 +2939,51 @@
   <h2 class="title">V3 - Spanning sets (ver. 48)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
--7 \\
 0 \\
+1 \\
 3 \\
-7
+2
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
+1 \\
+-5 \\
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+3 \\
+3 \\
+-1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-4 \\
 2 \\
--10 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--20 \\
-4 \\
--8 \\
-18
-\end{array}\right] , \left[\begin{array}{r}
--28 \\
-14 \\
--46 \\
-21
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-72 \\
--6 \\
--6 \\
--69
+-4
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
--7 \\
 0 \\
+1 \\
 3 \\
-7
+2
 \end{array}\right] , \left[\begin{array}{r}
-4 \\
+1 \\
+-5 \\
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{r}
+-1 \\
+3 \\
+3 \\
+-1
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+3 \\
+-4 \\
 2 \\
--10 \\
--5
-\end{array}\right] , \left[\begin{array}{r}
--20 \\
-4 \\
--8 \\
-18
-\end{array}\right] , \left[\begin{array}{r}
--28 \\
-14 \\
--46 \\
-21
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-72 \\
--6 \\
--6 \\
--69
+-4
 \end{array}\right]\)</span> 
-  	 do not  
+  	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -2991,59 +2991,59 @@
   <h2 class="title">V3 - Spanning sets (ver. 49)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
+-3 \\
+-3 \\
 -1 \\
--6 \\
--6 \\
--2
+-4
 \end{array}\right] , \left[\begin{array}{r}
--8 \\
-8 \\
 4 \\
--5
+2 \\
+-3 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
 0 \\
--6 \\
--10
+-3 \\
+-5 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--2 \\
--8 \\
-8 \\
-6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-7 \\
--8 \\
-6 \\
--2
+-4 \\
+4 \\
+3 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+3 \\
+-1 \\
+-3
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
+-3 \\
+-3 \\
 -1 \\
--6 \\
--6 \\
--2
+-4
 \end{array}\right] , \left[\begin{array}{r}
--8 \\
-8 \\
 4 \\
--5
+2 \\
+-3 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-7 \\
 0 \\
--6 \\
--10
+-3 \\
+-5 \\
+-1
 \end{array}\right] , \left[\begin{array}{r}
--2 \\
--8 \\
-8 \\
-6
-\end{array}\right] , \text{and} \left[\begin{array}{r}
-7 \\
--8 \\
-6 \\
--2
+-4 \\
+4 \\
+3 \\
+3
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
+-4 \\
+3 \\
+-1 \\
+-3
 \end{array}\right]\)</span> 
   	 do  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
@@ -3053,61 +3053,61 @@
   <h2 class="title">V3 - Spanning sets (ver. 50)</h2>
   <div class="statement">
     <p>Explain why the vectors <span class="m">\(\left[\begin{array}{r}
+-5 \\
+4 \\
 1 \\
--10 \\
-8 \\
-2
+-1
 \end{array}\right] , \left[\begin{array}{r}
 -2 \\
--4 \\
--4 \\
-2
+-2 \\
+1 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-6 \\
--5 \\
-9 \\
-0
+-8 \\
+10 \\
+1 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
+-13 \\
+14 \\
+2 \\
+-6
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 3 \\
 -2 \\
--3 \\
-5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--8 \\
-7 \\
--3 \\
--10
+-5 \\
+-5
 \end{array}\right]\)</span> span or don't span <span class="m">\(\mathbb{R}^4\)</span>. 
 	</p>
   </div>
   <div class="answer"><h4>Answer.</h4>
   <p> The vectors <span class="m">\(\left[\begin{array}{r}
+-5 \\
+4 \\
 1 \\
--10 \\
-8 \\
-2
+-1
 \end{array}\right] , \left[\begin{array}{r}
 -2 \\
--4 \\
--4 \\
-2
+-2 \\
+1 \\
+3
 \end{array}\right] , \left[\begin{array}{r}
-6 \\
--5 \\
-9 \\
-0
+-8 \\
+10 \\
+1 \\
+-5
 \end{array}\right] , \left[\begin{array}{r}
+-13 \\
+14 \\
+2 \\
+-6
+\end{array}\right] , \text{ and } \left[\begin{array}{r}
 3 \\
 -2 \\
--3 \\
-5
-\end{array}\right] , \text{and} \left[\begin{array}{r}
--8 \\
-7 \\
--3 \\
--10
+-5 \\
+-5
 \end{array}\right]\)</span> 
-  	 do  
+  	 do not  
 	span <span class="m">\(\mathbb{R}^4\)</span>.
   </p>
   </div>
@@ -3121,79 +3121,29 @@
       <h2>Diff EQ Standards</h2>
       <ul>
         
-          <li><a href="/diff-eq/C1/">DIFF-EQ C1</a></li>
-        
-          <li><a href="/diff-eq/C2/">DIFF-EQ C2</a></li>
-        
-          <li><a href="/diff-eq/C3m/">DIFF-EQ C3m</a></li>
-        
-          <li><a href="/diff-eq/C4/">DIFF-EQ C4</a></li>
-        
-          <li><a href="/diff-eq/C4b/">DIFF-EQ C4b</a></li>
-        
-          <li><a href="/diff-eq/C5/">DIFF-EQ C5</a></li>
-        
-          <li><a href="/diff-eq/C5b/">DIFF-EQ C5b</a></li>
-        
-          <li><a href="/diff-eq/C6/">DIFF-EQ C6</a></li>
-        
-          <li><a href="/diff-eq/C7m/">DIFF-EQ C7m</a></li>
-        
-          <li><a href="/diff-eq/D1/">DIFF-EQ D1</a></li>
-        
-          <li><a href="/diff-eq/D2/">DIFF-EQ D2</a></li>
-        
-          <li><a href="/diff-eq/D3m/">DIFF-EQ D3m</a></li>
-        
-          <li><a href="/diff-eq/D4m/">DIFF-EQ D4m</a></li>
-        
-          <li><a href="/diff-eq/F2/">DIFF-EQ F2</a></li>
-        
-          <li><a href="/diff-eq/F2b/">DIFF-EQ F2b</a></li>
-        
-          <li><a href="/diff-eq/F2c/">DIFF-EQ F2c</a></li>
-        
-          <li><a href="/diff-eq/F3m/">DIFF-EQ F3m</a></li>
-        
-          <li><a href="/diff-eq/F4/">DIFF-EQ F4</a></li>
-        
-          <li><a href="/diff-eq/F5/">DIFF-EQ F5</a></li>
-        
-          <li><a href="/diff-eq/F6/">DIFF-EQ F6</a></li>
-        
-          <li><a href="/diff-eq/N1/">DIFF-EQ N1</a></li>
-        
-          <li><a href="/diff-eq/N2/">DIFF-EQ N2</a></li>
-        
-          <li><a href="/diff-eq/N3m/">DIFF-EQ N3m</a></li>
-        
-          <li><a href="/diff-eq/S1/">DIFF-EQ S1</a></li>
-        
-          <li><a href="/diff-eq/S2m/">DIFF-EQ S2m</a></li>
-        
-          <li><a href="/diff-eq/S3/">DIFF-EQ S3</a></li>
-        
-          <li><a href="/diff-eq/S4m/">DIFF-EQ S4m</a></li>
-        
       </ul>
       <h2>Lin Alg Standards</h2>
       <ul>
         
-          <li><a href="/lin-alg/E2/">LIN-ALG E2</a></li>
+          <li><a href="/lin-alg/E2/">Linear Algebra E2</a></li>
         
-          <li><a href="/lin-alg/V2/">LIN-ALG V2</a></li>
+          <li><a href="/lin-alg/V1/">Linear Algebra V1</a></li>
         
-          <li><a href="/lin-alg/V3/">LIN-ALG V3</a></li>
+          <li><a href="/lin-alg/V10/">Linear Algebra V10</a></li>
         
-          <li><a href="/lin-alg/V5/">LIN-ALG V5</a></li>
+          <li><a href="/lin-alg/V2/">Linear Algebra V2</a></li>
         
-          <li><a href="/lin-alg/V6/">LIN-ALG V6</a></li>
+          <li><a href="/lin-alg/V3/">Linear Algebra V3</a></li>
         
-          <li><a href="/lin-alg/V7/">LIN-ALG V7</a></li>
+          <li><a href="/lin-alg/V5/">Linear Algebra V5</a></li>
         
-          <li><a href="/lin-alg/V8/">LIN-ALG V8</a></li>
+          <li><a href="/lin-alg/V6/">Linear Algebra V6</a></li>
         
-          <li><a href="/lin-alg/V9/">LIN-ALG V9</a></li>
+          <li><a href="/lin-alg/V7/">Linear Algebra V7</a></li>
+        
+          <li><a href="/lin-alg/V8/">Linear Algebra V8</a></li>
+        
+          <li><a href="/lin-alg/V9/">Linear Algebra V9</a></li>
         
       </ul>
     </div>

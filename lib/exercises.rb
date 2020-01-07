@@ -3,25 +3,19 @@ class ExercisesDataSource < Nanoc::DataSource
 
   def items
     items = []
-    courses = ['diff-eq', 'lin-alg']
-    courses.each do |course|
-      Dir.foreach("../mastr/build/#{course}") do |standard|
-        next if ['.','..'].include? standard
-        seeds = JSON.parse(File.read "../mastr/build/#{course}/#{standard}/seeds.json")
-        content = "<h2>#{seeds["title"]}</h2>\n"
-        seed_ints = seeds["seeds"].map{|seed| seed["_seed"]}.sort
-        seed_ints.each do |seed_int|
-          next if seed_int > 50
-          next if seed_int == 0
-          content << "<h4>Example #{seed_int}</h4>"
-          content << File.read("../mastr/build/#{course}/#{standard}/#{seed_int.to_s.rjust(3, "0")}.html")
-        end 
-        items << new_item(
-          content,
-          {title: "#{course.upcase} #{standard}"},
-          Nanoc::Identifier.new("/#{course}/#{standard}.html"),
-        )
-      end
+    Dir.foreach("../tbil-la/exercises/build") do |standard|
+      next if standard[0]=="."
+      seeds = JSON.parse(File.read "../tbil-la/exercises/build/#{standard}/seeds.json")
+      content = "<h2>#{seeds["title"]}</h2>\n"
+      (1..50).each do |seed_int|
+        content << "<h4>Example #{seed_int}</h4>"
+        content << File.read("../tbil-la/exercises/build/#{standard}/#{seed_int.to_s.rjust(3, "0")}.html")
+      end 
+      items << new_item(
+        content,
+        {title: "Linear Algebra #{standard}"},
+        Nanoc::Identifier.new("/lin-alg/#{standard}.html"),
+      )
     end
 
     return items

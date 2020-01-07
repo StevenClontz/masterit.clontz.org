@@ -1,0 +1,1021 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mastr - Linear Algebra V1</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc 4.11.0">
+  </head>
+  <body>
+    <div id="main">
+      <h2>V1 - Vector Spaces</h2>
+<h4>Example 1</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 1)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 2</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 2)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 3</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 3)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 4</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 4)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 5</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 5)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 6</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 6)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 7</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 7)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 8</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 8)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 9</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 9)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 10</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 10)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 11</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 11)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 12</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 12)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 13</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 13)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 14</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 14)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 15</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 15)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 16</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 16)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 17</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 17)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 18</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 18)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 19</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 19)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 20</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 20)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 21</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 21)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 22</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 22)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 23</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 23)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 24</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 24)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 25</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 25)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 26</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 26)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 27</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 27)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 28</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 28)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 29</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 29)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 30</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 30)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 31</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 31)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 32</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 32)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 33</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 33)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 34</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 34)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 35</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 35)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 36</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 36)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 37</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 37)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 38</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 38)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 39</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 39)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 40</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 40)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 41</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 41)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 42</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 42)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div><h4>Example 43</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 43)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 44</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 44)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 45</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 45)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 46</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 46)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+3y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not associative
+	
+  </p>
+  </div>
+</div><h4>Example 47</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 47)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (4x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 48</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 48)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (2x_1+x_2, y_1+2y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because an additive identity element does not exist
+	
+  </p>
+  </div>
+</div><h4>Example 49</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 49)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because vector addition is not commutative
+	
+  </p>
+  </div>
+</div><h4>Example 50</h4><div class="exercise">
+  <h2 class="title">V1 - Vector Spaces (ver. 50)</h2>
+  <div class="statement">
+    <p>Let <span class="m">\(V\)</span> be the set of all pairs of numbers <span class="m">\((x_1,y_1)\in\mathbb{R}^2\)</span>  together with the operations 
+\begin{align*}
+(x_1,y_1)\oplus (x_2,y_2)&amp;= (3x_1+x_2, y_1+1y_2)\\ 
+c \odot (x_1,y_1) &amp;= (cx_1,cy_1)\\ 
+\end{align*}
+
+	Show that scalar multiplication distributes over vector addition, i.e. 
+					<p class="me">\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).\]</p>
+	Show that <span class="m">\(V\)</span> nonetheless is not a vector space.
+	</p>
+  </div>
+  <div class="answer"><h4>Answer.</h4>
+  <p> <span class="m">\(V\)</span> is not a vector space because Scalar multiplication does not distribute over scalar addition
+	
+  </p>
+  </div>
+</div>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers</a></li>
+      </ul>
+      <h2>Diff EQ Standards</h2>
+      <ul>
+        
+      </ul>
+      <h2>Lin Alg Standards</h2>
+      <ul>
+        
+          <li><a href="/lin-alg/E2/">Linear Algebra E2</a></li>
+        
+          <li><a href="/lin-alg/V1/">Linear Algebra V1</a></li>
+        
+          <li><a href="/lin-alg/V10/">Linear Algebra V10</a></li>
+        
+          <li><a href="/lin-alg/V2/">Linear Algebra V2</a></li>
+        
+          <li><a href="/lin-alg/V3/">Linear Algebra V3</a></li>
+        
+          <li><a href="/lin-alg/V5/">Linear Algebra V5</a></li>
+        
+          <li><a href="/lin-alg/V6/">Linear Algebra V6</a></li>
+        
+          <li><a href="/lin-alg/V7/">Linear Algebra V7</a></li>
+        
+          <li><a href="/lin-alg/V8/">Linear Algebra V8</a></li>
+        
+          <li><a href="/lin-alg/V9/">Linear Algebra V9</a></li>
+        
+      </ul>
+    </div>
+<!-- latest MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  function toggleAnswers() {
+    var answers = document.getElementsByClassName("answer");
+    var i;
+    for (i = 0; i < answers.length; i++) {
+      var answer = answers[i];
+      answer.classList.toggle("hide");
+    }
+  }
+  if (document.getElementsByClassName("answer").length > 0) {
+    var showHideAnswers = document.getElementById("showHideAnswers");
+    showHideAnswers.classList.remove("hide");
+    showHideAnswers.addEventListener("click", function(e){e.preventDefault;toggleAnswers()});
+    toggleAnswers();
+  }
+</script>
+  </body>
+</html>
