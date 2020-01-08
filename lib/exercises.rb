@@ -13,7 +13,7 @@ class ExercisesDataSource < Nanoc::DataSource
       end 
       items << new_item(
         content,
-        {title: "Linear Algebra #{standard}"},
+        {title: "#{standard} (Lin Alg)"},
         Nanoc::Identifier.new("/lin-alg/#{standard}.html"),
       )
     end
@@ -27,7 +27,7 @@ class ExercisesDataSource < Nanoc::DataSource
       end 
       items << new_item(
         content,
-        {title: "Differential Equations #{standard}"},
+        {title: "#{standard} (Diff EQ)"},
         Nanoc::Identifier.new("/diff-eq/#{standard}.html"),
       )
     end
