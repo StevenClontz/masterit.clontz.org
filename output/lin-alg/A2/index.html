@@ -1,0 +1,1950 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mastr - Linear Algebra A2</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc 4.11.0">
+  </head>
+  <body>
+    <div id="main">
+      <h2>A2 - Linear maps and matrices</h2>
+<h4>Example 1</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 1)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 4 \, x_{2} - 3 \, x_{3} + 5 \, x_{4} \\
+x_{2} + x_{3} - 2 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-3 \\
+8 \\
+1 \\
+-5
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; -4 &amp; -3 &amp; 5 \\
+0 &amp; 1 &amp; 1 &amp; -2
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-63 \\
+19
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 2</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 2)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + 5 \, x_{2} + 7 \, x_{3} - 5 \, x_{4} \\
+x_{2} + 2 \, x_{3} - x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-8 \\
+-6 \\
+5 \\
+-6
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; 5 &amp; 7 &amp; -5 \\
+0 &amp; 1 &amp; 2 &amp; -1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+27 \\
+10
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 3</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 3)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+3 \, x_{2} + 8 \, x_{3} \\
+x_{2} + 3 \, x_{3} \\
+x_{1} - x_{2} - 2 \, x_{3} \\
+-2 \, x_{1} - 3 \, x_{2} - 6 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-6 \\
+5 \\
+1
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+0 &amp; 3 &amp; 8 \\
+0 &amp; 1 &amp; 3 \\
+1 &amp; -1 &amp; -2 \\
+-2 &amp; -3 &amp; -6
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+23 \\
+8 \\
+-13 \\
+-9
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 4</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 4)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + x_{2} + x_{3} \\
+-3 \, x_{1} - 2 \, x_{2} - 3 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+2 \\
+7 \\
+2
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 1 &amp; 1 \\
+-3 &amp; -2 &amp; -3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+11 \\
+-26
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 5</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 5)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} \\
+-x_{1} + 3 \, x_{2} \\
+-2 \, x_{1} + 4 \, x_{2} \\
+-2 \, x_{1} + 2 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-8 \\
+-6
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+-1 &amp; 0 \\
+-1 &amp; 3 \\
+-2 &amp; 4 \\
+-2 &amp; 2
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+8 \\
+-10 \\
+-8 \\
+4
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 6</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 6)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + x_{2} - 2 \, x_{3} - x_{4} \\
+x_{2} - 5 \, x_{3} - 5 \, x_{4} \\
+x_{2} - 4 \, x_{3} - 4 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-6 \\
+6 \\
+7 \\
+3
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; 1 &amp; -2 &amp; -1 \\
+0 &amp; 1 &amp; -5 &amp; -5 \\
+0 &amp; 1 &amp; -4 &amp; -4
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-17 \\
+-44 \\
+-34
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 7</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 7)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-3 \, x_{1} + x_{2} + 3 \, x_{3} + 3 \, x_{4} \\
+x_{1} + x_{3} + 2 \, x_{4} \\
+-2 \, x_{1} + x_{2} + 3 \, x_{3} + 4 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+0 \\
+8 \\
+2 \\
+-3
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+-3 &amp; 1 &amp; 3 &amp; 3 \\
+1 &amp; 0 &amp; 1 &amp; 2 \\
+-2 &amp; 1 &amp; 3 &amp; 4
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+5 \\
+-4 \\
+2
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 8</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 8)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-3 \, x_{1} - 3 \, x_{2} + 7 \, x_{3} + 2 \, x_{4} \\
+-4 \, x_{1} - 3 \, x_{2} + 8 \, x_{3} + x_{4} \\
+2 \, x_{1} + 2 \, x_{2} - 5 \, x_{3} - 2 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-6 \\
+-3 \\
+-5 \\
+0
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+-3 &amp; -3 &amp; 7 &amp; 2 \\
+-4 &amp; -3 &amp; 8 &amp; 1 \\
+2 &amp; 2 &amp; -5 &amp; -2
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-8 \\
+-7 \\
+7
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 9</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 9)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 3 \, x_{3} \\
+x_{2} - 3 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-3 \\
+1 \\
+7
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; -3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-24 \\
+-20
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 10</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 10)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + x_{3} - 2 \, x_{4} \\
+5 \, x_{1} + x_{2} + 2 \, x_{3} - 8 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-7 \\
+-6 \\
+0 \\
+1
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; 0 &amp; 1 &amp; -2 \\
+5 &amp; 1 &amp; 2 &amp; -8
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-9 \\
+-49
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 11</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 11)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{2} - 2 \, x_{3} \\
+-x_{1} + 5 \, x_{2} - 6 \, x_{3} \\
+-2 \, x_{1} + 6 \, x_{2} - 3 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-7 \\
+-5 \\
+-1
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+0 &amp; 1 &amp; -2 \\
+-1 &amp; 5 &amp; -6 \\
+-2 &amp; 6 &amp; -3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-3 \\
+-12 \\
+-13
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 12</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 12)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + 2 \, x_{2} + 3 \, x_{3} \\
+-x_{1} - 3 \, x_{2} - x_{3} \\
+-2 \, x_{2} + 3 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-6 \\
+4 \\
+-5
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 2 &amp; 3 \\
+-1 &amp; -3 &amp; -1 \\
+0 &amp; -2 &amp; 3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-13 \\
+-1 \\
+-23
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 13</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 13)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + 3 \, x_{2} \\
+x_{2} \\
+x_{1} - 2 \, x_{2} \\
+-2 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-5 \\
+8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+1 &amp; 3 \\
+0 &amp; 1 \\
+1 &amp; -2 \\
+0 &amp; -2
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+19 \\
+8 \\
+-21 \\
+-16
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 14</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 14)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} + 3 \, x_{2} \\
+x_{1} - 2 \, x_{2} \\
+-2 \, x_{1} + 6 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-5 \\
+2
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+-1 &amp; 3 \\
+1 &amp; -2 \\
+-2 &amp; 6
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+11 \\
+-9 \\
+22
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 15</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 15)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-2 \, x_{1} - x_{2} + 7 \, x_{3} + 2 \, x_{4} \\
+x_{1} - 3 \, x_{3} + x_{4} \\
+-x_{1} + 4 \, x_{3} - x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-3 \\
+-5 \\
+4 \\
+-4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+-2 &amp; -1 &amp; 7 &amp; 2 \\
+1 &amp; 0 &amp; -3 &amp; 1 \\
+-1 &amp; 0 &amp; 4 &amp; -1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+31 \\
+-19 \\
+23
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 16</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 16)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-2 \, x_{1} - x_{2} - x_{3} \\
+-3 \, x_{1} - 2 \, x_{2} + x_{3} \\
+x_{1} + x_{2} - x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-2 \\
+5 \\
+-4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+-2 &amp; -1 &amp; -1 \\
+-3 &amp; -2 &amp; 1 \\
+1 &amp; 1 &amp; -1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+3 \\
+-8 \\
+7
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 17</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 17)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + 2 \, x_{2} + 2 \, x_{3} \\
+-3 \, x_{1} - 5 \, x_{2} - 7 \, x_{3} \\
+-2 \, x_{1} - 7 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-3 \\
+5 \\
+5
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 2 &amp; 2 \\
+-3 &amp; -5 &amp; -7 \\
+-2 &amp; -7 &amp; 0
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+17 \\
+-51 \\
+-29
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 18</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 18)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + 4 \, x_{2} - 3 \, x_{3} - 6 \, x_{4} \\
+-x_{1} - 3 \, x_{2} + 2 \, x_{3} + 5 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+0 \\
+-4 \\
+8 \\
+-4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; 4 &amp; -3 &amp; -6 \\
+-1 &amp; -3 &amp; 2 &amp; 5
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-16 \\
+8
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 19</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 19)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} - x_{2} \\
+x_{2} - 3 \, x_{3} \\
+4 \, x_{1} + 3 \, x_{2} - 8 \, x_{3} \\
+-2 \, x_{1} - 2 \, x_{2} + 3 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+1 \\
+5 \\
+8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+-1 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -3 \\
+4 &amp; 3 &amp; -8 \\
+-2 &amp; -2 &amp; 3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-6 \\
+-19 \\
+-45 \\
+12
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 20</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 20)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 3 \, x_{2} - 6 \, x_{3} \\
+x_{1} - 2 \, x_{2} - 3 \, x_{3} \\
+x_{2} + 4 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-5 \\
+8 \\
+2
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; -3 &amp; -6 \\
+1 &amp; -2 &amp; -3 \\
+0 &amp; 1 &amp; 4
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-41 \\
+-27 \\
+16
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 21</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 21)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+5 \, x_{1} + 3 \, x_{2} \\
+-2 \, x_{1} - x_{2} \\
+2 \, x_{1} + 7 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-1 \\
+-1
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+5 &amp; 3 \\
+-2 &amp; -1 \\
+2 &amp; 7
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-8 \\
+3 \\
+-9
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 22</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 22)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} - 6 \, x_{2} \\
+x_{2} \\
+2 \, x_{1} - 3 \, x_{2} \\
+x_{1} + x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-3 \\
+5
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+-1 &amp; -6 \\
+0 &amp; 1 \\
+2 &amp; -3 \\
+1 &amp; 1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-27 \\
+5 \\
+-21 \\
+2
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 23</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 23)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-4 \, x_{2} \\
+x_{1} - x_{2} \\
+x_{1} + 2 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-5 \\
+-2
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+0 &amp; -4 \\
+1 &amp; -1 \\
+1 &amp; 2
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+8 \\
+-3 \\
+-9
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 24</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 24)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+5 \, x_{1} + 3 \, x_{3} \\
+-4 \, x_{1} + x_{2} \\
+-2 \, x_{1} - x_{3} \\
+5 \, x_{1} + 4 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-3 \\
+1 \\
+-8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+5 &amp; 0 &amp; 3 \\
+-4 &amp; 1 &amp; 0 \\
+-2 &amp; 0 &amp; -1 \\
+5 &amp; 0 &amp; 4
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-39 \\
+13 \\
+14 \\
+-47
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 25</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 25)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} + 3 \, x_{2} + 4 \, x_{3} \\
+-x_{1} + 4 \, x_{2} - 7 \, x_{3} \\
+-2 \, x_{1} + 3 \, x_{2} - 8 \, x_{3} \\
+-x_{1} + 3 \, x_{2} - x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-3 \\
+-1 \\
+-8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+-1 &amp; 3 &amp; 4 \\
+-1 &amp; 4 &amp; -7 \\
+-2 &amp; 3 &amp; -8 \\
+-1 &amp; 3 &amp; -1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-32 \\
+55 \\
+67 \\
+8
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 26</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 26)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+2 \, x_{1} - 5 \, x_{2} - 2 \, x_{3} - 7 \, x_{4} \\
+x_{1} - 2 \, x_{2} - x_{3} - 3 \, x_{4} \\
+-5 \, x_{2} + x_{3} - 3 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-2 \\
+4 \\
+2 \\
+2
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+2 &amp; -5 &amp; -2 &amp; -7 \\
+1 &amp; -2 &amp; -1 &amp; -3 \\
+0 &amp; -5 &amp; 1 &amp; -3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-42 \\
+-18 \\
+-24
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 27</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 27)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} - 8 \, x_{2} \\
+-3 \, x_{1} + 7 \, x_{2} \\
+-x_{1} - 3 \, x_{2} \\
+-3 \, x_{1} + 7 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+3 \\
+4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+-1 &amp; -8 \\
+-3 &amp; 7 \\
+-1 &amp; -3 \\
+-3 &amp; 7
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-35 \\
+19 \\
+-15 \\
+19
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 28</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 28)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + x_{2} - 5 \, x_{3} \\
+x_{1} + 2 \, x_{2} - 8 \, x_{3} \\
+2 \, x_{1} + x_{2} - 6 \, x_{3} \\
+-x_{2} + 6 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+3 \\
+-8 \\
+-6
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 1 &amp; -5 \\
+1 &amp; 2 &amp; -8 \\
+2 &amp; 1 &amp; -6 \\
+0 &amp; -1 &amp; 6
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+25 \\
+35 \\
+34 \\
+-28
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 29</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 29)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} - 5 \, x_{2} - x_{3} + 5 \, x_{4} \\
+x_{1} + 4 \, x_{2} + x_{3} - 4 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+4 \\
+6 \\
+-6 \\
+8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+-1 &amp; -5 &amp; -1 &amp; 5 \\
+1 &amp; 4 &amp; 1 &amp; -4
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+12 \\
+-10
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 30</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 30)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 4 \, x_{2} + 5 \, x_{3} \\
+-x_{1} + 5 \, x_{2} + 7 \, x_{3} \\
+x_{3} \\
+-5 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+6 \\
+5 \\
+-4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; -4 &amp; 5 \\
+-1 &amp; 5 &amp; 7 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; -5
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-34 \\
+-9 \\
+-4 \\
+20
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 31</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 31)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 5 \, x_{2} \\
+x_{2} \\
+4 \, x_{2} \\
+x_{1} - 6 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-5 \\
+-4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+1 &amp; -5 \\
+0 &amp; 1 \\
+0 &amp; 4 \\
+1 &amp; -6
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+15 \\
+-4 \\
+-16 \\
+19
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 32</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 32)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + x_{2} \\
+-5 \, x_{1} - 4 \, x_{2} - 3 \, x_{3} \\
+3 \, x_{2} - 8 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-2 \\
+3 \\
+-3
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 1 &amp; 0 \\
+-5 &amp; -4 &amp; -3 \\
+0 &amp; 3 &amp; -8
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+1 \\
+7 \\
+33
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 33</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 33)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+4 \, x_{1} + 7 \, x_{2} \\
+x_{1} + 4 \, x_{2} \\
+3 \, x_{1} + 4 \, x_{2} \\
+-2 \, x_{1} - 3 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+4 \\
+-6
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+4 &amp; 7 \\
+1 &amp; 4 \\
+3 &amp; 4 \\
+-2 &amp; -3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-26 \\
+-20 \\
+-12 \\
+10
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 34</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 34)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} \\
+x_{2} + 4 \, x_{3} \\
+x_{2} + 5 \, x_{3} \\
+x_{1} - 2 \, x_{2} - 5 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-6 \\
+-6 \\
+3
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 4 \\
+0 &amp; 1 &amp; 5 \\
+1 &amp; -2 &amp; -5
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-6 \\
+6 \\
+9 \\
+-9
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 35</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 35)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + 5 \, x_{2} \\
+x_{1} + 6 \, x_{2} \\
+x_{1} + 7 \, x_{2} \\
+-2 \, x_{1} - 5 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+6 \\
+6
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+1 &amp; 5 \\
+1 &amp; 6 \\
+1 &amp; 7 \\
+-2 &amp; -5
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+36 \\
+42 \\
+48 \\
+-42
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 36</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 36)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 3 \, x_{2} - 4 \, x_{3} - x_{4} \\
+2 \, x_{1} - 6 \, x_{2} - 7 \, x_{3} - 2 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+1 \\
+-2 \\
+0 \\
+8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; -3 &amp; -4 &amp; -1 \\
+2 &amp; -6 &amp; -7 &amp; -2
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-1 \\
+-2
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 37</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 37)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+7 \, x_{1} + 3 \, x_{2} - 2 \, x_{3} - 7 \, x_{4} \\
+2 \, x_{1} + x_{2} - x_{3} - x_{4} \\
+2 \, x_{1} + x_{2} - 3 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+6 \\
+2 \\
+5 \\
+4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+7 &amp; 3 &amp; -2 &amp; -7 \\
+2 &amp; 1 &amp; -1 &amp; -1 \\
+2 &amp; 1 &amp; 0 &amp; -3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+10 \\
+5 \\
+2
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 38</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 38)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-2 \, x_{1} - 5 \, x_{2} \\
+-3 \, x_{1} - 8 \, x_{2} \\
+-5 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+6 \\
+0
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+-2 &amp; -5 \\
+-3 &amp; -8 \\
+0 &amp; -5
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-12 \\
+-18 \\
+0
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 39</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 39)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{1}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 2 \, x_{2} + 3 \, x_{3} - x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+0 \\
+5 \\
+7 \\
+-4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; -2 &amp; 3 &amp; -1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+15
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 40</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 40)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{1} + 4 \, x_{3} \\
+-2 \, x_{1} - x_{2} + 8 \, x_{3} \\
+2 \, x_{1} - 3 \, x_{2} - 7 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+2 \\
+8 \\
+-5
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+-1 &amp; 0 &amp; 4 \\
+-2 &amp; -1 &amp; 8 \\
+2 &amp; -3 &amp; -7
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-22 \\
+-52 \\
+15
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 41</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 41)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 3 \, x_{2} \\
+2 \, x_{1} - 5 \, x_{2} \\
+0 \\
+5 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+2 \\
+-1
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+1 &amp; -3 \\
+2 &amp; -5 \\
+0 &amp; 0 \\
+0 &amp; 5
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+5 \\
+9 \\
+0 \\
+-5
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 42</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 42)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-2 \, x_{1} - 2 \, x_{2} - x_{3} \\
+x_{2} - x_{3} \\
+-x_{1} + x_{2} - 3 \, x_{3} \\
+x_{1} - 6 \, x_{2} + 8 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+6 \\
+0 \\
+-4
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+-2 &amp; -2 &amp; -1 \\
+0 &amp; 1 &amp; -1 \\
+-1 &amp; 1 &amp; -3 \\
+1 &amp; -6 &amp; 8
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-8 \\
+4 \\
+6 \\
+-26
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 43</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 43)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+2 \, x_{1} \\
+-4 \, x_{1} - 7 \, x_{2} \\
+-4 \, x_{1} - 7 \, x_{2} \\
+-x_{1} + 2 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+6 \\
+-7
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+2 &amp; 0 \\
+-4 &amp; -7 \\
+-4 &amp; -7 \\
+-1 &amp; 2
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+12 \\
+25 \\
+25 \\
+-20
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 44</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 44)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{3}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 5 \, x_{2} \\
+-x_{1} + 6 \, x_{2} \\
+x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-8 \\
+5
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+1 &amp; -5 \\
+-1 &amp; 6 \\
+0 &amp; 1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-33 \\
+38 \\
+5
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 45</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 45)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 5 \, x_{2} - 2 \, x_{4} \\
+-x_{1} + 5 \, x_{2} + x_{3} + 3 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+3 \\
+-1 \\
+4 \\
+0
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; -5 &amp; 0 &amp; -2 \\
+-1 &amp; 5 &amp; 1 &amp; 3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+8 \\
+-4
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 46</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 46)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-2 \, x_{1} - 2 \, x_{2} - 2 \, x_{3} \\
+-x_{1} + x_{2} + 7 \, x_{3} \\
+5 \, x_{1} + x_{2} - 4 \, x_{3} \\
+3 \, x_{1} + 2 \, x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+7 \\
+-4 \\
+8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+-2 &amp; -2 &amp; -2 \\
+-1 &amp; 1 &amp; 7 \\
+5 &amp; 1 &amp; -4 \\
+3 &amp; 2 &amp; 0
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-22 \\
+45 \\
+-1 \\
+13
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 47</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 47)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{4}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} - 2 \, x_{2} + 2 \, x_{3} + 4 \, x_{4} \\
+2 \, x_{1} - 3 \, x_{2} + 2 \, x_{3} + 7 \, x_{4}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+6 \\
+7 \\
+2 \\
+7
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrrr}
+1 &amp; -2 &amp; 2 &amp; 4 \\
+2 &amp; -3 &amp; 2 &amp; 7
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+24 \\
+44
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 48</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 48)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{2}\to\mathbb R^{4}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-2 \, x_{1} - 5 \, x_{2} \\
+-x_{1} - 3 \, x_{2} \\
+-x_{1} - x_{2} \\
+x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+4 \\
+8
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rr}
+-2 &amp; -5 \\
+-1 &amp; -3 \\
+-1 &amp; -1 \\
+0 &amp; 1
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-48 \\
+-28 \\
+-12 \\
+8
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 49</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 49)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+x_{1} + 3 \, x_{2} + 2 \, x_{3} \\
+-2 \, x_{1} - 5 \, x_{2} - 3 \, x_{3}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+-5 \\
+-8 \\
+-2
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+1 &amp; 3 &amp; 2 \\
+-2 &amp; -5 &amp; -3
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+-33 \\
+56
+\end{array}\right]\]</p>
+  </div>
+</div><h4>Example 50</h4><div class="exercise">
+  <h2 class="title">A2 - Linear maps and matrices (ver. 50)</h2>
+  <div class="statement">
+    <p>
+      Let <span class="m">\(T:\mathbb R^{3}\to\mathbb R^{2}\)</span> be the transformation given by
+    </p>
+    <p class="me">\[T\left( \left[\begin{array}{r}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right] \right)= \left[\begin{array}{r}
+-x_{2} + x_{3} \\
+x_{1} - x_{2}
+\end{array}\right]\]</p>
+    <p>
+      First give the standard matrix for <span class="m">\(T\)</span>.
+      Then show how to evaluate <span class="m">\(T\left( \left[\begin{array}{r}
+8 \\
+0 \\
+3
+\end{array}\right] \right)\)</span>.
+    </p>
+  </div>
+
+  <div class="answer"><h4>Answer.</h4>
+    <p class="me">\[\left[\begin{array}{rrr}
+0 &amp; -1 &amp; 1 \\
+1 &amp; -1 &amp; 0
+\end{array}\right]\]</p>
+    <p class="me">\[\left[\begin{array}{r}
+3 \\
+8
+\end{array}\right]\]</p>
+  </div>
+</div>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers</a></li>
+      </ul>
+      <h2>Diff EQ Standards</h2>
+      <ul>
+        
+      </ul>
+      <h2>Lin Alg Standards</h2>
+      <ul>
+        
+          <li><a href="/lin-alg/A2/">Linear Algebra A2</a></li>
+        
+          <li><a href="/lin-alg/A3/">Linear Algebra A3</a></li>
+        
+          <li><a href="/lin-alg/E1/">Linear Algebra E1</a></li>
+        
+          <li><a href="/lin-alg/E2/">Linear Algebra E2</a></li>
+        
+          <li><a href="/lin-alg/E3/">Linear Algebra E3</a></li>
+        
+          <li><a href="/lin-alg/M1/">Linear Algebra M1</a></li>
+        
+          <li><a href="/lin-alg/M2/">Linear Algebra M2</a></li>
+        
+          <li><a href="/lin-alg/M3/">Linear Algebra M3</a></li>
+        
+          <li><a href="/lin-alg/V01/">Linear Algebra V01</a></li>
+        
+          <li><a href="/lin-alg/V02/">Linear Algebra V02</a></li>
+        
+          <li><a href="/lin-alg/V03/">Linear Algebra V03</a></li>
+        
+          <li><a href="/lin-alg/V05/">Linear Algebra V05</a></li>
+        
+          <li><a href="/lin-alg/V06/">Linear Algebra V06</a></li>
+        
+          <li><a href="/lin-alg/V07/">Linear Algebra V07</a></li>
+        
+          <li><a href="/lin-alg/V08/">Linear Algebra V08</a></li>
+        
+          <li><a href="/lin-alg/V09/">Linear Algebra V09</a></li>
+        
+          <li><a href="/lin-alg/V10/">Linear Algebra V10</a></li>
+        
+      </ul>
+    </div>
+<!-- latest MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  function toggleAnswers() {
+    var answers = document.getElementsByClassName("answer");
+    var i;
+    for (i = 0; i < answers.length; i++) {
+      var answer = answers[i];
+      answer.classList.toggle("hide");
+    }
+  }
+  if (document.getElementsByClassName("answer").length > 0) {
+    var showHideAnswers = document.getElementById("showHideAnswers");
+    showHideAnswers.classList.remove("hide");
+    showHideAnswers.addEventListener("click", function(e){e.preventDefault;toggleAnswers()});
+    toggleAnswers();
+  }
+</script>
+  </body>
+</html>
