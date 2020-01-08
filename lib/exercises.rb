@@ -17,6 +17,20 @@ class ExercisesDataSource < Nanoc::DataSource
         Nanoc::Identifier.new("/lin-alg/#{standard}.html"),
       )
     end
+    Dir.foreach("../mastr-diff-eq/build") do |standard|
+      next if standard[0]=="."
+      seeds = JSON.parse(File.read "../mastr-diff-eq/build/#{standard}/seeds.json")
+      content = "<h2>#{seeds["title"]}</h2>\n"
+      (1..50).each do |seed_int|
+        content << "<h4>Example #{seed_int}</h4>"
+        content << File.read("../mastr-diff-eq/build/#{standard}/#{seed_int.to_s.rjust(3, "0")}.html")
+      end 
+      items << new_item(
+        content,
+        {title: "Differential Equations #{standard}"},
+        Nanoc::Identifier.new("/diff-eq/#{standard}.html"),
+      )
+    end
 
     return items
   end
