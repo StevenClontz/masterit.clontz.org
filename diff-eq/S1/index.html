@@ -566,7 +566,7 @@
     <div id="sidebar">
       <ul>
         <li><a href="/">Home</a></li>
-        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers</a></li>
+        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers [Spacebar]</a></li>
       </ul>
       <h2>Diff EQ Standards</h2>
       <ul>
@@ -691,7 +691,8 @@
   if (document.getElementsByClassName("answer").length > 0) {
     var showHideAnswers = document.getElementById("showHideAnswers");
     showHideAnswers.classList.remove("hide");
-    showHideAnswers.addEventListener("click", function(e){e.preventDefault;toggleAnswers()});
+    showHideAnswers.addEventListener("click", function(e){toggleAnswers();e.preventDefault();});
+    document.addEventListener("keydown", function(e){if (e.key==" "){toggleAnswers();e.preventDefault()}});
     toggleAnswers();
   }
 </script>
