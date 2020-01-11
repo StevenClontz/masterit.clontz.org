@@ -1,16 +1,164 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Mastr - A2 (Lin Alg)</title>
-    <link rel="stylesheet" href="/stylesheet.css">
-
-    <!-- you don't need to keep this, but it's cool for stats! -->
-    <meta name="generator" content="Nanoc 4.11.0">
-  </head>
-  <body>
-    <div id="main">
-      <h2>A2 - Linear maps and matrices</h2>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <!-- you don't need to keep this, but it's cool for stats -->
+  <meta name="generator" content="Nanoc 4.11.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="/stylesheet.css">
+  <title>Mastr - A2 (Lin Alg)</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Mastr</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!--<li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+  	</li>-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Differential Equations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!--<a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+  	    <a class="dropdown-item" href="#">Something else here</a>-->
+              
+                <a class="dropdown-item" href="/diff-eq/C1/">C1 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/C2/">C2 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/C3m/">C3m (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/C4/">C4 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/C5/">C5 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/C6/">C6 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/C7m/">C7m (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/D1/">D1 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/D2/">D2 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/D3m/">D3m (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/D4m/">D4m (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/F2/">F2 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/F3m/">F3m (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/F4/">F4 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/F5/">F5 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/F6/">F6 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/N1/">N1 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/N2/">N2 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/N3m/">N3m (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/S1/">S1 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/S2m/">S2m (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/S3/">S3 (Diff EQ)</a>
+              
+                <a class="dropdown-item" href="/diff-eq/S4m/">S4m (Diff EQ)</a>
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Linear Algebra
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!--<a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+  	    <a class="dropdown-item" href="#">Something else here</a>-->
+              
+                <a class="dropdown-item" href="/lin-alg/A1/">A1 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/A2/">A2 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/A3/">A3 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/A4/">A4 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/E1/">E1 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/E2/">E2 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/E3/">E3 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/G1/">G1 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/G2/">G2 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/G3/">G3 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/G4/">G4 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/M1/">M1 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/M2/">M2 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/M3/">M3 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V01/">V01 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V02/">V02 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V03/">V03 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V04/">V04 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V05/">V05 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V06/">V06 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V07/">V07 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V08/">V08 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V09/">V09 (Lin Alg)</a>
+              
+                <a class="dropdown-item" href="/lin-alg/V10/">V10 (Lin Alg)</a>
+              
+            </div>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+        </ul>
+	<ul class="navbar-nav">
+          <li id="showHideAnswers" class="d-none nav-item"><a class="nav-link" href="#">Show/Hide Answers [Spacebar]</a></li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-
+        </form>-->
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <h2>A2 - Linear maps and matrices</h2>
+<hr/>
 <h4>Example 1</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 1)</h2>
   
@@ -54,7 +202,8 @@ x_{2} + x_{3} - 2 \, x_{4}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 2</h4><div class="exercise">
+</div><hr/>
+<h4>Example 2</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 2)</h2>
   
   <div class="statement">
@@ -97,7 +246,8 @@ x_{2} + 2 \, x_{3} - x_{4}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 3</h4><div class="exercise">
+</div><hr/>
+<h4>Example 3</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 3)</h2>
   
   <div class="statement">
@@ -139,7 +289,8 @@ x_{1} - x_{2} - 2 \, x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 4</h4><div class="exercise">
+</div><hr/>
+<h4>Example 4</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 4)</h2>
   
   <div class="statement">
@@ -179,7 +330,8 @@ x_{1} + x_{2} + x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 5</h4><div class="exercise">
+</div><hr/>
+<h4>Example 5</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 5)</h2>
   
   <div class="statement">
@@ -219,7 +371,8 @@ x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 6</h4><div class="exercise">
+</div><hr/>
+<h4>Example 6</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 6)</h2>
   
   <div class="statement">
@@ -265,7 +418,8 @@ x_{2} - 4 \, x_{3} - 4 \, x_{4}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 7</h4><div class="exercise">
+</div><hr/>
+<h4>Example 7</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 7)</h2>
   
   <div class="statement">
@@ -311,7 +465,8 @@ x_{1} + x_{3} + 2 \, x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 8</h4><div class="exercise">
+</div><hr/>
+<h4>Example 8</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 8)</h2>
   
   <div class="statement">
@@ -352,7 +507,8 @@ x_{4}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 9</h4><div class="exercise">
+</div><hr/>
+<h4>Example 9</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 9)</h2>
   
   <div class="statement">
@@ -392,7 +548,8 @@ x_{2} - 3 \, x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 10</h4><div class="exercise">
+</div><hr/>
+<h4>Example 10</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 10)</h2>
   
   <div class="statement">
@@ -435,7 +592,8 @@ x_{1} + x_{3} - 2 \, x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 11</h4><div class="exercise">
+</div><hr/>
+<h4>Example 11</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 11)</h2>
   
   <div class="statement">
@@ -474,7 +632,8 @@ x_{2} - 2 \, x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 12</h4><div class="exercise">
+</div><hr/>
+<h4>Example 12</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 12)</h2>
   
   <div class="statement">
@@ -517,7 +676,8 @@ x_{1} + 2 \, x_{2} + 3 \, x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 13</h4><div class="exercise">
+</div><hr/>
+<h4>Example 13</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 13)</h2>
   
   <div class="statement">
@@ -560,7 +720,8 @@ x_{1} - 2 \, x_{2} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 14</h4><div class="exercise">
+</div><hr/>
+<h4>Example 14</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 14)</h2>
   
   <div class="statement">
@@ -600,7 +761,8 @@ x_{1} - 2 \, x_{2} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 15</h4><div class="exercise">
+</div><hr/>
+<h4>Example 15</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 15)</h2>
   
   <div class="statement">
@@ -646,7 +808,8 @@ x_{1} - 3 \, x_{3} + x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 16</h4><div class="exercise">
+</div><hr/>
+<h4>Example 16</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 16)</h2>
   
   <div class="statement">
@@ -685,7 +848,8 @@ x_{1} + x_{2} - x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 17</h4><div class="exercise">
+</div><hr/>
+<h4>Example 17</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 17)</h2>
   
   <div class="statement">
@@ -724,7 +888,8 @@ x_{1} + 2 \, x_{2} + 2 \, x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 18</h4><div class="exercise">
+</div><hr/>
+<h4>Example 18</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 18)</h2>
   
   <div class="statement">
@@ -767,7 +932,8 @@ x_{1} + 4 \, x_{2} - 3 \, x_{3} - 6 \, x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 19</h4><div class="exercise">
+</div><hr/>
+<h4>Example 19</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 19)</h2>
   
   <div class="statement">
@@ -813,7 +979,8 @@ x_{2} - 3 \, x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 20</h4><div class="exercise">
+</div><hr/>
+<h4>Example 20</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 20)</h2>
   
   <div class="statement">
@@ -852,7 +1019,8 @@ x_{2} + 4 \, x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 21</h4><div class="exercise">
+</div><hr/>
+<h4>Example 21</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 21)</h2>
   
   <div class="statement">
@@ -892,7 +1060,8 @@ x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 22</h4><div class="exercise">
+</div><hr/>
+<h4>Example 22</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 22)</h2>
   
   <div class="statement">
@@ -932,7 +1101,8 @@ x_{1} + x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 23</h4><div class="exercise">
+</div><hr/>
+<h4>Example 23</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 23)</h2>
   
   <div class="statement">
@@ -972,7 +1142,8 @@ x_{1} + 2 \, x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 24</h4><div class="exercise">
+</div><hr/>
+<h4>Example 24</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 24)</h2>
   
   <div class="statement">
@@ -1014,7 +1185,8 @@ x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 25</h4><div class="exercise">
+</div><hr/>
+<h4>Example 25</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 25)</h2>
   
   <div class="statement">
@@ -1056,7 +1228,8 @@ x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 26</h4><div class="exercise">
+</div><hr/>
+<h4>Example 26</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 26)</h2>
   
   <div class="statement">
@@ -1102,7 +1275,8 @@ x_{1} - 2 \, x_{2} - x_{3} - 3 \, x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 27</h4><div class="exercise">
+</div><hr/>
+<h4>Example 27</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 27)</h2>
   
   <div class="statement">
@@ -1142,7 +1316,8 @@ x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 28</h4><div class="exercise">
+</div><hr/>
+<h4>Example 28</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 28)</h2>
   
   <div class="statement">
@@ -1188,7 +1363,8 @@ x_{1} + 2 \, x_{2} - 8 \, x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 29</h4><div class="exercise">
+</div><hr/>
+<h4>Example 29</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 29)</h2>
   
   <div class="statement">
@@ -1226,7 +1402,8 @@ x_{1} + 4 \, x_{2} + x_{3} - 4 \, x_{4}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 30</h4><div class="exercise">
+</div><hr/>
+<h4>Example 30</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 30)</h2>
   
   <div class="statement">
@@ -1272,7 +1449,8 @@ x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 31</h4><div class="exercise">
+</div><hr/>
+<h4>Example 31</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 31)</h2>
   
   <div class="statement">
@@ -1312,7 +1490,8 @@ x_{1} - 6 \, x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 32</h4><div class="exercise">
+</div><hr/>
+<h4>Example 32</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 32)</h2>
   
   <div class="statement">
@@ -1355,7 +1534,8 @@ x_{1} + x_{2} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 33</h4><div class="exercise">
+</div><hr/>
+<h4>Example 33</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 33)</h2>
   
   <div class="statement">
@@ -1398,7 +1578,8 @@ x_{1} + 4 \, x_{2} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 34</h4><div class="exercise">
+</div><hr/>
+<h4>Example 34</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 34)</h2>
   
   <div class="statement">
@@ -1444,7 +1625,8 @@ x_{1} - 2 \, x_{2} - 5 \, x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 35</h4><div class="exercise">
+</div><hr/>
+<h4>Example 35</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 35)</h2>
   
   <div class="statement">
@@ -1484,7 +1666,8 @@ x_{1} + 7 \, x_{2} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 36</h4><div class="exercise">
+</div><hr/>
+<h4>Example 36</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 36)</h2>
   
   <div class="statement">
@@ -1527,7 +1710,8 @@ x_{1} - 3 \, x_{2} - 4 \, x_{3} - x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 37</h4><div class="exercise">
+</div><hr/>
+<h4>Example 37</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 37)</h2>
   
   <div class="statement">
@@ -1573,7 +1757,8 @@ x_{4}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 38</h4><div class="exercise">
+</div><hr/>
+<h4>Example 38</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 38)</h2>
   
   <div class="statement">
@@ -1613,7 +1798,8 @@ x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 39</h4><div class="exercise">
+</div><hr/>
+<h4>Example 39</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 39)</h2>
   
   <div class="statement">
@@ -1648,7 +1834,8 @@ x_{1} - 2 \, x_{2} + 3 \, x_{3} - x_{4}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 40</h4><div class="exercise">
+</div><hr/>
+<h4>Example 40</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 40)</h2>
   
   <div class="statement">
@@ -1687,7 +1874,8 @@ x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 41</h4><div class="exercise">
+</div><hr/>
+<h4>Example 41</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 41)</h2>
   
   <div class="statement">
@@ -1727,7 +1915,8 @@ x_{1} - 3 \, x_{2} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 42</h4><div class="exercise">
+</div><hr/>
+<h4>Example 42</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 42)</h2>
   
   <div class="statement">
@@ -1773,7 +1962,8 @@ x_{1} - 6 \, x_{2} + 8 \, x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 43</h4><div class="exercise">
+</div><hr/>
+<h4>Example 43</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 43)</h2>
   
   <div class="statement">
@@ -1816,7 +2006,8 @@ x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 44</h4><div class="exercise">
+</div><hr/>
+<h4>Example 44</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 44)</h2>
   
   <div class="statement">
@@ -1856,7 +2047,8 @@ x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 45</h4><div class="exercise">
+</div><hr/>
+<h4>Example 45</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 45)</h2>
   
   <div class="statement">
@@ -1899,7 +2091,8 @@ x_{1} - 5 \, x_{2} - 2 \, x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 46</h4><div class="exercise">
+</div><hr/>
+<h4>Example 46</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 46)</h2>
   
   <div class="statement">
@@ -1945,7 +2138,8 @@ x_{3}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 47</h4><div class="exercise">
+</div><hr/>
+<h4>Example 47</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 47)</h2>
   
   <div class="statement">
@@ -1988,7 +2182,8 @@ x_{1} - 2 \, x_{2} + 2 \, x_{3} + 4 \, x_{4} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 48</h4><div class="exercise">
+</div><hr/>
+<h4>Example 48</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 48)</h2>
   
   <div class="statement">
@@ -2031,7 +2226,8 @@ x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 49</h4><div class="exercise">
+</div><hr/>
+<h4>Example 49</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 49)</h2>
   
   <div class="statement">
@@ -2067,7 +2263,8 @@ x_{1} + 3 \, x_{2} + 2 \, x_{3} \\
 \end{array}\right]\]</p>
   </div>
   
-</div><h4>Example 50</h4><div class="exercise">
+</div><hr/>
+<h4>Example 50</h4><div class="exercise">
   <h2 class="title">A2 - Linear maps and matrices (ver. 50)</h2>
   
   <div class="statement">
@@ -2103,136 +2300,32 @@ x_{1} - x_{2}
 \end{array}\right]\]</p>
   </div>
   
-</div>
-    </div>
-    <div id="sidebar">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers [Spacebar]</a></li>
-      </ul>
-      <h2>Diff EQ Standards</h2>
-      <ul>
-        
-          <li><a href="/diff-eq/C1/">C1 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/C2/">C2 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/C3m/">C3m (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/C4/">C4 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/C5/">C5 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/C6/">C6 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/C7m/">C7m (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/D1/">D1 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/D2/">D2 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/D3m/">D3m (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/D4m/">D4m (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/F2/">F2 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/F3m/">F3m (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/F4/">F4 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/F5/">F5 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/F6/">F6 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/N1/">N1 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/N2/">N2 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/N3m/">N3m (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/S1/">S1 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/S2m/">S2m (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/S3/">S3 (Diff EQ)</a></li>
-        
-          <li><a href="/diff-eq/S4m/">S4m (Diff EQ)</a></li>
-        
-      </ul>
-      <h2>Lin Alg Standards</h2>
-      <ul>
-        
-          <li><a href="/lin-alg/A1/">A1 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/A2/">A2 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/A3/">A3 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/A4/">A4 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/E1/">E1 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/E2/">E2 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/E3/">E3 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/G1/">G1 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/G2/">G2 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/G3/">G3 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/G4/">G4 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/M1/">M1 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/M2/">M2 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/M3/">M3 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V01/">V01 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V02/">V02 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V03/">V03 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V04/">V04 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V05/">V05 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V06/">V06 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V07/">V07 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V08/">V08 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V09/">V09 (Lin Alg)</a></li>
-        
-          <li><a href="/lin-alg/V10/">V10 (Lin Alg)</a></li>
-        
-      </ul>
-    </div>
-<!-- latest MathJax -->
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/javascript">
-  function toggleAnswers() {
-    var answers = document.getElementsByClassName("answer");
-    var i;
-    for (i = 0; i < answers.length; i++) {
-      var answer = answers[i];
-      answer.classList.toggle("hide");
+</div><hr/>
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- latest MathJax -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <!-- custom hacky show/hide-->
+  <script type="text/javascript">
+    var answers = document.getElementsByClassName("answer")
+    $(answers).addClass('alert alert-primary collapse hide');
+    $(answers).collapse({"toggle":false});
+    function toggleAnswers() {
+      $(answers).collapse("toggle");
     }
-  }
-  if (document.getElementsByClassName("answer").length > 0) {
-    var showHideAnswers = document.getElementById("showHideAnswers");
-    showHideAnswers.classList.remove("hide");
-    showHideAnswers.addEventListener("click", function(e){toggleAnswers();e.preventDefault();});
-    document.addEventListener("keydown", function(e){if (e.key==" "){toggleAnswers();e.preventDefault()}});
-    toggleAnswers();
-  }
-</script>
-  </body>
+    if (answers.length > 0) {
+      var showHideAnswers = document.getElementById("showHideAnswers");
+      showHideAnswers.classList.remove("d-none");
+      showHideAnswers.addEventListener("click", function(e){toggleAnswers();e.preventDefault();});
+      document.addEventListener("keydown", function(e){if (e.key==" "){toggleAnswers();e.preventDefault()}});
+    }
+  </script>
+</body>
 </html>
