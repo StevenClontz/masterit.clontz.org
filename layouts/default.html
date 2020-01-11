@@ -1,55 +1,97 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Mastr - <%= @item[:title] %></title>
-    <link rel="stylesheet" href="/stylesheet.css">
-
-    <!-- you don't need to keep this, but it's cool for stats! -->
-    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
-  </head>
-  <body>
-    <div id="main">
-      <%= yield %>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <!-- you don't need to keep this, but it's cool for stats -->
+  <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="/stylesheet.css">
+  <title>Mastr - <%= @item[:title] %></title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Mastr</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!--<li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+  	</li>-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Differential Equations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!--<a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+  	    <a class="dropdown-item" href="#">Something else here</a>-->
+              <% @items.find_all('/diff-eq/*').sort_by{|i|i[:title]}.each do |i| %>
+                <%= link_to i[:title], i, class:"dropdown-item" %>
+              <% end %>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Linear Algebra
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!--<a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+  	    <a class="dropdown-item" href="#">Something else here</a>-->
+              <% @items.find_all('/lin-alg/*').sort_by{|i|i[:title]}.each do |i| %>
+                <%= link_to i[:title], i, class:"dropdown-item" %>
+              <% end %>
+            </div>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+        </ul>
+	<ul class="navbar-nav">
+          <li id="showHideAnswers" class="d-none nav-item"><a class="nav-link" href="#">Show/Hide Answers [Spacebar]</a></li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-
+        </form>-->
+      </div>
     </div>
-    <div id="sidebar">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li id="showHideAnswers" class="hide"><a href="#">Show/Hide Answers [Spacebar]</a></li>
-      </ul>
-      <h2>Diff EQ Standards</h2>
-      <ul>
-        <% @items.find_all('/diff-eq/*').sort_by{|i|i[:title]}.each do |i| %>
-          <li><%= link_to i[:title], i %></li>
-        <% end %>
-      </ul>
-      <h2>Lin Alg Standards</h2>
-      <ul>
-        <% @items.find_all('/lin-alg/*').sort_by{|i|i[:title]}.each do |i| %>
-          <li><%= link_to i[:title], i %></li>
-        <% end %>
-      </ul>
-    </div>
-<!-- latest MathJax -->
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/javascript">
-  function toggleAnswers() {
-    var answers = document.getElementsByClassName("answer");
-    var i;
-    for (i = 0; i < answers.length; i++) {
-      var answer = answers[i];
-      answer.classList.toggle("hide");
+  </nav>
+  <div class="container mt-3">
+    <%= yield %>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- latest MathJax -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <!-- custom hacky show/hide-->
+  <script type="text/javascript">
+    var answers = document.getElementsByClassName("answer")
+    $(answers).addClass('alert alert-primary collapse hide');
+    $(answers).collapse({"toggle":false});
+    function toggleAnswers() {
+      $(answers).collapse("toggle");
     }
-  }
-  if (document.getElementsByClassName("answer").length > 0) {
-    var showHideAnswers = document.getElementById("showHideAnswers");
-    showHideAnswers.classList.remove("hide");
-    showHideAnswers.addEventListener("click", function(e){toggleAnswers();e.preventDefault();});
-    document.addEventListener("keydown", function(e){if (e.key==" "){toggleAnswers();e.preventDefault()}});
-    toggleAnswers();
-  }
-</script>
-  </body>
+    if (answers.length > 0) {
+      var showHideAnswers = document.getElementById("showHideAnswers");
+      showHideAnswers.classList.remove("d-none");
+      showHideAnswers.addEventListener("click", function(e){toggleAnswers();e.preventDefault();});
+      document.addEventListener("keydown", function(e){if (e.key==" "){toggleAnswers();e.preventDefault()}});
+    }
+  </script>
+</body>
 </html>
