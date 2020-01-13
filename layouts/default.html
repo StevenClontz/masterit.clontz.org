@@ -27,7 +27,9 @@
               Differential Equations
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <% @items.find_all('/diff-eq/*').sort_by{|i|i[:title]}.each do |i| %>
+              <%= link_to "Diff Eq Home", @items['/diff-eq/index.html'], class:"dropdown-item" %>
+              <div class="dropdown-divider"></div>
+              <% @items.find_all('/diff-eq/*').reject{|i|i.identifier=="/diff-eq/index.html"}.sort_by{|i|i[:title]}.each do |i| %>
                 <%= link_to i[:title], i, class:"dropdown-item" %>
               <% end %>
             </div>
@@ -37,7 +39,9 @@
               Linear Algebra
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <% @items.find_all('/lin-alg/*').sort_by{|i|i[:title]}.each do |i| %>
+              <%= link_to "Lin Alg Home", @items['/lin-alg/index.html'], class:"dropdown-item" %>
+              <div class="dropdown-divider"></div>
+              <% @items.find_all('/lin-alg/*').reject{|i|i.identifier=="/lin-alg/index.html"}.sort_by{|i|i[:title]}.each do |i| %>
                 <%= link_to i[:title], i, class:"dropdown-item" %>
               <% end %>
             </div>

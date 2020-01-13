@@ -1,0 +1,11 @@
+---
+title: Linear Algebra
+---
+
+<h1><%= @item[:title] %></h1>
+
+<ul>
+  <% @items.find_all('/lin-alg/*').reject{|i|i.identifier=="/lin-alg/index.html"}.sort_by{|i|i[:title]}.each do |i| %>
+    <li><%= link_to i[:title], i %></li>
+  <% end %>
+</ul>
