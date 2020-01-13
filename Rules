@@ -6,7 +6,7 @@ compile '/index.html' do
 end
 
 ['lin-alg','diff-eq'].each do |subj|
-  compile "/#{subj}/index.html" do
+  compile "/#{subj}.html" do
     filter :erb
     layout "/default.*"
     write "/#{subj}/index.html"

@@ -5,7 +5,7 @@ title: Differential Equations
 <h1><%= @item[:title] %></h1>
 
 <ul>
-  <% @items.find_all('/diff-eq/*').reject{|i|i.identifier=="/diff-eq/index.html"}.sort_by{|i|i[:title]}.each do |i| %>
+  <% @items.find_all('/diff-eq/*').sort_by{|i|i[:title]}.each do |i| %>
     <li><%= link_to i[:title], i %></li>
   <% end %>
 </ul>
