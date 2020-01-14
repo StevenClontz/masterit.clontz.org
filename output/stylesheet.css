@@ -5,6 +5,6 @@
   max-height:50vh;
   overflow-y:auto;
 }
-p {
+.exercise,.answer {
   overflow-x:auto;
 }
