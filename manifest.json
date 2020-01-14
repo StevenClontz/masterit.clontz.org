@@ -1,0 +1,7 @@
+{
+  "name": "MasterIt",
+  "description": "Freely available exercises",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any"
+}
